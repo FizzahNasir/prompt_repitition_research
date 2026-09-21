@@ -6,6 +6,14 @@
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_PERSONAL_ACCESS_TOKEN}"
       }
+    },
+    "overleaf": {
+      "command": "npx",
+      "args": ["-y", "@mjyoo2/overleaf-mcp"],
+      "env": {
+        "OVERLEAF_PROJECT_ID": "${env:OVERLEAF_PROJECT_ID}",
+        "OVERLEAF_GIT_TOKEN": "${env:OVERLEAF_GIT_TOKEN}"
+      }
     }
   }
 }
