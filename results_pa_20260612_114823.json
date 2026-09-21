@@ -1,0 +1,6756 @@
+{
+  "gpt-4o-mini": {
+    "4_Question_Only": [
+      {
+        "item_id": "mgsm_pa_001",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "18",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_002",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "3",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_003",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "70000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_004",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "540",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_005",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_006",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "64",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_007",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "260",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_008",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "160",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_009",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "45",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_010",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "460",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_011",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "366",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_012",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "694",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_013",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "13",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_014",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "18",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_015",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "60",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_016",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "125",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_017",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "230",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_018",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "57500",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_019",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "7",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_020",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_021",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_022",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "14",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_023",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "7",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_024",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "8",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_025",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "26",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_026",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "2",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_027",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "243",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_028",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "16",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_029",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "25",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_030",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "104",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_031",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "109",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_032",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "80",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_033",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "35",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_034",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "70",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_035",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "23",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_036",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "9",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_037",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "75",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_038",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "2",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_039",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_040",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "18",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_041",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "8",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_042",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "200",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_043",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "26",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_044",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "48",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_045",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_046",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "104",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_047",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "163",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_048",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "800",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_049",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "8",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_050",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "30",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_051",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "294",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_052",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_053",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_054",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "40",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_055",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "40",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_056",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "14",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_057",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "3",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_058",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "83",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_059",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "57",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_060",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "187",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_061",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "17",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_062",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "1430",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_063",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "25000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_064",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "1596",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_065",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "300",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_066",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "36",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_067",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "48",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_068",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "595",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_069",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "36",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_070",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "60",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_071",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "7425",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_072",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "60",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_073",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "221",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_074",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "255",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_075",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "88",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_076",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "60",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_077",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_078",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "100",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_079",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_080",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "70",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_081",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_082",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "17",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_083",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "623",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_084",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "600",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_085",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_086",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "44",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_087",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "22",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_088",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "9360",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_089",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "8000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_090",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "24",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_091",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "225",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_092",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "28",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_093",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "4",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_094",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "36",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_095",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "348",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_096",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "40",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_097",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "3",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_098",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "12",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_099",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_100",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "58",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_101",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "175",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_102",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_103",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "26",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_104",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "140",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_105",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "500",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_106",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_107",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "72",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_108",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "3",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_109",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "50",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_110",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "28",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_111",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "45",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_112",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "16",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_113",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "24",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_114",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "25",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_115",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_116",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "90",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_117",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "42",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_118",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "360",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_119",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "4",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_120",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "95200",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_121",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "240",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_122",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "27",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_123",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "48",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_124",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "50",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_125",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_126",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_127",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "82",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_128",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "120",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_129",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "880",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_130",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_131",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "30",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_132",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "940",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_133",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "60",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_134",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "13",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_135",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "720",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_136",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "40",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_137",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_138",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "29",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_139",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "105",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_140",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "70",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_141",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_142",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "400",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_143",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "140",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_144",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "16",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_145",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_146",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "4000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_147",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "2125",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_148",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "75",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_149",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "30",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_150",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "16",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_151",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "4",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_152",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_153",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "4",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_154",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "48",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_155",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "272",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_156",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "280",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_157",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "1400",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_158",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "80",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_159",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "34",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_160",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_161",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "16",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_162",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "32",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_163",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "92",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_164",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "50",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_165",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_166",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "77",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_167",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_168",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "16",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_169",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "18",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_170",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "120",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_171",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "150",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_172",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "1210",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_173",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "51",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_174",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "18000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_175",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "95",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_176",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_177",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "100",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_178",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "350",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_179",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "122",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_180",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "130",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_181",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_182",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "160",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_183",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "23",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_184",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "2",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_185",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "25",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_186",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "30",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_187",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_188",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "106",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_189",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "50",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_190",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "34",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_191",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "360",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_192",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_193",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "91",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_194",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "24",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_195",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_196",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "12",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_197",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "120",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_198",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6277",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_199",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "320",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_200",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "7500",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_201",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "55",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_202",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "114200",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_203",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "100",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_204",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "31",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_205",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "98",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_206",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "98",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_207",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "860",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_208",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "2600",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_209",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "76",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_210",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "145",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_211",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_212",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "4",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_213",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_214",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "250",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_215",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "8",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_216",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "44",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_217",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "220",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_218",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "15",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_219",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "45",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_220",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "54",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_221",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "70",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_222",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "90",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_223",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "140",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_224",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_225",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "180",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_226",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "9",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_227",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "33",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_228",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "9",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_229",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "1",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_230",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "21",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_231",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "276000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_232",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "50",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_233",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "75",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_234",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "12",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_235",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "21",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_236",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "10",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_237",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "31",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_238",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "90",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_239",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "68",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_240",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "280",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_241",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "21",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_242",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "6",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_243",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "3",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_244",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "250",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_245",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "20",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_246",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "7",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_247",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "27000",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_248",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "32",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_249",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "300",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      },
+      {
+        "item_id": "mgsm_pa_250",
+        "language": "pa",
+        "task": "GSM8K",
+        "scenario": "4_Question_Only",
+        "correct_answer": "5600",
+        "baseline": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "repetition": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "verbose": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "triple": {
+          "response": "[dry-run]",
+          "correct": null
+        },
+        "padding": {
+          "response": "[dry-run]",
+          "correct": null
+        }
+      }
+    ]
+  }
+}

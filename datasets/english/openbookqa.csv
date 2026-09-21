@@ -1,0 +1,1024 @@
+id,question_stem,choices,answerKey
+8-343,"A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to","{'text': array(['make more phone calls', 'quit eating lunch out',
+       'buy less with monopoly money', 'have lunch with friends'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1129,There is most likely going to be fog around:,"{'text': array(['a marsh', 'a tundra', 'the plains', 'a desert'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+880,Predators eat,"{'text': array(['lions', 'humans', 'bunnies', 'grass'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-999,"Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means","{'text': array(['roots may be split', 'roots may begin to die',
+       'parts may break the concrete', 'roots may fall apart'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-464,An electric car runs on electricity via,"{'text': array(['gasoline', 'a power station', 'electrical conductors', 'fuel'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-794,As the rain forest is deforested the atmosphere will increase with,"{'text': array(['oxygen', 'nitrogen', 'carbon', 'rain'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-1163,an electric car contains a motor that runs on,"{'text': array(['gas', 'hydrogen', 'ions', 'plutonium'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-322,The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?,"{'text': array(['moons gravity', 'human planet rotation', 'global warming',
+       'moon rotation'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-1140,The summer solstice in the northern hemisphere is four months before,"{'text': array(['May', 'July', 'April', 'October'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-903,The main component in dirt is,"{'text': array(['microorganisms', 'broken stones', 'pollution', 'bacteria'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-511,It's easier for human's to survive in:,"{'text': array(['a cave', 'the ocean.', 'a town', 'alone'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-937,A cactus stem is used to store,"{'text': array(['fruit', 'liquid', 'food', 'spines'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-201,A red-tailed hawk is searching for prey. It is most likely to swoop down on,"{'text': array(['an eagle', 'a cow', 'a gecko', 'a deer'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1618,The chance of wildfires is increased by,"{'text': array(['parched foliage', 'torrential rain', 'lush foliage',
+       'careful fire maintenance'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+758,A positive effect of burning biofuel is,"{'text': array(['shortage of crops for the food supply',
+       'an increase in air pollution', 'powering the lights in a home',
+       'deforestation in the amazon to make room for crops'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-414,"As gasoline costs rise, alternative fuels are being used, which means that","{'text': array(['wind power will be expensive', 'gas costs will rise',
+       'oil costs will be maintained', 'gasoline will be needed less'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-675,"A person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to install","{'text': array(['sun grafts', 'sunlight shields', 'panels collecting sunlight',
+       'solar bees'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-163,A Mola Mola might live where?,"{'text': array(['Lake Michigan', 'The Mississippi River', 'Bay of Bengal',
+       'Lake Eerie'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1032,Which requires energy to move?,"{'text': array(['weasel', 'willow', 'mango', 'poison ivy'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+889,An animal that only eats plants is a,"{'text': array(['rat', 'moth', 'chimpanzee', 'pig'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1160,There was a lot more water vapor in the air when we went on a trip to,"{'text': array(['Hanoi', 'Athens', 'Baghdad', 'Phoenix'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-298,An example of conservation is avoiding the use of,"{'text': array(['gasoline', 'air', 'snow', 'clothes'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1189,What can feathers on Spheniscidae be used for?,"{'text': array(['keeping warm', 'flying', 'sleeping', 'eating'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-395,Overpopulation can cause,"{'text': array(['More fresh water for people to drink',
+       'Lower Life Expectancy in Countries', 'More food for more people',
+       'More space for places to people to live'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-238,Shining a light through a diamond can,"{'text': array(['make a lot of bright lights shine',
+       'summon a brilliant wave of color', 'heat up a room',
+       'make a lot of money'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-372,"If you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact with","{'text': array(['its snout', 'its gills', 'its nose', 'its belly'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-35,which of these would stop a car quicker?,"{'text': array(['a wheel with wet brake pads', 'a wheel without brake pads',
+       'a wheel with worn brake pads', 'a wheel with dry brake pads'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-271,what system is needed for a body to get its needed supply of the gas humans breathe in?,"{'text': array(['the circulatory system', 'the digestive system',
+       'the school system', 'central nervous system'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-409,Every evening a child can look into the night sky and see that the moon is,"{'text': array(['gone', 'breaking', 'falling', 'moving upwards'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+530,"When it's flying, a plane has no friction with the","{'text': array(['wings', 'ground', 'air', 'clouds'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1426,To grow plants require,"{'text': array(['acid rain', 'pesticides', 'shafts of sunlight', 'moonbeam rays'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-466,What is the best way to guess a babies eye color?,"{'text': array(['The surroundings they are born in.', 'Their parents usual diet.',
+       'Just take a random guess.',
+       'The genealogy records of their family.'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1577,What animal eats plants?,"{'text': array(['eagles', 'robins', 'owls', 'leopards'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-257,Which of these is a hypothesis?,"{'text': array(['The ice caps will completely melt if global warming continues',
+       'The earth is round', 'The earth revolves around the sun',
+       'Gravity causes objects to fall'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+378,What explains the characteristic lunar formations?,"{'text': array(['remains of ancient ponds', 'many collisions that have occured',
+       'volcanic explosions over millions of years',
+       'sink holes due to the moons porous nature'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-41,Tadpoles start their lives as,"{'text': array(['Water animals', 'Frogs', 'Ants', 'College Students'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-540,"If a person puts out four apples around their home on the same day, the molecules in which apple would be moving the most rapidly?","{'text': array(['the apple sitting on a sunny sidewalk',
+       'the apple in the freezer',
+       'the apple sitting on the shaded stoop', 'the apple in a closet'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+266,What is used for sensing visual things?,"{'text': array(['nerves', 'tibia', 'nostril', 'cornea'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1309,They studied the soil by using,"{'text': array(['plants', 'a telescope', 'roots', 'a microscope'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-1197,Bill's arm got cold when he put it inside the,"{'text': array(['refrigerator', 'room', 'jacket', 'oven'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-891,A recyclable material can be,"{'text': array(['transformed', 'traded', 'thrown away', 'used more times'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1180,What is different about birth in humans and chickens?,"{'text': array(['Mother', 'Fertilization', 'Father', 'the hard shell'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1204,Which of these situations is an example of pollutants?,"{'text': array(['plastic bags floating in the ocean',
+       'mallard ducks floating on a lake',
+       'cottonwood seeds floating in the air',
+       'cirrus clouds floating in the sky'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-52,Human reproduction requires,"{'text': array(['eggs with shells', 'nest incubation', 'a nest', 'a womb'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1759,Thermometers,"{'text': array(['can help you monitor a fever',
+       'indicate levels of mercury in the blood',
+       'read exactly at 98.6 degrees', 'are used only for babies'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-655,"if the earth was a living room, what can be done to melt the glaciers?","{'text': array(['someone would turn up the room heater',
+       'someone would turn up the air conditioner',
+       'someone would turn up the music',
+       'someone would turn on the light'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+132,What would happen when balloons heat up?,"{'text': array(['they get bigger', 'they get smaller', 'nothing happens',
+       'they fall down'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-79,"A balloon is filled with helium for a party. After the party, the balloons are left in the living room, where a fireplace is heating the room. The balloons","{'text': array(['expand', 'melt', 'shrink', 'fall'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1835,Seals are most likely to be found in what type of environment?,"{'text': array(['desert', 'arctic', 'Mediterranean', 'tropical'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-149,"When the eggs hatch, the offspring are","{'text': array(['killed', 'hurt', 'born', 'cold'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+695,Some berries may be eaten by,"{'text': array(['a bear or person', 'a bear or shark', 'a bear or lion',
+       'a bear or wolf'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-179,A person has a chance to experience an equinox,"{'text': array(['weekly', 'monthly', 'annually', 'biannually'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-50,Overpopulation of an organism can,"{'text': array(['strain the resources of an ecosystem',
+       'cause boundless growth of resources',
+       'lead to extinction of the organism',
+       'cause the ecosystem to flourish'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+508,"To improve health, what is a good strategy?","{'text': array(['high risk lifestyle', 'restaurant food', 'business trip',
+       'a spa trip'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1674,A girl and her mom have the same,"{'text': array(['date of birth', 'shirt', 'number of toenails', 'hair length'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+163,The transportation with the most mass is likely a,"{'text': array(['commercial plane', 'private plane', 'bus', 'private car'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-49,A rabbit may enjoy,"{'text': array(['meat', 'compost', 'peas', 'pebbles'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-393,"A construction group wants to put a shopping center in town, but the only place available is a small nature park with a trail. Deer and other wildlife frequent the park, since it is the only place in the city where trees and fresh water are available for them. The construction group decides to build the shopping center, which means that","{'text': array(['the deer are moved to a zoo', 'the trail is expanded',
+       'the mall has a nature park in it',
+       'the wildlife environment is destroyed'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+788,Owls are likely to hunt at,"{'text': array(['3pm', '2am', '6pm', '7am'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-29,What could be a positive aspect of a tree being cut down?,"{'text': array(['the plants that were under the tree will have access to more light',
+       'the squirrels that were in that tree will have an easier time getting to their home',
+       'Plants under the tree will get cooled off by the shade',
+       'The sun will shine brighter than before'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-368,Birds carrying away fruit helps the tree,"{'text': array(['grow', 'fertilize', 'reproduce', 'conquer'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-671,"If a UFO is flying overhead and looks small, then large, then","{'text': array(['the UFO is calling', 'the UFO had been close',
+       'the UFO is approaching', 'the UFO is leaving'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1272,Inherited behavior is exhibited when,"{'text': array(['bears take a long winter sleep', 'dogs sit on command',
+       'seals clap for their trainers', 'rats navigate thru a maze'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+648,What likely explains deforestation?,"{'text': array(['Increased insect populations', 'Clearing for farming',
+       'reduction in rainfall', 'More carbon dioxide'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1180,Mosquitoes enjoy all the people at a BBQ in the summer for what reason?,"{'text': array(['steak', 'blood', 'nice weather', 'taking food'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-227,The surface of the moon contains,"{'text': array(['dogs', 'water', 'high peaks', 'humans'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1582,A tool used to identify the percent chance of a trait being passed down has at least,"{'text': array(['four boxes', 'eight boxes', 'two boxes', 'six boxes'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-125,"A prisoner is kept in a stone room, unable to see the sun. The prisoner knows that he needs vitamin D to survive, so he","{'text': array(['asks for milk', 'asks for television', 'asks for water',
+       'asks for sleep'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1923,When trying to pull a rose out of the ground why do you encounter resistance?,"{'text': array(['roots', 'tensile strength', 'plant temperature', 'plant color'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-229,A bat flew through the sky without hitting anything due to which of these?,"{'text': array(['rainy sky to fly in', 'fast truck to drive',
+       'a car with gasoline', 'surfaces to reflect sound off'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1702,How can we see that the coloration of fur is an inherited characteristic?,"{'text': array(['puppies have soft fur', 'kittens look like their parents',
+       'all mammals are born with fur', 'baby rats are mostly bald'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-260,Decaying vegetation is part of the process that,"{'text': array(['enables nuclear power to function',
+       'enables to emitting of light beams',
+       'enables gas powered motors to operate',
+       'enables windmills to power electric grids'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-491,"After a torrential downpour over a week, a man notices that the pond in his backyard is","{'text': array(['melted', 'dehydrated', 'bloated', 'salted'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+75,The amount of friction and the speed of an object have what kind of relationship?,"{'text': array(['inverse', 'reverse', 'direct', 'equal'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1215,A fallen leaf,"{'text': array(['will turn into a tree', 'will become bright green',
+       'will begin to recycle the nutrients that made up its structure',
+       'is likely to continue to grow'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-93,Over a period of time the weather can change,"{'text': array(['The color of my hair', 'The way I walk', 'The size of a statue',
+       'The sound a computer makes'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-988,Plant growth may cause,"{'text': array(['an uptick in the number of leaves', 'a surge in leaf disease',
+       'a gradual decrease in leaves', 'a rapid decline of the leaves'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-1139,The man's heart skipped a beat and he felt pain after touching which of these?,"{'text': array(['ice cube', 'water', 'electrical transformer', 'grass'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1545,Which substance is capable of dripping?,"{'text': array(['Oxygen', 'Juice', 'Wood', 'Lightning'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-664,If bacon is left too long on a hot stove top,"{'text': array(['it will be cooked perfectly', 'it will be bacteria laden',
+       'it will become blackened', 'it will be left raw'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-53,the dashboard reading in a jaguar would likely be set to which of these?,"{'text': array(['set to calories', 'set to volume', 'set to kilometers',
+       'set to width'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1044,are explosions safe?,"{'text': array(['they could harm living things', 'they are very safe',
+       'they cause nothing serious', 'none of these'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-1122,The lowest temperature on the trip was at,"{'text': array(['the mountain pass', 'the plain', 'the large hill', 'the canyon'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-79,What is the benefit to using a frosted window film over a non treated windows?,"{'text': array(['they are easier to make', 'they let in less light',
+       'they are cheaper to produce', 'they are much stronger'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-157,Ocean water contains,"{'text': array(['copious amounts of seltzer', 'scant amounts of sodium chloride',
+       'scant amounts of carbonation',
+       'copious amounts of the combination of Na and Cl'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-1164,A cheetah that runs all day will find it has lost a lot of,"{'text': array(['blood', 'water', 'prey', 'spots'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-63,Beak shape can influence a bird's ability,"{'text': array(['to give birth to live young', ""to mate with it's partner"",
+       'to fly to warmer climates', 'to chew up certain worms'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-308,Some blind people have demonstrated bat-like skills by:,"{'text': array(['sensing shapes by light and shadows',
+       'having a unusually strong sense of smell',
+       'sensing nearby objects by temperature change',
+       ""using sound to 'see'""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+326,December 21st through March 20 is a three month period which is an example of what?,"{'text': array(['A session', 'A Match', 'A Season', 'Autumn'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1184,Seeds provide new plants with,"{'text': array(['life sustaining elements', 'essentials for photosynthesis',
+       'water and hydrogen', 'storage for roots'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+359,What is a more comfortable color to have for your automobile upholstery if living in a desert?,"{'text': array(['ecru', 'red', 'black', 'navy'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-350,The salamander could eat a large amounts of what?,"{'text': array(['fettuccine if left around', 'waxy leaves from certain plants',
+       'dead carcass meat from livestock', 'six legged winged organisms'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-140,A person can see,"{'text': array(['a radio recording', 'an emotion', 'a written message',
+       'an abstract idea'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+591,"When looking for good soil for plants, typically what is optimal?","{'text': array(['malleable and nutritious', 'dry and sandy', 'grainy and bitter',
+       'compact and hard'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-391,Animals are drawn to,"{'text': array(['gold', 'houses', 'feeders', 'Carbon Dioxide'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1672,Squirrels spend their fall,"{'text': array(['looking for pretty leaves to collect',
+       'stockpiling rocks for fighting in the winter',
+       'stockpiling pecans for the frigid months',
+       'collecting twigs to keep warm'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-464,Rainbows are always found after what?,"{'text': array(['A fire', 'A tornado', 'Rainfall', 'Cereal'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-983,Crop rotation has a positive impact on what?,"{'text': array(['government mentality', 'dirt quality', 'town economies',
+       'crop watering'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-179,the best method for detecting texture is,"{'text': array(['rubbing it', 'seeing it', 'hearing it', 'tasting it'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-942,Cold-blooded animals are often,"{'text': array(['fast', 'large', 'hairless', 'slow'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-100,Grey clouds can bring,"{'text': array(['sunlight', 'falling water molecules', 'blooming flowers',
+       'drought conditions'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-30,Which animal is considered a predator?,"{'text': array(['ant', 'snake', 'elephant', 'giraffe'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1709,Pollinators,"{'text': array(['enable plants to continue flourishing',
+       'play an unimportant role in the reproduction process',
+       'are useless to plants', 'are considered unwanted pests'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-491,"A farmer harvests seeds from some plants, such as tomatoes, in order to plant them later on. These seeds, once planted","{'text': array(['have their own dirt', 'have their own sunlight',
+       'have a lot of sand', 'contain their necessary nutrition'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+44,What type of characteristics are people not born with?,"{'text': array(['genetics', 'skills', 'physical attributes', 'height'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1023,A spinning object is used to make,"{'text': array(['steam', 'heat', 'water', 'electricity'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1911,One of the negative consequences of offshore oil platforms is,"{'text': array(['evaporation of the surrounding water',
+       'discharge of liquid petroleum in the surrounding sea',
+       'improvement in the conditions of sea life',
+       'increase in the birthrate of sea birds'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+429,The unit of measure derived from French word millilitre is a unit used for measuring volume generally used for values between 1 and,"{'text': array(['1000', '250', '5000', '300'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-49,"A man's child runs through the yard in the sprinklers, getting mud all over their feet. The child then runs around on the porch, tracking mud everywhere. While the mud is still wet, the man decides to clean off the porch by","{'text': array(['getting a new child', 'yelling at the mud',
+       'asking the child to stop', 'turning on the hose'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+520,Earthquakes,"{'text': array(['only happen in California', 'cause solar and lunar eclipses',
+       'will break your vases', 'make bridges much safer'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1128,A seismograph can accurately describe,"{'text': array(['how rough the footing will be', 'how bad the weather will be',
+       'how stable the ground will be', 'how shaky the horse will be'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-394,"Light from further away may appear to be less bright than other, closer sources, such as in which instance?","{'text': array(['the sun is always bright', 'the moon is brighter than stars',
+       'the moon is brighter than a floodlight',
+       'the sun is darker than the moon'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1166,A plant needs a specific climate to grow and,"{'text': array(['wither', 'persist', 'die', 'decay'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-884,Banging on a drum causes,"{'text': array(['music to be loud', 'music to be appealing',
+       'reverberations to strike the eardrum', 'concerts to sell out'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-501,What may have been formed by a volcano?,"{'text': array(['Mt. McKinley', 'Lake Pontchartrain', 'The great lakes',
+       'Niagara Falls'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-757,"Humans, cats, dogs, and elephants are known as mammals because their kids are born alive. Non-mammalian babies are born","{'text': array(['old', 'dead', 'in an egg', 'big'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-725,Wind can cause,"{'text': array(['basements to flood due to weather',
+       'small birds to kill large birds', 'waterfalls to flow backwards',
+       'stones to weather down to pebbles'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1300,Inherited characteristics,"{'text': array(['include mice being able to navigate a maze',
+       'include learning to sit on command',
+       'include dolphins doing tricks for their trainers',
+       'include spots on a ladybug'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-230,How could we determine approximately how far a bird is from the ground?,"{'text': array(['Measure the altitude of the bird using a reference point, such as a tall building.',
+       'Identify the species of bird',
+       'Ask the bird how high it was when it returns back to earth',
+       ""Measure the bird's mass""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-988,Endangered pandas are sometimes,"{'text': array(['accidentally dropped into volcanoes',
+       'confined to enclosures to be viewed by the public',
+       'found eating corn in the middle of North America',
+       'made into delicious rare steaks'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-393,Algae can be found in,"{'text': array(['reservoir', 'meat', 'street', 'tree'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-823,A toaster converts electrical energy into heat energy for toasting much like,"{'text': array(['a campfire toasts bread', 'a microwave heats soup',
+       'a fire burns paper', 'a small oven works'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-24,"An octopus, when in danger and unable to swim to safety, may find itself","{'text': array(['mimicking other things', 'melting into sand',
+       'creating new homes', 'mocking other fish'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+570,What does someone do when creating music?,"{'text': array(['hit a toy baseball with a bat',
+       'shake a baby rattle with your hand',
+       'bang the wall with your fist',
+       'pluck the strings of a fingerboard with your fingers'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-124,The pull the human planet space rock orbiter has on certain bodies of dihydrogen monooxide results in?,"{'text': array(['telescope views', 'water level fluctuations', 'animal',
+       'plant harvesting'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-199,"Since density = mass / volume, denser liquids such as water sink more than","{'text': array(['baby oil', 'corn syrup or', 'milk', 'honey'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+767,Photosynthesis can be performed by,"{'text': array(['a cabbage cell', 'a bee cell', 'a bear cell', 'a cat cell'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+28,The force exerted on an object and distance traveled have what kind of relationship?,"{'text': array(['reverse', 'inverse', 'equal', 'direct'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-1134,all cells use cellular respiration to,"{'text': array(['photosynthesize', 'release waste', 'perform meiosis',
+       'release energy'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1030,The viewing oriented sensor of a prairie creature are for what?,"{'text': array(['reproductive purposes', 'viewing sounds', 'sensing views',
+       'sensing tastes'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-18,"A dog is going to have to corral sheep for the afternoon, so it needs to prepare its body for the enormous workload ahead of it. The dog is","{'text': array(['breaks for birds on the road', 'given a large breakfast',
+       'eats a few corn cobs', 'given two apples to watch'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-378,"A woman sells bracelets that she makes. The bracelets gain popularity, and the woman makes incredibly large amounts of money from the sales. After a while, very few people are still buying the bracelets, so","{'text': array(['the woman makes more money',
+       'the woman makes the same amount of money',
+       'the woman spends more money', 'the woman makes less money'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-677,A desert environment is,"{'text': array(['dry, grass covered, and humid', 'lush, green, and tropical',
+       'arid, parched, and sun-baked', 'dry, damp, and lush'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-786,Seasons are caused by what rotating on its axis?,"{'text': array(['Our Planet', 'The Atmosphere', 'The Equator', 'The Sun'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-463,Which is best an letting electricity pass through?,"{'text': array(['tile flooring', 'human flesh', 'hockey stick', 'a steak knife'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-71,Asteroids crashing on planets can leave behind,"{'text': array(['large, bowl-shaped cavities in the ground',
+       'aliens and foreign foods', ""small dents in the planet's core"",
+       'lakes filled with salty water'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-1053,What is the formula of the substance which best helps plants grow,"{'text': array(['NH4', 'C4H4', 'CO2', 'H2O'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-437,You can experience a change of pressure when,"{'text': array(['Yelling really loud', 'Soaring the skies', 'Going walking',
+       'riding a bike'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1787,A small creek absorbing heat energy can result in,"{'text': array(['the creek water getting colder', 'a parched creek bed',
+       'tributaries branching off from the creek',
+       'a runoff of extra water'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-107,Summertime  happens during June in all but which location?,"{'text': array(['Australia', 'in Canada', 'United States', 'Europe'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+769,It takes more water to fill a bathtub than a,"{'text': array(['lake', 'pool', 'stomach', 'holding tank'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-73,The eighth month of the year is winter in,"{'text': array(['Brazil', 'Indiana', 'London', 'Canada'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-1194,birds use their peckers to catch,"{'text': array(['dogs', 'a tan', 'a ball', 'bees'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-416,transplanting seedling oaks has a positive impact on,"{'text': array(['fuel costs', 'the economy', 'housing value', 'the environment'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+470,What is an example of hunting?,"{'text': array(['humans throwing a spear through an animal',
+       'humans chewing on boiled animal muscles',
+       'humans gathering animals in a gate',
+       'humans plucking fruit from a tree'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1297,Which of these has shape that changes depending on the container which it resides within?,"{'text': array(['paper', 'wood', 'stone', 'orange juice'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-346,What would be the flavor if you ate the item that fell and is thought to have hit Sir Issac Newton's head,"{'text': array(['Sweet', 'Salty', 'bitter', 'sour'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-807,Earth's four layers are comprised mainly of,"{'text': array(['stone', 'bacteria', 'water', 'air'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-463,"if coffee sits in the fridge and loses its liquid form, what is that point known as?","{'text': array(['the freezing point', 'the prime point', 'the boiling point',
+       'the melting point'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-110,Mammals give birth to live,"{'text': array(['children', 'birds', 'fish', 'insects'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1611,"If a battery in an electromagnet is active, then what will happen to a nail in that electromagnet?","{'text': array(['it loses its magnetization', 'it loses its charge',
+       'it may become magnetized', 'it gains a charge'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-942,Which of these is a factor in the shape of a fern's seed?,"{'text': array(['luck', 'humans', 'gold', 'inheritance'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-1102,Which is recyclable?,"{'text': array(['An Elephant', 'A school notebook', 'A boat', 'A lake'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-774,"if the population in a habitat is on a steady decline, what condition is the habitat?","{'text': array(['it is a place to emigrate from', 'it is an ideal habitat',
+       'it is an unsustainable habitat', 'it is a thriving abode'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-333,A teacher wants to show how to combine two substances together. The two things that he can use in order to mix them completely are,"{'text': array(['water and soda', 'water and oil', 'sand and rocks',
+       'salt and bark'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-573,Medicine is used to cure but can cause people to have allergic reactions such as,"{'text': array(['spider bites', 'vomiting', 'placebo effect', 'dance fever'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1955,Lightning may lead to,"{'text': array(['damage to local foliage', 'rainbows across the sky',
+       'growth of local flora', 'firefighters getting the night off'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-45,When would a nocturnal predator most likely hunt?,"{'text': array(['5 p.m.', '12 p.m.', '3 a.m.', '10 a.m.'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-674,Where water be located in its gas form?,"{'text': array(['inside a disc golf driver', 'inside of a brass pipe',
+       'a mile up in the sky', 'inside a leather baseball'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+898,Green parts of a life form absorb,"{'text': array(['carbon dioxide', 'light', 'oxygen', 'water'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-1159,If a new species of predator joins a community,"{'text': array(['the new species will become herbivores',
+       'prey will experience an increase in population',
+       'prey will experience a drop in population',
+       'the old species will die out'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+568,Why would a perennial plant with an elongated stem a frequently used for lumber fall to the ground?,"{'text': array([""It's dead"", 'For water', 'For food', 'For sun'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-877,I'm an animal with a white fur and a large fluffy tail that lives in arctic regions; what am I?,"{'text': array(['weasel', 'snow fox', 'wolf', 'polar bear'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+406,Dairy is a source of,"{'text': array(['a vitamin that prevents blood loss',
+       'a vitamin that treats amino acid deficiency',
+       'a group of fat-soluble secosteroids',
+       'a vitamin that helps treat liver problems'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1132,"Atomic 26 is drawn to a device, it could be","{'text': array(['magnetized', 'Na', 'compass', 'K'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-479,why do tadpoles change into frogs?,"{'text': array(['tadpoles change to different animals',
+       'tadpoles are really just fish',
+       'they are young frogs still growing', 'none of these'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+609,What do cows eat?,"{'text': array(['Chickpeas', 'Chocolate', 'Steak', 'Poultry'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1568,Which object conducts electricity?,"{'text': array(['Window', ""Rubik's Cube"", 'Ship Anchor', 'Boulder'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-418,Glucose travels,"{'text': array(['from roots to leaves of a daffodil',
+       ""from a rose's leaves to the atmosphere"",
+       ""from a daisy's leaves into it's underground support system"",
+       ""from the sun to a sunflower's buds""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1050,Evaporation,"{'text': array(['only happens in the summer',
+       ""is like nature's disappearing water trick"", 'is caused by snow',
+       'involves the disappearance of sunlight'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-510,"In order for crops to grow food safely, pesticides are used on them. When it floods, this causes t he what to be poisonous?","{'text': array(['air', 'Corn', 'Runoff', 'farmers'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-519,The boy was able to warm the fireplace without a lighter thanks to what?,"{'text': array(['friction', 'metal', 'wishing', 'magic'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-637,Where would a duck like to live?,"{'text': array(['the Sahara', 'Antarctica', 'the Appalachian mountains',
+       'Death Valley'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+473,What do tuna eat?,"{'text': array(['Atlantic menhaden', 'Swedish fish', 'gummy fish', 'laminariales'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-445,"A woman notices that she is depressed every autumn, and wonders why. A friend suggests to her that perhaps certain changes that take place as seasons move from warm to cold may be having an effect on her. When pressed for an example of these changes, the friend cites","{'text': array(['flowers blooming', 'grass turning brown', 'trees growing',
+       'blossoms blooming'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-575,is it normal for an adult animal to lay eggs?,"{'text': array(['it has never happened', 'yes it is standard',
+       'it is abnormal and weird', 'all of these'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-284,If your dog is overweight,"{'text': array(['add more fat to their diet', 'cut back their caloric intake',
+       'let them sleep more', 'increase their caloric intake'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-135,Eyes allow humans,"{'text': array(['to detect when a traffic light changes',
+       'detect sour flavors in candy', 'hear music at concerts',
+       'detect acrid odors in the air'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+397,Organisms covered by layers of sediment,"{'text': array(['become fossils over night', 'may end up reanimated over time',
+       'develop characteristics for survival', 'may end up fueling a car'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-32,The winter solstice is on December 21st in the,"{'text': array(['counties', 'north of equator', 'states', 'southern hemisphere'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+48,A lake environment is a good setup for what to happen to organic remains?,"{'text': array(['bleaching', 'burning', 'fossilization', 'drying'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-69,were there fossil fuels in the ground when humans evolved?,"{'text': array(['this was only created by humans',
+       'humans predate fossil fuel formation',
+       'significant supplies accumulated prior', 'none of these'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-159,"The Grand Canyon is massive, with large, high peaks and very deep lows, which was formed when","{'text': array(['some water is around it', 'water rained on it',
+       'natural waters weathered it', 'a pool was opened'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-317,What type of useful product can be made from the moving winds?,"{'text': array(['wood', 'bananas', 'electricity', 'metal'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+423,The sides of the canyon are,"{'text': array(['metal', 'water', 'rivers', 'stone'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-304,which of these people would have the worst air quality at their residence?,"{'text': array(['a man who lives next to a landfill',
+       'a man who lives in a city with the best air quality',
+       'none of these', 'a man who lives in a great suburb'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+785,What is a stopwatch used for?,"{'text': array(['to rewind 5 minutes',
+       'to tell what will happen 5 minutes from now', 'to voice the time',
+       'to measure minutes and hours'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-1087,As a drought worsens the level at an aquifer will,"{'text': array(['stay the same', 'fluctuate wildly', 'decrease', 'increase'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+485,Wind frequently helps transport from one place to another,"{'text': array(['marble statues', 'molten magma', 'subterranean termites',
+       'exposed topsoil'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-908,When a kid slams on the brakes on their bike what is caused?,"{'text': array(['bike helmet', 'avoiding accidents', 'friction', 'gearing'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1231,Sources of spices have,"{'text': array(['crystals', 'feathers', 'cell walls', 'craters'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+810,Conservation,"{'text': array(['leads to longer drought of resources',
+       'leads to longer availability of resources',
+       'leads to more consumption', 'leads to short supply of resources'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+158,A tree is not the habitat of a,"{'text': array(['squirrel', 'woodpecker', 'monkey', 'lion'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-445,Erosion could lead to,"{'text': array(['a change in the direction of a stream',
+       'a change in ocean temperatures', 'an increase in rainy weather',
+       'an increase in plants and animals'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1502,A hemisphere experiences summer when,"{'text': array([""it's tilted towards Jupiter"", ""it's angled towards the moon"",
+       ""it's angled towards the largest star in the solar system"",
+       ""it spins counter clockwise on Earth's axis""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1200,What date is the amount of daylight minimized,"{'text': array(['Jul 4th', 'Feb 29th', 'May 3rd', 'Sep 1st'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+437,Which term is involved with protection by skin?,"{'text': array(['Eucerin pH5 range', 'Sagittal plane', 'pyogenic vibrio',
+       'popliteus'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-205,The reason Earth is so sturdy is because,"{'text': array(['It is made from rock', 'It eats three meals a day',
+       'It has a loving family', 'It is made from metal'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-270,A plant left in the dark,"{'text': array(['produces fruit', 'grows faster', 'fails to grow', 'gets greener'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-130,"A boy wants to use his Walkman so that he can listen to some music. When he tries to turn it on, it us unable to, and the boy realizes that he will need","{'text': array(['heat', 'metal', 'lithium-ion', 'plastic'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+229,Nuclear activity is the cause of what celestial occurrence?,"{'text': array(['axial planetary rotation', 'comets', 'planetary formation',
+       ""the sun's rays""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-390,Which source provides the safest water?,"{'text': array(['River', 'Sea', 'Ocean', 'Rain'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-107,"A rabbit has a litter of bunnies! Most of the babies are white, just like the mother rabbit, but one baby has brown spots, like the father rabbit. The father rabbit","{'text': array(['spread out some fur', 'has black on his ears',
+       'passed down inherited characteristics',
+       'is the same size as the mother'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-527,Photosynthesis means plants are unable to,"{'text': array(['convert sunlight to sand', 'provide food sources for others',
+       'be producers in an ecosystem', 'make their own food'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-333,"Through DNA, a rabbit will have long ears if","{'text': array(['rabbits are born with ears', 'there was a lot of food',
+       'genetic contributors had long ears', 'parents were also rabbits'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-44,"There are various creatures that live in forests, such as","{'text': array(['giant fish', 'enormous crabs', 'whitetails', 'desert jackals'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-160,An octopus protects itself with,"{'text': array(['water splashing', 'running fast', 'long hands',
+       'pigment squirting'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1942,Resources decreasing in an environment,"{'text': array(['induces organisms to use more of their resources',
+       'causes an increase in use of resources',
+       'causes an uptick in birthrate',
+       'induces organisms to be more economical with resources'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-597,The sidewalk next to a house having a crack in it and having vegetation growing from it is considered?,"{'text': array(['insects', 'weathering', 'lava', 'erosion'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-35,"If you wanted to make a necklace, how long would you have to wait for the materials to appear inside the Earth?","{'text': array(['millions of years', '1 day', '10 days', '100 days'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1161,Moon phases,"{'text': array(['change the moon into cheese',
+       ""alter the way the moon's facade looks"",
+       'change moon lakes into vapor', 'cause lunar eclipse every day'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-171,"If hot water were poured on an arm, what would happen to internal organs?","{'text': array(['they would be scalded', 'organs would remain uneffected',
+       'they would begin to decay', 'they would experience pain'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1139,Barnyard bovines,"{'text': array(['eat organic chicken', 'eat eggs', 'eat beef', 'eat alfalfa hay'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1924,Desert environments features,"{'text': array(['tropical plants', 'tons of sun', 'massive rain totals',
+       'icy precipitation'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-440,"a large cluster of humans, dogs, apple trees, atmosphere and more can be called","{'text': array(['army of ants', 'a community', 'a toy store', 'a shopping mall'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-528,"A person is considering various organs, and is looking at which ones will be most muscular. A contender for most muscular is","{'text': array(['the lungs', 'the kidney', 'the heart', 'the liver'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+170,Which pair don't reproduce the same way?,"{'text': array(['rabbit and hare', 'mule and hinny', 'cat and catfish',
+       'caterpillar and butterfly'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+395,Which of the following is warm blooded?,"{'text': array(['toad', 'snake', 'turtle', 'skunk'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-633,"A male bird spots a female of his species and begins a fancy dance, flashing his bright feathers around in the air, showing off. This male is attempting to procure","{'text': array(['a manager', 'an agent', 'a meal', 'a reproductive companion'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-504,Vast quantities of metal can be obtained from,"{'text': array(['a quarry', 'concerts', 'forests', 'salt'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-192,Roasting a turkey requires adding what type of energy,"{'text': array(['Heat', 'Kinetic', 'Magnetic', 'Chemical'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-1108,Dry environments often,"{'text': array(['liberally use water for everything', 'allow plants to flourish',
+       'require people to move', 'institute rules about water usage'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-852,Phloem moves things around a plant similar to how,"{'text': array(['blood moves in a body', 'leaves move in the wind',
+       'water moves in a system', 'cars move on a street'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+761,Where would a polar bear be most comfortable?,"{'text': array(['Arizona', 'Georgia', 'Florida', 'Nebraska'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-318,"When a plane is in the sky and is several miles away, the light seen is barely visible, but when it is drawing near","{'text': array(['light is far away', 'light is more easily seen',
+       'light is more distant', 'light is further away'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+636,Members of rock bands often perform with,"{'text': array(['flutes', 'sandals', 'earplugs', 'gloves'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-444,Muscles move bones to produce movement like when,"{'text': array(['arms are resting', 'hair is growing', 'smiles are invisible',
+       'toes are wiggled'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-57,How is electricity produced from the ocean?,"{'text': array(['decaying organic material from sealife',
+       'energy is accessed underwater from tides',
+       'drills to access oil supplies',
+       'chemical reactions produced from the salt in the water'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-187,small reptile's diet consists mostly of,"{'text': array(['invertebrates', 'insects', 'mammals', 'fish'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1345,The life work of a flower is to,"{'text': array(['provide nice scents', 'be successfully fertilized',
+       'grow very tall', 'look pretty'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-59,Which of these would create the most sound if struck with a metal spoon?,"{'text': array(['the plastic water bottle', 'the backside of a person',
+       'the hair on a doll', 'the chassis of a car'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+178,During landslides there is often a lot of,"{'text': array(['air', 'mud', 'snow', 'wind'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1186,An example of a chemical reaction would be,"{'text': array(['A rusty fence', 'Sleeping', 'Drinking water', 'Rain'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+82,The size of an object and the ability to see it more easily have what kind of relationship?,"{'text': array(['equal', 'inverse', 'direct', 'reverse'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-165,Tuna primarily eat,"{'text': array(['parasites, soybeans and flaxseeds',
+       'sea turtles, sharks and coral reefs',
+       'spineless marine organisms, cartilaginous and gelatinous organisms',
+       'sea vegetables like kelp, Irish moss and Arame'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+404,Evaporation of water can lead to,"{'text': array(['waterfalls', 'blizzards', 'earthquakes', 'hot springs'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+279,What is an electrical energy conductor?,"{'text': array(['horseshoe', 'tire', 'cotton shirt', 'maple branch'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-532,What kind of substance will cool when it touches a cold object?,"{'text': array(['warm', 'frozen', 'chilly', 'cold'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+268,Scraping an object,"{'text': array(['may cause the object to grow in size',
+       'may cause the object to fall',
+       'may cause pieces to flake off the object',
+       'may cause the object to snap in half'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1018,A pulley is used to lift a flag on a flagpole by,"{'text': array(['moving a rope sideways', 'putting something in the air',
+       'moving things with wheels', 'yanking string up a wheel'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1756,Which animal lays eggs,"{'text': array(['emus', 'dogs', 'squirrels', 'giraffes'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1137,Dunes can be made out of the same thing as,"{'text': array(['clothes', 'food', 'forests', 'castles'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-203,A learned behavior is exhibited when,"{'text': array(['squinting in bright light', 'inhaling and exhaling during sleep',
+       'blinking and gulping air', 'nailing up a picture frame'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+745,Wax can be used similarly to,"{'text': array(['wood', 'rubber', 'water', 'metal'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-902,Bill planted rapeseed in his field one year and soybeans the next in order to,"{'text': array(['get bigger yields', 'make things boring', 'keep things random',
+       'get smaller yields'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1095,What is the primary reason my duck feather filled jacket works well against the snow,"{'text': array(['feathers slows heat transfer', 'the natural duck wax',
+       'a synthetic thick liner', 'small flexible solar panels'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-163,Turbines churning seawater can be used to produce what?,"{'text': array(['a charge for appliances', 'large quantities of soup',
+       'large schools of fish', 'creating some sharp cheese'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-858,What will increase when a substance absorbs solar energy?,"{'text': array(['weight', 'height', 'hotness', 'nutrition'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1530,Which of these travels through the air?,"{'text': array(['planets', 'thoughts', 'automobile', 'music'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-993,"A company makes notebooks for college courses, so their main material is","{'text': array(['chips', 'water', 'grass', 'trees'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-340,Rain is usually guaranteed when all are present but,"{'text': array(['cirrus clouds', 'cumulus clouds', 'hail stones',
+       'direct sunshine'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+3,Sources of air pollution are,"{'text': array(['Walking', 'Landfills', 'Water', 'Chips'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1074,What are iron nails made out of?,"{'text': array(['wood', 'plastic', 'metal', 'glass'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-431,Putting one kind of soda into the same cup as another kind of soda is doing what to the substances?,"{'text': array(['combining', 'drinking', 'Subtracting', 'throwing'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-638,A moth leaving it's cocoon is the final step in a,"{'text': array(['life cycle', 'transformation', 'recycling process',
+       'chemical reaction'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-352,Which of these combinations would be desired if someone wanted to make a cutting implement that lasts a long time?,"{'text': array(['ice and snow', 'sticks and stones', 'snow and water',
+       'iron and carbon'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+226,Which of the following is powered the same way an electric car is?,"{'text': array(['a bicycle', 'a motorcycle', 'a propane grill', 'a blender'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-132,Aluminum is what?,"{'text': array(['reprocessable', 'plastic', 'liquid', 'absorbent'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-222,To get warm frogs can,"{'text': array(['wear a Christmas sweater', 'Drink a hot chocolate',
+       'Go for a run', 'sit under a lamp'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-105,"if you put wine from a jug into a thin bottle, how come it conforms?","{'text': array(['it exhibits absolute rigidity', 'it is a solid mass',
+       'all of these', 'it is a variable substance'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-459,Earthworms create tunnels in,"{'text': array(['ice', 'dirt', 'water', 'concrete'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-881,when worms return nutrients from dead organisms to the soil by eating them it is known as,"{'text': array(['regurgitation', 'decomposition', 'recycling', 'burial'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+280,The aluminum cans were much hotter than the,"{'text': array(['gold jewelry', 'wooden fence', 'brass doorknob', 'steel pole'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+187,Which of the following is not an input in photosynthesis?,"{'text': array(['sunlight', 'oxygen', 'water', 'carbon dioxide'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-253,which of these are you most likely to find in a desert?,"{'text': array(['a hammer head shark', 'a big tilapia fish',
+       'a prickly horned male lizard', 'none of these'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-482,"If your dog sits in an oxygen deficient chamber, what happens?","{'text': array(['it will be fine', 'it will be happy', 'it will be comfortable',
+       'It will pass out'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+496,Which of the following can be used to turn on an electrical device?,"{'text': array(['solar-rechargeable battery', 'a wedge', 'a magnet',
+       'pressure gauge'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+630,Which of the following contains large amounts of salt water?,"{'text': array(['The Amazon', 'The Nile', 'The Indian', 'The Mississippi'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-16,The nimbleness of this animal is a key adaption that allows it to escape attacks from predators:,"{'text': array(['the butterfly', 'the sloth', 'the praying mantis', 'the antelope'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-986,A person speaks English as her first language because,"{'text': array(['media is mainly in English', 'school is in English',
+       'she was genetically predisposed', 'she watched her parents speak'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-787,what are eaten by honey producing insects?,"{'text': array(['they consume plants', 'they eat cows', 'plant reproduction parts',
+       'they eat flowers'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-181,The Earth's closest heat source is,"{'text': array(['our celestial fireball', 'solar flares', 'gamma rays', 'big bang'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1240,How can we see how wind effects sand?,"{'text': array(['sand is always moving', 'sandstorms create ripples in sand',
+       'sand is easy to move through',
+       'beaches often have waves in the sand'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+474,Fruit comes from what source,"{'text': array(['an organism that releases carbon dioxide',
+       ""an organism that absorbs water through it's branches"",
+       'an organism that absorbs oxygen',
+       ""an organism that absorbs water through it's roots""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1274,In which location would a groundhog hide from a wolf?,"{'text': array(['beside a tree', 'in the grass', 'on a stump', 'under the ground'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1531,Cutting down trees in a forest,"{'text': array(['leads to more habitats for animals',
+       'decreases the chance of erosion',
+       'increases the number of trees in the forest',
+       'leads to less habitats for animals'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-321,"I chipped away at a toy doll and the surface became really rough, when I rub it against a piece of wood that will create an increase in","{'text': array(['animals', 'resistance', 'water', 'sunshine'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1321,The arctic is white in coloring,"{'text': array([""because it's overpopulated with polar bears"",
+       ""because it's covered in white lilies"",
+       ""because it's blanketed in crystalline ice water"",
+       ""because it's gets so little sunlight""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-51,What would help to ensure that your dog remains free from hypothermia in January in Alaska?,"{'text': array(['Lots of meat', 'Lots of love', 'Vitamin supplements',
+       'An insulated room'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-685,The majority of a lizard's diet consists of,"{'text': array(['fleas', 'crawlies', 'gummy worms', 'berries'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-59,What food production happens in a leaf?,"{'text': array(['nutrient making process', 'the breathing', 'the respiration',
+       'the digestion'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-270,Plants are unable to grow if they have zero access to,"{'text': array(['a nice cool breeze', 'fresh soil with manure',
+       'a regular source of saltwater',
+       'needs required for creating chlorophyll'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-736,Which characteristic did a person inherit?,"{'text': array(['length of hair', 'number of friends', 'number of nails',
+       'length of shirt'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-186,Selective deforestation has a negative impact on,"{'text': array(['rain clouds and ozone layer', 'lakes, ponds and shellfish',
+       'greenhouse gases and algae', 'living organisms in ecosystem'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+224,Where would you find a mine?,"{'text': array(['in a tree', 'under a mountain', 'in the air', 'in the water'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-206,What can cause people to crash their car?,"{'text': array(['Seeing a solar eclipse', 'Using their turn signals',
+       'Driving the speed limit', 'Keeping their eyes on the road'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-190,Coral grows in,"{'text': array(['frigid waters', 'tepid seas', 'glacial environments',
+       'jungle forests'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-334,"A Punnett square is used to identify the percent chance of a trait being passed down from a parent to its offspring, so","{'text': array(['certain things may be featured',
+       'certain features may be predicted', 'certain traits may be given',
+       'certain features may be guaranteed'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-853,"A deer is eating in a field, and wants more food. Regardless of how hard the deer tries, the deer is unable to produce","{'text': array(['longer antlers', 'food for itself', 'baby deer', 'urine'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-367,Building new areas to dispose of refuse may lead to,"{'text': array(['community concerns over environmental impact',
+       'better air and soil quality', 'higher value on land parcels',
+       'improvement in water supply'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1047,Evaporation,"{'text': array(['causes puddles to become dried out mud',
+       'causes fields of crops to grow faster',
+       'causes flowers to bloom abundantly', 'fills up irrigation ponds'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-454,"A field begins to bloom and blossom and plants need to be pollinated. In order to spread seeds, plants will most rely on","{'text': array(['pythons', 'salmon', 'robins', 'craters'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1572,Which item urinates?,"{'text': array(['airplane', 'car', 'mammal', 'boat'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-373,All of the following are examples of evaporation apart from,"{'text': array(['Warm breath fogging up a mirror',
+       'Morning dew drying on the grass',
+       'The water level in a glass decreasing', 'Sweat drying on skin'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-772,The lunar cycle also changes,"{'text': array(['water', 'colors', 'the sun', 'planets'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1852,An organism that makes food for itself,"{'text': array(['is nutritionally self sustaining',
+       'will die faster than other organisms',
+       'will need help sustaining strength',
+       'is reliant on other organisms for assistance'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-1090,What does the respiratory system transfer to the circulatory system?,"{'text': array(['food', 'water', 'nutrients', 'O'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-769,"In a closed circuit, electricity will","{'text': array(['burn out', 'charge itself', 'loop endlessly', 'resist flow'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-478,A Punnett square can be used to calculate the chance of a trait being passed to someone's,"{'text': array(['mother', 'grandfather', 'daughter', 'father'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+448,They looked where the log decayed to garden as it would leave the earth,"{'text': array(['richer', 'dryer', 'sandy', 'harder'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-417,what kind of temperature causes fur shedding?,"{'text': array(['in freezing cold', 'a high temperature', 'in any temperature',
+       'a low temperature'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-108,exposure to fire could result in,"{'text': array(['wet items', 'cold items', 'none of these', 'combusted items'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1506,What is an example of clear weather meaning sunny weather?,"{'text': array(['more stars are visible on clear nights',
+       'cloud cover protects from sunburn', 'clear days will be warmer',
+       'fewer clouds allow for more sunlight'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1712,The special tissues in plants that transport minerals throughout the plant are similar to,"{'text': array(['a wick', 'a funnel', 'a knife', 'a whisk'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-312,a compass is a kind of tool for determining direction by pointing,"{'text': array(['to western Canada shoreline', 'to the lower pole',
+       'to the upper pole', 'directly to the equator'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-776,Which of these saws will last longer?,"{'text': array(['iron saw', 'aluminium saw', 'plastic saw', 'wooden saw'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-279,"although there are many stars visible in the night sky, which is most visible in the day?","{'text': array(['the single moon close to us', 'the orion star cluster',
+       'the sun that shines all day', 'all of these'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-621,The moon is known for having what feature?,"{'text': array(['frozen streams of water', 'large bowl shaped cavities',
+       'caves formed by solar winds', 'groups of large trees'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1823,Cellular respiration's trash is,"{'text': array([""a bug's treasure"", ""a cow's treasure"", ""a plant's treasure"",
+       ""everyone's trash""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-735,Which of the following human activities can lead to a change in the local ecosystem?,"{'text': array(['swimming in a lake', 'building a new subdivision',
+       'dancing in a field', 'going for a hike'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-1170,A bird that takes off flying is,"{'text': array(['using heat to produce motion', 'using calories to produce motion',
+       'using wings to produce heat', 'using calories to produce energy'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1500,The leading cause of soil and rock erosion is,"{'text': array(['H2O', 'CO2', 'NaCl', 'Fe'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+342,Which of these foods might have a negative impact on humans?,"{'text': array(['Organic corn', 'Conventional corn', 'Organic potato',
+       'Organic Apples'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-356,What kind of implement is a compass?,"{'text': array(['to test heat', 'for wind speed', 'it measures distance',
+       'it shows direction'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+78,Nectar is taken to,"{'text': array(['flowers', 'a hive', 'a stream', 'a nest'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-520,what is the closest source of plasma to our planet?,"{'text': array(['all of these', 'the cloud in the sky',
+       'the nearest star sulfur burning heavenly body',
+       'the bare moon surface'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-653,"A sailor needs to navigate to the shore, and does this by","{'text': array(['closing the sails quickly', 'setting out to sea',
+       'making an adjustment to the rudder', 'taking the afternoon off'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1112,A bat starts its life similarly to a,"{'text': array(['chicken', 'pig', 'butterfly', 'duck'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-152,"In order to catch a rabbit, a predator must be","{'text': array(['big', 'quick', 'slow', 'small'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-552,"If a bird is a carnivore, then it is likely a(n)","{'text': array(['prey', 'predator', 'herbivore', 'canary'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-262,A warm-weather organism can be found in,"{'text': array(['the Sahara', 'the mountains', 'the ocean', 'the sewers'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-683,"When approaching an elephant from a great distance,","{'text': array(['it stays large', 'it grows larger', 'it gets bigger',
+       'it looks bigger'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+276,What would cause a human to grow?,"{'text': array(['light waves', 'eating wheat', 'photosynthesis', 'marching'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-855,A saguaro has adaptations for an environment with,"{'text': array(['lots of snow', 'many people', 'less water', 'more water'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+664,There are less hummingbirds by this house than before because of,"{'text': array(['a feeder at this house', 'the birds no longer like feeders',
+       'the size of the feeder', 'a feeder at another house'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-883,the  oceans are full of,"{'text': array(['water lilies', 'guppies', 'sea life', 'fresh water'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-550,A light was off because the cord was,"{'text': array(['sitting on the table', 'attached to the wall',
+       'attached to an extension cord', 'attached to a battery pack'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-493,"In the hottest months in the hottest desert, creatures such as birds may find water to drink","{'text': array(['in sticks', 'in pebbles', 'in sand', 'in spiked plants'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-257,Why might a polar bear grow white hair?,"{'text': array(['look fancy', 'random', 'blend in', 'stand out'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1239,Xylem,"{'text': array(['discourages pests from landing on leaves',
+       'allows plants to move carbon dioxide from root to stems',
+       'carries seedlings from roots to leaves',
+       'allows plants to move rain thru their systems'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+869,A food that is a source of heat is,"{'text': array(['ramen', 'salad', 'ice cream', 'sushi'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-1105,When heat is added to something,"{'text': array(['contaminates may be destroyed', 'bacterial can grow more rapidly',
+       'viruses may be picked up', 'the thing loses energy'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+597,The heart is an example of,"{'text': array(['a part of the nervous system', 'an organ that filters toxins',
+       'a self-healing protector from germs',
+       'something protected by the skeletal system'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+385,Prey are eaten by,"{'text': array(['an animal herded by sheep dogs',
+       'the animal with a starring role in Bambi',
+       'animals known for their memory',
+       'the fastest mammal with four legs'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1301,A dog is warm-blooded just like,"{'text': array(['a snake', 'a cardinal', 'a spider', 'a scorpion'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-893,A flashlight will need this in order to radiate photons:,"{'text': array(['radiation', 'acoustic energy', 'vibrations', 'electron flow'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-369,to find out how fast you are going you first need to know,"{'text': array([""where you're going"", 'distance traveled', 'distance to travel',
+       'home location'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1026,"A small lamb, two days old, is walking with its mother. The mother feels ill, so refuses food, which dries up her milk production. The lack of lactation causes the lamb to","{'text': array(['weaken', 'strengthen', 'coexist', 'thrive'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-424,"When trying to find fresh clams for dinner, a hungry person would don","{'text': array(['a dinner jacket', 'a diving suit', 'a warm coat', 'a dress suit'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-259,How do polar bears survive the cold?,"{'text': array(['B and D', 'Double Fur Coats', 'Cold blooded', 'Compact ears'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-783,A solid is likely to form in extreme,"{'text': array(['floods', 'wind', 'chill', 'rain'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1088,What are the feet of Dendrocygna autumnalis designed for?,"{'text': array(['catching prey', 'aquatic speed', 'flying', 'walking'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1387,What is an example of fire giving off light?,"{'text': array(['an oven is preheated and the pilot light is lit',
+       'a match is lit to light a cigarette',
+       'a lit candle in a window signalling to someone',
+       'a fire that was put out to send smoke signals'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1062,The respiratory system works by,"{'text': array(['directing oxygen from lungs to other organs',
+       'pushing air through lungs', 'moving air in a room',
+       'making air quality better'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+676,Animals have more fat,"{'text': array(['in the ocean', 'in human homes', 'in landfills', 'in polar areas'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1998,A stick bug uses what to protect itself from predators?,"{'text': array(['poison', 'its appearance', 'speed', 'hearing'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1698,Corn is sometimes used to make,"{'text': array(['a simple alcohol', 'water', 'glass', 'milk'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+490,The inside of the Thanksgiving turkey is white instead of pink because of,"{'text': array(['heat energy', 'light energy', 'color energy', 'color transfusion'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+844,Little puppies are a result of:,"{'text': array(['reproduction ?', 'pet store sale', 'a begging child', 'evolution'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1795,What would a Jersey most likely be fed?,"{'text': array(['hamburger', 'moles', 'alfalfa', 'cow'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1508,Which of these energy sources generates the least amount of pollution?,"{'text': array(['coal', 'windmill', 'lithium batteries', 'gasoline'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-289,Grass snakes live in what?,"{'text': array(['trees', 'mountains', 'lakes', 'turf'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-668,Cephalopod ink is by octopuses to,"{'text': array(['mate', 'feed', 'hide', 'play'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-364,Tapping a drumstick to a drum will,"{'text': array(['reverberate when touched together',
+       'vibrate when next to each other', 'shake around when near',
+       'put each other down'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1271,Snow is more likely to fall two months before,"{'text': array(['June', 'March', 'September', 'December'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1117,If I want to avoid being dinner for some type of frog what should I reincarnate as?,"{'text': array(['Scorpion', 'House Fly', 'Cricket', 'Moth'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+35,Dead plants are easier to find in,"{'text': array(['January', 'July', 'May', 'September'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1660,The harder a child pushes a toy car,"{'text': array(['decreases the distance it will travel',
+       'the further it will roll across the floor',
+       'the quicker the child will want to play with another toy',
+       'determines how long the child with play with it'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-710,Fossil fuels,"{'text': array(['come from old age', 'come from expired life',
+       'take two years to create', 'are created in a year'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-52,"A star, burning far, far away, has enormous pressure and temperature. This allows for","{'text': array(['a room to have overhead lights', 'night on Earth to be dimly lit',
+       'plastic stars to decorate a ceiling',
+       'a person to be the star of a show'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1167,Erosion is caused by different kinds of,"{'text': array(['soil', 'fish', 'rocks', 'weather'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-43,Respiration is a,"{'text': array(['happens for some species',
+       'happens for only land dwelling mammals',
+       'occurs for only sea creatures', 'commonality among all animals'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-57,"In order for your computer to operate, it must have an electrical path that is what?","{'text': array(['magical', 'closed', 'broken', 'open'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1411,Polar bears live in,"{'text': array(['frosty environments', 'tepid environments', 'warm environments',
+       'tropical environments'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-206,What would be more likely to attract a magnet?,"{'text': array(['a plastic zipper', 'flowing water', 'a car engine',
+       'A wooden desk'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-740,What constitutes a frog's diet?,"{'text': array(['it eats all plants', 'it will eat dogs', 'it only eats burgers',
+       'it chomps on insects'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1774,What is an example of the digestive system digesting food for the body?,"{'text': array(['a man eating nachos then getting food poisoning',
+       'a baby drinking formula then needing a diaper change',
+       'a cat eating food then throwing it up',
+       'a horse licking a salt lick'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-93,The body is negatively impacted by,"{'text': array(['white blood cells', 'vitamins', 'rotavirus',
+       'nasal decongestants'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-97,"Someone wants their electromagnets to work, but is having difficulty powering them. In order to make them work, they need to","{'text': array(['run wire through currants', 'run a continuous current',
+       'run around the wire', 'currently run wire through'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-813,"if a place has experienced flooding, what could be responsible?","{'text': array(['all of these', 'there has been excess condensed water vapor',
+       'the water lacks oxygen', 'the local deities are angry'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-686,What is an example of reproduction?,"{'text': array(['farming', 'egg depositing', 'flying', 'walking'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-799,A place that is snowy has a large amount of,"{'text': array(['wind', 'storms', 'frozen water', 'rain'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1179,An ideal abode for crickets is,"{'text': array(['a small potted plant in a house',
+       'a green and lush tree and plant packed area',
+       'a briny and warm body of water',
+       'a area surrounded by spider webs'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1954,Carbon steel is always what?,"{'text': array(['attractive to various objects that contain iron',
+       'pleasant with a magnetic personality',
+       'made up of iron and pieces of magnets',
+       'hard as a magnetizing rod'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-403,"if a bat delivers a live offspring, what does this tell us?","{'text': array(['it is a mammal', 'calling it a bird is wrong', 'all of these',
+       'it is capable of reproducing'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-576,"If you find something smooth and hard on the ground, it is probably made of what?","{'text': array(['minerals', 'mist', 'clouds', 'water'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-866,as you get closer to something it begins to,"{'text': array(['shrinks down to nothing', 'grow in size visually',
+       'show a large shadow', 'rotate in a clockwise direction'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-208,After a storm,"{'text': array(['ponds may dry out', 'flowers will wilt and wither',
+       'creek beds may be spilling over',
+       'drinking water will be in short supply'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-771,What could I use as biofuel,"{'text': array(['Gold', 'Car', 'Diamonds', 'Pine Needles'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+998,Which animal is hiding from a predator?,"{'text': array(['a tadpole losing its tail as it grows',
+       'an angler fish using its Esca to lure another fish',
+       'an octopus mimicking the color and texture of a rocky outcrop',
+       ""a great white shark breaching the water's surface""], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+433,Which best demonstrates the concept of force causing an increase in speed?,"{'text': array(['skating on a rough surface', 'a full bag swung in circles',
+       'a computer powering on', 'a baker stirring batter'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-508,the night sky shows very far away what,"{'text': array(['clumps of flaming gas', 'tidal waves washing over beaches',
+       'aircraft falling towards collision',
+       'party balloons tied to houses'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-561,Which would you likely find inside a beach ball?,"{'text': array(['cheese', 'steam', 'water', 'air'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-976,Two fridge decorations when touched back to back,"{'text': array(['shove each other away', 'are attracted to each other',
+       'have very little reaction', 'are reflective when together'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1635,Runoff happens because of,"{'text': array(['birds', 'cattails', 'people', 'fish'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-875,Desert environments are generally,"{'text': array(['sweltering', 'arctic like', 'lush', 'frigid'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-1053,Are deserts characterized by high sunshine?,"{'text': array(['they get low sunlight', 'deserts get surplus sun',
+       'deserts get little sun', 'deserts are always cloudy'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-957,Water conservation could be a survival tactic in,"{'text': array(['The Appalachian Mountains', 'New York City', 'The Amazon',
+       'The Gobi Desert'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1150,Objects used to hold sheets of paper together are often,"{'text': array(['large', 'wooden', 'ferromagnetic', 'electronic'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-240,"In order for plants and animals to grow, they need to consume food and water for","{'text': array(['energy', 'fun', 'taste', 'soil'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-554,A bear cub learns to stay away from unknown bears because,"{'text': array(['they are much bigger than the cub',
+       'the other bears look like its mother',
+       'their mother teaches them to keep their distance',
+       'the unknown bears look harmless'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-135,a person driving to work in which of these is most likely to lose control?,"{'text': array(['a dry cobblestone road', 'a sleet covered highway',
+       'a dry paved road', 'a dry gravel road'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-1096,"The only creature with offspring that is hatched, of these, is the","{'text': array(['squirrel', 'swallow', 'mink', 'bat'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+841,What element is prevalent in a plateau?,"{'text': array(['helium', 'krypton', 'silicon', 'neon'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-146,"When a city tears down a park in a city, the park","{'text': array(['is removed', 'is renewed', 'is retrieved', 'is restored'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1554,Seeds,"{'text': array(['are useless shells that need to be discarded',
+       'store extra bits of chlorophyll', 'need to be mashed to grow',
+       'aid in feeding what grows from them'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-731,"If a grizzly bear eats a salmon, what is the grizzly bear demonstrating?","{'text': array(['consumption', 'cinematography', 'direction', 'production'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1780,The spring season brings,"{'text': array(['Bees', 'Snow', 'More Oxygen', 'Dust'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-1077,"Kinetic energy can be found in objects that move, such as","{'text': array(['flower pots on a wagon', 'cars that are in a lot',
+       'kids that are sleeping soundly',
+       'skateboards that are ridden all day'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-494,which of these is the quickest to go visiting from our world?,"{'text': array(['none of these', 'a trip to mars', 'a trip to the moon',
+       'a trip to the northern star'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+936,Animals died after the removal of a,"{'text': array(['bush', 'street', 'house', 'city'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-478,"If I want to go running at night, what can I use as a reflector?","{'text': array(['A black shirt', 'Kitchen foil', 'Sunglasses', 'A megaphone'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-669,the closest star to our planet delivers solar energy to the planet,"{'text': array(['maybe', 'all of these', 'this is sure', 'this is uncertain'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-732,Coal-fire power stations heat coal to incredible temps in order to,"{'text': array(['produce energy', 'use heat energy', 'burn energy',
+       'fuel the world'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-658,"Creatures sometimes have barbs on their backs that they use to sting, all of these do, outside of the","{'text': array(['wasp', 'bee', 'scorpion', 'butterfly'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1003,A renewable resource is,"{'text': array(['fossil fuel', 'turbine produced electricity', 'copper',
+       'coal lumps'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-62,"In a hypothetical world, black bears decrease in numbers until there are zero black bears left on this world. The black bear species","{'text': array(['would cease existing', 'would be troubled', 'would be thriving',
+       'would be endangered'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-386,Acid can be used to make a new,"{'text': array(['light', 'substance', 'electricity', 'sound'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+257,Global warming is lowering the world's amount of,"{'text': array(['hurricanes', 'ocean levels', 'carbon dioxide', 'ice'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+147,Echolocation can't detect an object's,"{'text': array(['distance', 'shape', 'size', 'temperature'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-599,What material has already broken down?,"{'text': array(['wood', 'glass', 'boulders', 'sand'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-92,Which beverage would dissolve solids the best?,"{'text': array(['A glass of ice-cold water', 'A boiling hot mug of tea',
+       'A cup of warm milk', 'A room temperature glass of water'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+354,Which animal has live births?,"{'text': array(['poodle', 'hummingbird', 'crocodile', 'trout'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-966,Quartz crystals are made up of,"{'text': array(['majic', 'hexagons', 'octogons', 'water'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-612,cellular respiration is when energy is produced in a cell by consumption of,"{'text': array(['water', 'nutrients', 'mitochondria', 'gas'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-548,Did pasteurization get invented by Thomas Edison?,"{'text': array(['negative', 'positive', 'all of these', 'maybe it was'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-429,A glass of water can undergo a chemical change by adding,"{'text': array(['a cup of salt', 'a cup of dirt', 'a cup of water', 'a cup of ice'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-95,Water levels may decrease on cloudless days because,"{'text': array(['water is warmer than the air', 'air is warmer than water',
+       'moisture is pulled upwards', 'moisture always tries to rise'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1560,To change an object's shape,"{'text': array(['rip off a corner portion', 'lay it flat on a table',
+       'color the edges of it', 'add a piece of tape to it'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-461,Steve was driving on the highway when he rear-ended another car because he didn't see it until he was just a foot away. This could have happened because of,"{'text': array(['reports of tornadoes in the area',
+       ""a dog running across the highway behind Steve's car"",
+       'a sudden fog moving into the area', 'ice forming on the road'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-490,DNA is a vehicle for passing,"{'text': array(['clothes types', 'school grades', 'elbow size',
+       'language and dialect'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-301,A beach ball goes from flat to round once you put what inside of it?,"{'text': array(['food', 'sunlight', 'gas', 'salt'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+60,"In general, how many times per month is there a full moon?","{'text': array(['twice', 'three times', 'once', 'four times'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-894,What kind of object does light bounce off of?,"{'text': array(['tadpole', 'any object', 'item that reflects', 'black hole'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-895,The amount of brush in a park has been decreasing. What could be a cause?,"{'text': array(['the season has been quite dry', 'There has been a lot of rain',
+       'snakes shelter under the brush',
+       'People have been walking by the brush on the trails'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-281,"if a pot on the stove is described as hot, what does this mean?","{'text': array(['the body of the pot is of high temperature',
+       'the body of the pot is cold', 'all of these',
+       'the body of the pot is wet'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+202,What animal is more difficult for predators to see in water?,"{'text': array(['a fish', 'a duck', 'an octopus', 'a crab'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1937,A wedge requires,"{'text': array(['electrical energy', 'chemical energy', 'mechanical energy',
+       'heat energy'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+620,In solid phase matter has a/an,"{'text': array(['concrete configuration', 'ambiguous form', 'shapeless form',
+       'radioactive glow'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-142,"A school trip is going to study the coral reef for a class. They want to see how strong coral is, and what species of life live in and around it. Therefore, the class","{'text': array(['takes a trip to the desert', 'climbs a tall mountain',
+       'travels to the seaside', 'visits a remote jungle'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-1138,"When ice buildup is on a sidewalk, the ice may be reduced by","{'text': array(['adding salt', 'adding litter', 'adding sand', 'adding water'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-471,The appropriate place to put this item is the recycling bin,"{'text': array(['used motor oil', 'used soda can', 'used Styrofoam plates',
+       'left over medicine'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-433,How many times would someone change the page of a calendar in a year?,"{'text': array(['13', '12', '15', '14'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1458,A car has the least speed if it,"{'text': array(['is heavy', 'is large', 'is turned off', 'is small'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+57,Which musical instrument is the same type as a guitar?,"{'text': array(['flute', 'cello', 'drum', 'trumpet'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+605,The balance result will be number of,"{'text': array(['kilowatts', 'kilobytes', 'kilograms', 'kilometers'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-889,Which of these is a place where a human might live?,"{'text': array(['igloo', 'cloud', 'Mars', 'the Moon'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1890,Camouflage is when an organism does what?,"{'text': array(['reconfigure appearance to blend in',
+       'hides its young to avoid prey',
+       'changes its shape to appear larger',
+       'buries itself to disappear momentarily'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-618,Which of these is required for a plant to enjoy the product of a rain storm?,"{'text': array(['xylem', 'luck', 'magic', 'dirt'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-523,How does a microscope make small things appear?,"{'text': array(['humongous', 'transparent', 'discolored', 'distorted'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1126,Water can turn to vapor,"{'text': array(['when a pot of water is placed on an off stove burner',
+       'when placing water in a freezer',
+       'when boiling eggs on a stove top',
+       'when placed in a room temperature setting'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+644,"An incandescent bulb's filament produces similar light as an LED bulb, but more","{'text': array(['white light', 'conversion', 'heat', 'sound'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-365,"A boy at school is waiting desperately for the school day to be over so that he can go home and play video games. He watches the time count down on the clock at the head of the class, counting the","{'text': array(['seconds', 'days', 'weeks', 'years'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-727,Camouflage can be used by animals for hunting,"{'text': array(['water', 'trees', 'air', 'meals'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-461,"Carbohydrates are made of sugar, which means that a diabetic would need to exhibit care in consuming","{'text': array(['broccoli', 'meat', 'celery', 'toast'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-1071,Hand dryers can also be used to,"{'text': array(['keep cold drinks cool',
+       'dry out clothes after coming in from the rain',
+       'hydrate your face and hands', 'make a damp rag damper'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1918,Polar bears require,"{'text': array(['a tropical environment', 'a frigid environment',
+       'a tepid environment', 'a warm environment'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1038,A measurement of time that is less than a minute is a,"{'text': array(['day', 'minute', 'hour', 'second'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-197,What will be more available in an area when rainfall increases?,"{'text': array(['fire', 'air', 'dirt', 'H2O'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1393,When does the first quarter phase of the moon occur?,"{'text': array(['when you cannot see the moon in the sky at night',
+       'after the first phase of the lunar month', 'after a blue moon',
+       'during the full moon'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-244,An ice cube placed in sunlight will,"{'text': array(['shrink', 'change color', 'grow', 'freeze'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-916,"If a person loses his job and is low on money, he will have to start cutting back on how much food he consumes or he'd run out, otherwise known as","{'text': array(['destroying', 'conserving', 'losing', 'squandering'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-1046,The skeletal system protects which of these?,"{'text': array(['liver', 'eyelashes', 'finger nails', 'blood vessels'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+167,What has more gravity force than Earth but less than the sun?,"{'text': array(['Jupiter', 'the moon', 'a space station', 'a comet'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-566,The dam was put under much more stress after the,"{'text': array(['party', 'huge rain storm', 'drought', 'breakup.'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-28,If photosynthesis was a recipe it would require these ingredients,"{'text': array(['CO2, water, and argon', 'sunlight, oxygen, and fertilizer',
+       'CO2, H20, and cloudy skies', 'CO2, H20, and sun rays'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-179,"If a nail is Fe, that nail is","{'text': array(['foreign', 'atomic 26', 'nickel', 'atomic 12'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+389,when a circle is torn it is,"{'text': array(['doubled', 'changed', 'a smaller circle', 'a square'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1528,Wind can cause,"{'text': array(['leaves to remain on branches', 'trees to stand perfectly still',
+       'dunes at the beach to be depleted', 'still waters on the ocean'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1457,What happens as water levels rise?,"{'text': array(['fish swim more', 'homes are built', 'land is taller',
+       'beaches shrink'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+1208,An increase in an object's temperature occurs when,"{'text': array(['an orange is placed in a refrigerator',
+       'a steak is removed from the freezer to defrost',
+       'a glass of water is moved from counter top to dinner table',
+       'an ice tray is placed in a freezer'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1170,A sousaphone,"{'text': array(['is ancient', 'is a frog', 'makes deep noises', 'is a smartphone'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-409,A cooked lobster is,"{'text': array(['inedible', 'cold', 'dead', 'green'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-307,An animal might pant,"{'text': array(['on a sunny day', 'during a rain storm', 'when it is snowing',
+       'during the night time'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+1948,Carnivores,"{'text': array(['eat foliage and vegetables exclusively',
+       'are the bottom of the food chain', 'require prey to survive',
+       'require carbon dioxide to survive'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+661,The light that appears dimmest is,"{'text': array(['the light in the hall', 'a light in the room',
+       'a star outside the window', 'a streetlight outside the window'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-435,A plant will grow strong if it has,"{'text': array(['love', 'heat', 'earth', 'sand'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-332,loose soil can be caused by one of these,"{'text': array(['a koala sitting on a tree', 'none of these',
+       'a worm burrowing through the earth',
+       'a bird flying through the air'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+948,An instinctual behavior is,"{'text': array(['dogs rolling over on command',
+       'frogs returning to the ponds were they hatched to lay eggs',
+       'birds mimicking human speech',
+       'seals clapping for treats from trainers'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+381,How do plants reproduce?,"{'text': array(['seeds', 'stem', 'flowers', 'leaves'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-759,What produce pollen and seeds?,"{'text': array(['lakes that are frozen over',
+       'things you give a loved one in a bouquet',
+       'various types of animals', 'a person that is healthy'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-350,which of these would be most ideal for plant root growth?,"{'text': array(['a sticky clay soil', 'soil with worms burrowing around',
+       'an arid soil with little looseness', 'all of these'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-727,Having a sense of touch means,"{'text': array(['I am the water', 'I am a tree', 'I am an Ant', 'I am the Air'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+850,Live birth is exemplified in,"{'text': array(['snakes slithering out of eggs',
+       'a calf emerging from a mother giraffe',
+       'owlets pecking out of their encasement',
+       'sea turtles emerging from their shells'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+970,Cooking peas requires,"{'text': array(['fresh briny sea water', 'an unheated stove top',
+       'salt and cayenne pepper', 'turning on a stove top'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+7-381,Earth revolves around,"{'text': array(['the moon', 'outer space', 'another planet', 'an energy source'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-436,A satellite orbits a,"{'text': array(['empty space', 'ocean', 'terrestrial body', 'air pocket'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-411,Will happen to the number of islands if the planet's temperature rises?,"{'text': array(['they will increase', 'nothing will happen', 'they will shrink',
+       'they will double'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-692,There is a heightened threat of landslide in,"{'text': array(['the desert', 'The Andes', 'the ocean', 'Indiana'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1334,An example of water being an electrical conductor would be what?,"{'text': array(['lightening hitting water and organisms inside dying',
+       'standing in a puddle and avoiding being struck by lightening',
+       'standing in a field and getting struck by lightening',
+       'grabbing a fence and being shocked'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-1160,What would Occur once between January 1st and December 31st,"{'text': array(['The moons orbit around the year', 'One rotation on mercury',
+       'The distance between earth and Jupiter when traveling at light speed',
+       'A Solar Year on earth'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+9-89,Burning something that reproduces usually will:,"{'text': array(['impair its well being in some way',
+       'weed out weaker members of the species',
+       'speed up its biological functions',
+       'increase its population growth'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-1034,what does a chipmunk do with acorns,"{'text': array(['throw them at other chipmunks', ""leave them where they're found"",
+       'use them to build shelter', 'transfer them to the stomach'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+8-293,"A pot of pasta is boiling on the stove, and the lid on top of the pot is shaking as the water boils more rapidly. A person goes to the stove and removes the pot, releasing steam into the air above, and so the steam is","{'text': array(['cold air', 'water vapor', 'very dry', 'boiling water'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-652,A plant that gets extra minerals such as zinc are probably,"{'text': array(['planted in zinc pills', 'plated in the sea',
+       'placed in good soil', 'made out of soil'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+1391,Which item has a higher altitude?,"{'text': array(['Tile Floor', 'Cars', ""A 6'' Man"", 'A Picture Book'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+9-948,"if a student wants an orange, he would have to get it from which of these?","{'text': array(['from a live cow', 'from a live plant', 'from a volcano cave',
+       'from a wild dog'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+8-213,What could have covered an organism in order to create a trilobite?,"{'text': array(['Grass', 'Water', 'Snow', 'Sand'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",D
+162,A dog is more likely to shiver at,"{'text': array(['1 pm', '5 am', '9 am', '6 pm'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+1359,"Photosynthesis does what by converting carbon dioxide, water, and sunlight into carbohydrates?","{'text': array(['nourishes small protein bits that need to eat with tiny shakes',
+       'providing nourishment which enables some growth to vegetation',
+       'mixes carbs into soluble plant matter',
+       'makes good vegetable protein'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+9-743,where might a bunny live?,"{'text': array(['a thicket', 'atop palm trees', 'a sewer system',
+       'a deserted island'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-645,"A shark will be unable to survive on eating algae and moss, because","{'text': array(['it is a predator', 'it is a vegetarian',
+       'it is a freshwater fish', 'it is a producer'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+8-250,"A meadow vole just gave birth, and needs to feed herself so that she can produce milk for her babies. She searches for food in a field, and happily munches down on some","{'text': array(['oil', 'deer', 'bugs', 'recycled plastic fruit'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+283,The Grand Canyon was formed by,"{'text': array(['a volcano erupting in 1782',
+       'a river named after the 20th state to join the union flowing over time',
+       'a river named after the 38th state to join the union flowing over time',
+       'the Great Lakes drying up'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+8-183,"A woman, with a pale complexion, wants to spend the bright, sunny day at the beach. She makes sure that she stops at the store to pick up some sunblock before she begins to enjoy her day filled with sand and surf. She applies the sunblock carefully and thoroughly, because she knows that","{'text': array(['UV rays are harmful', 'sunlight will be fun', 'the sun is close',
+       'the sun is in space'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+9-284,A person is heating water in order to cook pasta. He spills the pot of water on his leg and finds that the water,"{'text': array(['scalds', 'cools', 'toasts', 'freezes'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",A
+7-1186,Pasta may be cooked in water when,"{'text': array(['the water is warm', 'the water is on the stove',
+       'water is bubbling from applied warmth', 'the pasta is very fresh'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+926,A decrease in diseases,"{'text': array(['has no impact on a population', 'leads to more sick people',
+       'leads to less sick people',
+       'leads to an uptick in emergency room visits'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C
+7-519,"When soil is viewed in a scientific way, what is seen and viewed is actually","{'text': array(['insects like big beetles', 'tiny lifeforms in dirt',
+       'small mammals living there', 'a lot of tiny pebbles'],
+      dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",B
+7-7,Some animals use a liquid coming from their skin to adjust to,"{'text': array(['cold', 'water', 'heat', 'humidity'], dtype=object), 'label': array(['A', 'B', 'C', 'D'], dtype=object)}",C

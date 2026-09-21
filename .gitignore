@@ -1,0 +1,59 @@
+# Environment and secrets
+.env
+*.env
+.env.*
+!.env.example
+
+# GitHub tokens and credentials
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.json
+token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Office lock files
+~$*
+*.tmp
+*.temp

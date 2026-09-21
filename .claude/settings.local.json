@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($key = [System.Environment]::GetEnvironmentVariable\\(\"OPENAI_API_KEY\", \"User\"\\); $env:OPENAI_API_KEY = $key; cd D:\\\\research; C:\\\\Users\\\\centu\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe run_punjabi.py --models gpt-4o-mini --tasks GSM8K --dry-run 2>&1 | Select-Object -Last 20)",
+      "PowerShell($key = [System.Environment]::GetEnvironmentVariable\\(\"OPENAI_API_KEY\", \"User\"\\); $env:OPENAI_API_KEY = $key; cd D:\\\\research; $env:PYTHONUNBUFFERED = \"1\"; C:\\\\Users\\\\centu\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe -u run_punjabi.py --models gpt-4o-mini --tasks GSM8K 2>&1 | Select-Object -First 50)"
+    ]
+  }
+}

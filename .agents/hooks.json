@@ -1,0 +1,32 @@
+{
+  "dataset-safety": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Guarding dataset integrity and handwritten images provenance.'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "python-validator": {
+    "enabled": true,
+    "PostToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Tool execution complete.'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
