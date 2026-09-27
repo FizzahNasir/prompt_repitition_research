@@ -6,9 +6,10 @@ Replication of arXiv:2512.14982 for RTL / low-resource languages.
 Usage examples:
     python run_punjabi.py --dry-run
     python run_punjabi.py --language ur --dry-run
+    python run_punjabi.py --language ps --dry-run
     python run_punjabi.py --models gpt-4o-mini
     python run_punjabi.py --language ur --models gpt-4o-mini --tasks GSM8K ARC
-    python run_punjabi.py --models gpt-4o gpt-4o-mini --tasks GSM8K ARC
+    python run_punjabi.py --language ps --models gpt-4o gpt-4o-mini --tasks GSM8K ARC
     python run_punjabi.py --models gpt-4o-mini --resume results_20260522_120000.json
     python run_punjabi.py --analysis-only --results results_20260522_120000.csv
 """
@@ -114,8 +115,8 @@ def _parse_args():
         epilog=__doc__,
     )
     p.add_argument(
-        "--language", default="pa", choices=["pa", "ur"],
-        help="Language to benchmark: pa=Punjabi (default), ur=Urdu",
+        "--language", default="pa", choices=["pa", "ur", "ps", "bal"],
+        help="Language to benchmark: pa=Punjabi Shahmukhi (default), ur=Urdu, ps=Pashto, bal=Balochi",
     )
     p.add_argument(
         "--models", nargs="+", default=["gpt-4o-mini"],
@@ -180,6 +181,14 @@ def main():
         from urdu_datasets_loader import build_dataset
         from experiment_runner import SYSTEM_PROMPT_UR as system_prompt
         lang_label = "Urdu"
+    elif args.language == "ps":
+        from pashto_datasets_loader import build_dataset
+        from experiment_runner import SYSTEM_PROMPT_PS as system_prompt
+        lang_label = "Pashto"
+    elif args.language == "bal":
+        from balochi_datasets_loader import build_dataset
+        from experiment_runner import SYSTEM_PROMPT_BAL as system_prompt
+        lang_label = "Balochi"
     else:
         from punjabi_datasets_loader import build_dataset
         from experiment_runner import SYSTEM_PROMPT_PA as system_prompt

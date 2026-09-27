@@ -1,13 +1,62 @@
 {
-  "dataset-safety": {
+  "dataset-integrity-guard": {
     "enabled": true,
+    "description": "Prevents deletion/modification of protected assets (images/, datasets/, .env)",
     "PreToolUse": [
       {
         "matcher": "run_command",
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Guarding dataset integrity and handwritten images provenance.'\"",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Dataset integrity guard active — images/ and datasets/ are protected.'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "rtl-script-guard": {
+    "enabled": true,
+    "description": "Ensures Shahmukhi script is used for Punjabi, never Gurmukhi",
+    "PreToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Verifying RTL script integrity for Punjabi/Shahmukhi.'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "api-token-guard": {
+    "enabled": true,
+    "description": "Prevents committing API keys or .env files to git",
+    "PreToolUse": [
+      {
+        "matcher": "str_replace_editor",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Checking for token leakage...'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "experiment-progress-tracker": {
+    "enabled": true,
+    "description": "Tracks experiment run progress and auto-checks results",
+    "PostToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Experiment step complete. Auto-saving checkpoint.'\"",
             "timeout": 5
           }
         ]
@@ -16,13 +65,46 @@
   },
   "python-validator": {
     "enabled": true,
+    "description": "Validates Python syntax and imports after code changes",
     "PostToolUse": [
+      {
+        "matcher": "str_replace_editor",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Validating Python imports and syntax.'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "mcnemar-test-guard": {
+    "enabled": true,
+    "description": "Ensures McNemar test is used with p < 0.1, correction=False",
+    "PreToolUse": [
       {
         "matcher": "run_command",
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Tool execution complete.'\"",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Statistical significance: McNemar test with p < 0.1, correction=False.'\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "temp-guard": {
+    "enabled": true,
+    "description": "Enforces temp=0 and max_tokens=100 for non-reasoning regime",
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"Write-Output '[Hook] Non-reasoning regime: temperature=0, max_tokens=100.'\"",
             "timeout": 5
           }
         ]

@@ -69,6 +69,12 @@ SYSTEM_PROMPT_PA = "براہ راست جواب دیو۔ اپنی سوچ دی و�
 # System prompt for Urdu experiments (same intent, Urdu phrasing)
 SYSTEM_PROMPT_UR = "براہ راست جواب دیں۔ اپنی سوچ کی وضاحت نہ کریں۔ قدم بقدم مت سوچیں۔"
 
+# System prompt for Pashto experiments (same intent, Pashto phrasing)
+SYSTEM_PROMPT_PS = "مستقیم ځواب ورکړئ. خپل فکر مه تشریح کوئ. گام په گام مه فکر کوئ."
+
+# System prompt for Balochi experiments (same intent, Balochi phrasing)
+SYSTEM_PROMPT_BAL = "تچک ءَ پسو بہ دئے. وتی ھیال ءَ مَہ درشان کن. گام پہ گام مَہ جیڑ."
+
 # First repeat-bridge phrase used in verbose and triple methods
 REPEAT_PHRASES = {
     "en":  "Please re-read the above and answer:",
