@@ -37,24 +37,31 @@ datasets/
 │   ├── openbookqa_urdu_validation.csv        (500 rows)
 │   └── openbookqa_urdu_test.csv              (500 rows)
 │
-├── pashto/                                   ← (Roadmap) Pashto datasets
-└── balochi/                                  ← (Roadmap) Balochi datasets
+├── pashto/                                   ← Pashto datasets
+│   ├── mgsm_pashto_translated.csv            (250 items)
+│   ├── arc_pashto.csv                        (~892 items)
+│   ├── openbookqa_pashto.csv                 (~513 items)
+│   └── commonsenseqa_pashto.csv              (~561 items)
+│   ├── NameIndex_Pashto.xlsx                 (100 items)
+│   ├── MiddleMatch_Pashto.xlsx               (100 items)
+│   └── ScriptMixed_Pashto.xlsx               (20 items)
+├── balochi/                                  ← (Roadmap) Balochi datasets
 ```
 
 ---
 
 ## 2. Benchmark Summary
 
-| Task | Type | Punjabi (Shahmukhi) | Urdu | Pashto (Target) | Balochi (Target) |
-|------|------|--------------------:|-----:|----------------:|-----------------:|
+| Task | Type | Punjabi (Shahmukhi) | Urdu | Pashto | Balochi (Target) |
+|------|------|--------------------:|-----:|-------:|-----------------:|
 | **MGSM** | Math (open-ended) | 250 | 250 | 250 | 250 |
-| **ARC-Challenge** | Science MCQ (4 choices) | 300 | 300 | 300 | 300 |
-| **OpenBookQA** | Science Fact MCQ (4 choices) | 495 | 5,767 | 500 | 500 |
-| **CommonSenseQA**| Everyday Reasoning (5 choices)| 288 | 288 | 300 | 300 |
+| **ARC-Challenge** | Science MCQ (4 choices) | 300 | 300 | ~892 | 300 |
+| **OpenBookQA** | Science Fact MCQ (4 choices) | 495 | 5,767 | ~513 | 500 |
+| **CommonSenseQA**| Everyday Reasoning (5 choices)| 288 | 288 | ~561 | 300 |
 | **NameIndex** | Long-context Retrieval | 100 | 100 | 100 | 100 |
 | **MiddleMatch** | Contextual Triplet Retrieval | 100 | 100 | 100 | 100 |
 | **ScriptMixed** | Code-Switching (English + RTL) | 20 | 20 | 20 | 20 |
-| **Total Usable** | | **1,553** | **6,825** | **~1,570** | **~1,570** |
+| **Total Usable** | | **1,553** | **6,825** | **~2,446** | **~1,570** |
 
 ---
 

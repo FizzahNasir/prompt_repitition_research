@@ -50,6 +50,7 @@
 | `punjabi_datasets_loader.py` | ✅ Complete | Loads all 7 Punjabi tasks (1,553 items), supports cleaned filenames |
 | `urdu_datasets_loader.py` | ✅ Complete | Loads all 7 Urdu tasks (6,825 items), supports merged & clean filenames |
 | `generate_retrieval_tasks.py` | ✅ Active | Generates NameIndex, MiddleMatch, ScriptMixed for pa & ur; extending to ps & bal |
+| `datasets/pashto/` | ✅ Complete | New Pashto datasets: MGSM (250), ARC (~892), OpenBookQA (~513), CommonSenseQA (~561) |
 | `experiment_runner.py` | ✅ Complete | API calling, prompt transformations, latency/token logging, CSV append |
 | `analysis.py` | ✅ Complete | Groupby `(model, task, scenario, method)`, McNemar testing, Figure 1 plots |
 | `run_punjabi.py` | ✅ Complete | Unified CLI entrypoint supporting `--language {pa, ur}`, `--models`, `--dry-run` |
