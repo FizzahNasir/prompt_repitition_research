@@ -1,0 +1,650 @@
+[
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو نوکیں فلم دیستگ؟   ہاں، باز جوان ات.   چہ ژانر ءِ ات؟",
+    "output": "Have you seen the new movie?   Yes, it was very good.   What genre was it?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے آفر باز جوان انت.   بلے ما گیشتر رعایت لوٹیں.   اگاں اے شرطاں منگہ بہ بیت، گڑا ما راضی ایں.",
+    "output": "This offer is very good.   But we want more discount.   If these conditions are accepted, then we agree.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من باز وھد ءَ چہ اے ادارہ ءَ کار کنگ ءَ اوں.   من وتی ذمہ واری ءَ گوں ایمانداری ءَ پیلو کتگ.   من یک گیشتر تنخواہ ءِ خواستگار آں.",
+    "output": "I have been working for this organization for a long time.   I have fulfilled my responsibilities with sincerity.   I am requesting a higher salary.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے اسائنمنٹ ءِ بارو ءَ یک سوالے ہست.   مہربانی کن ات، اے گپ ءَ گیشتر وضاحت بدے.   آخری تاریخ کدی انت؟",
+    "output": "Teacher, I have a question about this assignment.   Please explain this further.   What is the deadline?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من شمے دیما وتی منصوبہ پیش دارگ ءَ آں.   اے منصوبہ ءِ مولود مردمانی کمک کنگ اِنت.   من امید داراں کہ شما آئی ءَ پسند کن اِت.",
+    "output": "I am presenting my project to you.   The aim of this project is to help people.   I hope you like it.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے سوال ءِ جواب چے اِنت؟,من اے گپ ءَ سرپد نہ بوتگاں   مہربانی کن ات، گیشتر وضاحت بدے.",
+    "output": "Teacher, what is the answer to this question?   I didn't understand this.   Please explain further.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "فردا گندگ ءَ رویں؟   کجا رویں؟   مہربانی کن ات، یک جاگہے تجویز کن.",
+    "output": "Shall we meet tomorrow?   Where shall we go?   Please suggest a place.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے منصوبہ کدی سرجم بیت؟   ما باید گیشتر ترندی ءَ کار بہ کنیں۔   آخری تاریخ باز نزیک انت.",
+    "output": "When will this project be completed?   We need to work more quickly.   The deadline is very close.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من کوئٹہ ءَ سفر کتگ.   آئی یک باز جوانیں شہرے.   تو کجا سفر کتگ؟",
+    "output": "I have traveled to Quetta.   It is a very beautiful city.   Where have you traveled?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو چون ئے؟ وش آتک ئے!   من ءَ لہتیں مشکل انت   تئی کار چون انت؟",
+    "output": "How are you? Welcome!   I'm having some difficulties   How is yourgoing?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "مرچی سک گرم اِنت۔   آسمان جمبر اِنت   بوت کنت کہ ھئور بہ بیت   موسم وش انت",
+    "output": "It's very hot today.   The sky is cloudy, it might rain.   The weather is very nice.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تئی کار باز جوان ات.   بلے اے جاگہ ءَ گیشتر توجہ دیگ لوٹیت.   گیشتر کوشست کن.",
+    "output": "Your work was very good.   But this area needs more attention.   Try harder.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "ما فردا سینما ءَ رویں؟   ہاں، باز وش انت.   چہ وخت ءَ رویں؟",
+    "output": "Shall we go to the cinema tomorrow?   Yes, that sounds great.   What time shall we go?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے قیمت چنت انت؟   مہربانی کن ات، کم کن ات.   من اے کپڑا ءَ زوراں.",
+    "output": "How much does this cost?   Please reduce the price.   I will take this cloth.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی شوق کتاب وانگ انت.   من گیتار ہم جنیں.   تئی شوق چے اَنت؟”",
+    "output": "My hobby is reading books.   I also play the guitar.   What are your hobbies?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "باز مہربانی! تئی کمک ءَ من ءَ باز وش بوت.   من تئی مھر ءَ ھچبر شموشت نہ کناں   تو باز جوانیں مردمے ئے.",
+    "output": "Thank you very much! I really appreciate your help.   I will never forget your kindness.   You are a very good person.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی ھاندان ءَ پنچ مردم اَنت   منی پت استاد اِنت   منی مات لوگبانک اِنت",
+    "output": "My family has five members   My father is a teacher   My mother is a housewife",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من ءَ چپس ءِ گوں برگر لوٹ اِیت۔,،   سافٹ ڈرنک ھم بیار۔,،   بل چنچو اِنت؟",
+    "output": "I'll have a burger with chips.   Bring a soft drink too.   How much is the bill?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے تاریخی واقعہ باز اہم ات.   چہ شما ءَ اے بارو ءَ چیزے زانگ ءَ انت؟   اے واقعہ کدی بوتگ ات؟",
+    "output": "This historical event was very important.   Do you know anything about it?   When did this event happen?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے جاہ کجا اِنت؟   سیدھا برو   پدا اولی چپ ءَ بہ رو۔   مہربانی ءَ من ءَ راہ ءَ بہ گش۔",
+    "output": "Where is this place?   Go straight, then take the first left.   Please tell me the way.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے باز توار انت! من آرام لوٹاں.   مہربانی کن ات، توار ءَ کم کن ات.   من وپسگ ءَ اوں.",
+    "output": "This is very noisy! I want some peace.   Please turn down the volume.   I'm trying to sleep.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے شہر ءَ گندگ ءِ واستہ جوانیں جاگہ کجا انت؟   شما چے تجویز کن ات؟   من تاریخ ءُ ثقافت ءَ دوست داراں.",
+    "output": "Where are some good places to visit in this city?   What do you recommend?   I like history and culture.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "امتحان باز نزیک انت، باید گیشتر وانیگ بہ بیت.   اے کتاب باز کمک کنت.   سوال باز مشکل انت.",
+    "output": "The exam is very close, we need to study more.   This book helps a lot.   The questions are very difficult.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "چہ نوکیں خبراں تئی سرپدی ہست؟   ہاں، من نیوز ونتگ.   اے بارو ءَ تئی نظر چی انت؟",
+    "output": "Are you aware of the latest news?   Yes, I read the news.   What is your opinion on this?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو چون ئے؟ وش آتک ئے!   من ءَ لہتیں مشکل انت   تئی کار چون انت؟",
+    "output": "How are you? Welcome!   I'm having some difficulties   How is yourgoing?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی ھاندان ءَ پنچ مردم اَنت   منی پت استاد اِنت   منی مات لوگبانک اِنت",
+    "output": "My family has five members   My father is a teacher   My mother is a housewife",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من ءَ چپس ءِ گوں برگر لوٹ اِیت۔,،    سافٹ ڈرنک ھم بیار۔,،   بل چنچو اِنت؟",
+    "output": "I'll have a burger with chips.   Bring a soft drink too.   How much is the bill?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے جاہ کجا اِنت؟   سیدھا برو    پدا اولی چپ ءَ بہ رو۔   مہربانی ءَ من ءَ راہ ءَ بہ گش۔",
+    "output": "Where is this place?   Go straight, then take the first left.   Please tell me the way.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "مرچی سک گرم اِنت۔   آسمان جمبر اِنت    بوت کنت کہ ھئور بہ بیت   موسم وش انت",
+    "output": "It's very hot today.   The sky is cloudy, it might rain.   The weather is very nice.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "ما فردا سینما ءَ رویں؟   ہاں، باز وش انت.   چہ وخت ءَ رویں؟",
+    "output": "Shall we go to the cinema tomorrow?   Yes, that sounds great.   What time shall we go?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من کمپیوٹر سائنس ءِ ماہر آں   من پروگرامنگ ءِ تہا کار کناں   من ءَ پنچ سال ءِ تجربہ اِنت",
+    "output": "I am a computer science expert   I work in programming   I have five years of experience",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "ما نوکیں منصوبہ ءِ سرا گپ ءُ تران کنگ ءَ ایں   اے منصوبہ سک باز المی انت۔   مارا گیشتر محنت کنگ لوٹیت۔",
+    "output": "We are discussing the new project.   This project is very important.   We need to work harder.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من شمے دیما وتی منصوبہ پیش دارگ ءَ آں.   اے منصوبہ ءِ مولود مردمانی کمک کنگ اِنت.   من امید داراں کہ شما آئی ءَ پسند کن اِت.",
+    "output": "I am presenting my project to you.   The aim of this project is to help people.   I hope you like it.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے سوال ءِ جواب چے اِنت؟,من اے گپ ءَ سرپد نہ بوتگاں   مہربانی کن ات، گیشتر وضاحت بدے.",
+    "output": "Teacher, what is the answer to this question?   I didn't understand this.   Please explain further.",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے کتاب باز دلچسپ ات.   چہ شما ءَ ہم اے کتاب ونتگ؟   اے کتاب ءِ مستریں ھیال چے بوتگ؟”",
+    "output": "This book was very interesting.   Have you also read this book?   What was the main idea of this book?",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی شوق کتاب وانگ انت.   من گیتار ہم جنیں.   تئی شوق چے اَنت؟”",
+    "output": "My hobby is reading books.   I also play the guitar.   What are your hobbies?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من کوئٹہ ءَ سفر کتگ.   آئی یک باز جوانیں شہرے.   تو کجا سفر کتگ؟",
+    "output": "I have traveled to Quetta.   It is a very beautiful city.   Where have you traveled?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے قیمت چنت انت؟   مہربانی کن ات، کم کن ات.   من اے کپڑا ءَ زوراں.",
+    "output": "How much does this cost?   Please reduce the price.   I will take this cloth.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "می سر درد کنت.   من ءَ دوا بدے.   باز مہربانی.",
+    "output": "I have a headache.   Give me some medicine.   Thank you very much.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے آفر باز جوان انت.   بلے ما گیشتر رعایت لوٹیں.   اگاں اے شرطاں منگہ بہ بیت، گڑا ما راضی ایں.",
+    "output": "This offer is very good.   But we want more discount.   If these conditions are accepted, then we agree.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تئی کار باز جوان ات.   بلے اے جاگہ ءَ گیشتر توجہ دیگ لوٹیت.   گیشتر کوشست کن.",
+    "output": "Your work was very good.   But this area needs more attention.   Try harder.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے اسائنمنٹ ءِ بارو ءَ یک سوالے ہست.   مہربانی کن ات، اے گپ ءَ گیشتر وضاحت بدے.   آخری تاریخ کدی انت؟",
+    "output": "Teacher, I have a question about this assignment.   Please explain this further.   What is the deadline?",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "امتحان باز نزیک انت، باید گیشتر وانیگ بہ بیت.   اے کتاب باز کمک کنت.   سوال باز مشکل انت.",
+    "output": "The exam is very close, we need to study more.   This book helps a lot.   The questions are very difficult.",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "می پاسپورٹ کجا انت؟   جہاز کدی روانہ بیت؟   مہربانی کن ات، کمک کن ات.",
+    "output": "Where is my passport?   When does the plane depart?   Please help me.",
+    "context": "travel_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "یک کمرہ لوٹاں دو شپ ءِ واستہ.   قیمت چنت انت؟   صبحانہ ہم شامل انت؟",
+    "output": "I want a room for two nights.   How much is the price?   Is breakfast included?",
+    "context": "travel_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے باز توار انت! من آرام لوٹاں.   مہربانی کن ات، توار ءَ کم کن ات.   من وپسگ ءَ اوں.",
+    "output": "This is very noisy! I want some peace.   Please turn down the volume.   I'm trying to sleep.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "باز مہربانی! تئی کمک ءَ من ءَ باز وش بوت.   من تئی مھر ءَ ھچبر شموشت نہ کناں   تو باز جوانیں مردمے ئے.",
+    "output": "Thank you very much! I really appreciate your help.   I will never forget your kindness.   You are a very good person.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من باز وھد ءَ چہ اے ادارہ ءَ کار کنگ ءَ اوں.   من وتی ذمہ واری ءَ گوں ایمانداری ءَ پیلو کتگ.   من یک گیشتر تنخواہ ءِ خواستگار آں.",
+    "output": "I have been working for this organization for a long time.   I have fulfilled my responsibilities with sincerity.   I am requesting a higher salary.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے منصوبہ کدی سرجم بیت؟   ما باید گیشتر ترندی ءَ کار بہ کنیں۔   آخری تاریخ باز نزیک انت.",
+    "output": "When will this project be completed?   We need to work more quickly.   The deadline is very close.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے تاریخی واقعہ باز اہم ات.   چہ شما ءَ اے بارو ءَ چیزے زانگ ءَ انت؟   اے واقعہ کدی بوتگ ات؟",
+    "output": "This historical event was very important.   Do you know anything about it?   When did this event happen?",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے شہر ءَ گندگ ءِ واستہ جوانیں جاگہ کجا انت؟   شما چے تجویز کن ات؟   من تاریخ ءُ ثقافت ءَ دوست داراں.",
+    "output": "Where are some good places to visit in this city?   What do you recommend?   I like history and culture.",
+    "context": "travel_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو نوکیں فلم دیستگ؟   ہاں، باز جوان ات.   چہ ژانر ءِ ات؟",
+    "output": "Have you seen the new movie?   Yes, it was very good.   What genre was it?",
+    "context": "chat_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "فردا گندگ ءَ رویں؟   کجا رویں؟   مہربانی کن ات، یک جاگہے تجویز کن.",
+    "output": "Shall we meet tomorrow?   Where shall we go?   Please suggest a place.",
+    "context": "chat_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "چہ نوکیں خبراں تئی سرپدی ہست؟   ہاں، من نیوز ونتگ.   اے بارو ءَ تئی نظر چی انت؟",
+    "output": "Are you aware of the latest news?   Yes, I read the news.   What is your opinion on this?",
+    "context": "chat_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو نوکیں فلم دیستگ؟   ہاں، باز جوان ات.   چہ ژانر ءِ ات؟",
+    "output": "Have you seen the new movie?   Yes, it was very good.   What genre was it?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے آفر باز جوان انت.   بلے ما گیشتر رعایت لوٹیں.   اگاں اے شرطاں منگہ بہ بیت، گڑا ما راضی ایں.",
+    "output": "This offer is very good.   But we want more discount.   If these conditions are accepted, then we agree.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من باز وھد ءَ چہ اے ادارہ ءَ کار کنگ ءَ اوں.   من وتی ذمہ واری ءَ گوں ایمانداری ءَ پیلو کتگ.   من یک گیشتر تنخواہ ءِ خواستگار آں.",
+    "output": "I have been working for this organization for a long time.   I have fulfilled my responsibilities with sincerity.   I am requesting a higher salary.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے اسائنمنٹ ءِ بارو ءَ یک سوالے ہست.   مہربانی کن ات، اے گپ ءَ گیشتر وضاحت بدے.   آخری تاریخ کدی انت؟",
+    "output": "Teacher, I have a question about this assignment.   Please explain this further.   What is the deadline?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من شمے دیما وتی منصوبہ پیش دارگ ءَ آں.   اے منصوبہ ءِ مولود مردمانی کمک کنگ اِنت.   من امید داراں کہ شما آئی ءَ پسند کن اِت.",
+    "output": "I am presenting my project to you.   The aim of this project is to help people.   I hope you like it.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے سوال ءِ جواب چے اِنت؟,من اے گپ ءَ سرپد نہ بوتگاں   مہربانی کن ات، گیشتر وضاحت بدے.",
+    "output": "Teacher, what is the answer to this question?   I didn't understand this.   Please explain further.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "فردا گندگ ءَ رویں؟   کجا رویں؟   مہربانی کن ات، یک جاگہے تجویز کن.",
+    "output": "Shall we meet tomorrow?   Where shall we go?   Please suggest a place.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے منصوبہ کدی سرجم بیت؟   ما باید گیشتر ترندی ءَ کار بہ کنیں۔   آخری تاریخ باز نزیک انت.",
+    "output": "When will this project be completed?   We need to work more quickly.   The deadline is very close.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من کوئٹہ ءَ سفر کتگ.   آئی یک باز جوانیں شہرے.   تو کجا سفر کتگ؟",
+    "output": "I have traveled to Quetta.   It is a very beautiful city.   Where have you traveled?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو چون ئے؟ وش آتک ئے!   من ءَ لہتیں مشکل انت   تئی کار چون انت؟",
+    "output": "How are you? Welcome!   I'm having some difficulties   How is yourgoing?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "مرچی سک گرم اِنت۔   آسمان جمبر اِنت   بوت کنت کہ ھئور بہ بیت   موسم وش انت",
+    "output": "It's very hot today.   The sky is cloudy, it might rain.   The weather is very nice.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تئی کار باز جوان ات.   بلے اے جاگہ ءَ گیشتر توجہ دیگ لوٹیت.   گیشتر کوشست کن.",
+    "output": "Your work was very good.   But this area needs more attention.   Try harder.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "ما فردا سینما ءَ رویں؟   ہاں، باز وش انت.   چہ وخت ءَ رویں؟",
+    "output": "Shall we go to the cinema tomorrow?   Yes, that sounds great.   What time shall we go?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے قیمت چنت انت؟   مہربانی کن ات، کم کن ات.   من اے کپڑا ءَ زوراں.",
+    "output": "How much does this cost?   Please reduce the price.   I will take this cloth.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی شوق کتاب وانگ انت.   من گیتار ہم جنیں.   تئی شوق چے اَنت؟”",
+    "output": "My hobby is reading books.   I also play the guitar.   What are your hobbies?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "باز مہربانی! تئی کمک ءَ من ءَ باز وش بوت.   من تئی مھر ءَ ھچبر شموشت نہ کناں   تو باز جوانیں مردمے ئے.",
+    "output": "Thank you very much! I really appreciate your help.   I will never forget your kindness.   You are a very good person.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی ھاندان ءَ پنچ مردم اَنت   منی پت استاد اِنت   منی مات لوگبانک اِنت",
+    "output": "My family has five members   My father is a teacher   My mother is a housewife",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من ءَ چپس ءِ گوں برگر لوٹ اِیت۔,،   سافٹ ڈرنک ھم بیار۔,،   بل چنچو اِنت؟",
+    "output": "I'll have a burger with chips.   Bring a soft drink too.   How much is the bill?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے تاریخی واقعہ باز اہم ات.   چہ شما ءَ اے بارو ءَ چیزے زانگ ءَ انت؟   اے واقعہ کدی بوتگ ات؟",
+    "output": "This historical event was very important.   Do you know anything about it?   When did this event happen?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے جاہ کجا اِنت؟   سیدھا برو   پدا اولی چپ ءَ بہ رو۔   مہربانی ءَ من ءَ راہ ءَ بہ گش۔",
+    "output": "Where is this place?   Go straight, then take the first left.   Please tell me the way.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے باز توار انت! من آرام لوٹاں.   مہربانی کن ات، توار ءَ کم کن ات.   من وپسگ ءَ اوں.",
+    "output": "This is very noisy! I want some peace.   Please turn down the volume.   I'm trying to sleep.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے شہر ءَ گندگ ءِ واستہ جوانیں جاگہ کجا انت؟   شما چے تجویز کن ات؟   من تاریخ ءُ ثقافت ءَ دوست داراں.",
+    "output": "Where are some good places to visit in this city?   What do you recommend?   I like history and culture.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "امتحان باز نزیک انت، باید گیشتر وانیگ بہ بیت.   اے کتاب باز کمک کنت.   سوال باز مشکل انت.",
+    "output": "The exam is very close, we need to study more.   This book helps a lot.   The questions are very difficult.",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "چہ نوکیں خبراں تئی سرپدی ہست؟   ہاں، من نیوز ونتگ.   اے بارو ءَ تئی نظر چی انت؟",
+    "output": "Are you aware of the latest news?   Yes, I read the news.   What is your opinion on this?",
+    "context": "general"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو چون ئے؟ وش آتک ئے!   من ءَ لہتیں مشکل انت   تئی کار چون انت؟",
+    "output": "How are you? Welcome!   I'm having some difficulties   How is yourgoing?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی ھاندان ءَ پنچ مردم اَنت   منی پت استاد اِنت   منی مات لوگبانک اِنت",
+    "output": "My family has five members   My father is a teacher   My mother is a housewife",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من ءَ چپس ءِ گوں برگر لوٹ اِیت۔,،    سافٹ ڈرنک ھم بیار۔,،   بل چنچو اِنت؟",
+    "output": "I'll have a burger with chips.   Bring a soft drink too.   How much is the bill?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے جاہ کجا اِنت؟   سیدھا برو    پدا اولی چپ ءَ بہ رو۔   مہربانی ءَ من ءَ راہ ءَ بہ گش۔",
+    "output": "Where is this place?   Go straight, then take the first left.   Please tell me the way.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "مرچی سک گرم اِنت۔   آسمان جمبر اِنت    بوت کنت کہ ھئور بہ بیت   موسم وش انت",
+    "output": "It's very hot today.   The sky is cloudy, it might rain.   The weather is very nice.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "ما فردا سینما ءَ رویں؟   ہاں، باز وش انت.   چہ وخت ءَ رویں؟",
+    "output": "Shall we go to the cinema tomorrow?   Yes, that sounds great.   What time shall we go?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من کمپیوٹر سائنس ءِ ماہر آں   من پروگرامنگ ءِ تہا کار کناں   من ءَ پنچ سال ءِ تجربہ اِنت",
+    "output": "I am a computer science expert   I work in programming   I have five years of experience",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "ما نوکیں منصوبہ ءِ سرا گپ ءُ تران کنگ ءَ ایں   اے منصوبہ سک باز المی انت۔   مارا گیشتر محنت کنگ لوٹیت۔",
+    "output": "We are discussing the new project.   This project is very important.   We need to work harder.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من شمے دیما وتی منصوبہ پیش دارگ ءَ آں.   اے منصوبہ ءِ مولود مردمانی کمک کنگ اِنت.   من امید داراں کہ شما آئی ءَ پسند کن اِت.",
+    "output": "I am presenting my project to you.   The aim of this project is to help people.   I hope you like it.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے سوال ءِ جواب چے اِنت؟,من اے گپ ءَ سرپد نہ بوتگاں   مہربانی کن ات، گیشتر وضاحت بدے.",
+    "output": "Teacher, what is the answer to this question?   I didn't understand this.   Please explain further.",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے کتاب باز دلچسپ ات.   چہ شما ءَ ہم اے کتاب ونتگ؟   اے کتاب ءِ مستریں ھیال چے بوتگ؟”",
+    "output": "This book was very interesting.   Have you also read this book?   What was the main idea of this book?",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "منی شوق کتاب وانگ انت.   من گیتار ہم جنیں.   تئی شوق چے اَنت؟”",
+    "output": "My hobby is reading books.   I also play the guitar.   What are your hobbies?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من کوئٹہ ءَ سفر کتگ.   آئی یک باز جوانیں شہرے.   تو کجا سفر کتگ؟",
+    "output": "I have traveled to Quetta.   It is a very beautiful city.   Where have you traveled?",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے قیمت چنت انت؟   مہربانی کن ات، کم کن ات.   من اے کپڑا ءَ زوراں.",
+    "output": "How much does this cost?   Please reduce the price.   I will take this cloth.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "می سر درد کنت.   من ءَ دوا بدے.   باز مہربانی.",
+    "output": "I have a headache.   Give me some medicine.   Thank you very much.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے آفر باز جوان انت.   بلے ما گیشتر رعایت لوٹیں.   اگاں اے شرطاں منگہ بہ بیت، گڑا ما راضی ایں.",
+    "output": "This offer is very good.   But we want more discount.   If these conditions are accepted, then we agree.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تئی کار باز جوان ات.   بلے اے جاگہ ءَ گیشتر توجہ دیگ لوٹیت.   گیشتر کوشست کن.",
+    "output": "Your work was very good.   But this area needs more attention.   Try harder.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "استاد، اے اسائنمنٹ ءِ بارو ءَ یک سوالے ہست.   مہربانی کن ات، اے گپ ءَ گیشتر وضاحت بدے.   آخری تاریخ کدی انت؟",
+    "output": "Teacher, I have a question about this assignment.   Please explain this further.   What is the deadline?",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "امتحان باز نزیک انت، باید گیشتر وانیگ بہ بیت.   اے کتاب باز کمک کنت.   سوال باز مشکل انت.",
+    "output": "The exam is very close, we need to study more.   This book helps a lot.   The questions are very difficult.",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "می پاسپورٹ کجا انت؟   جہاز کدی روانہ بیت؟   مہربانی کن ات، کمک کن ات.",
+    "output": "Where is my passport?   When does the plane depart?   Please help me.",
+    "context": "travel_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "یک کمرہ لوٹاں دو شپ ءِ واستہ.   قیمت چنت انت؟   صبحانہ ہم شامل انت؟",
+    "output": "I want a room for two nights.   How much is the price?   Is breakfast included?",
+    "context": "travel_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے باز توار انت! من آرام لوٹاں.   مہربانی کن ات، توار ءَ کم کن ات.   من وپسگ ءَ اوں.",
+    "output": "This is very noisy! I want some peace.   Please turn down the volume.   I'm trying to sleep.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "باز مہربانی! تئی کمک ءَ من ءَ باز وش بوت.   من تئی مھر ءَ ھچبر شموشت نہ کناں   تو باز جوانیں مردمے ئے.",
+    "output": "Thank you very much! I really appreciate your help.   I will never forget your kindness.   You are a very good person.",
+    "context": "daily_interactions"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "من باز وھد ءَ چہ اے ادارہ ءَ کار کنگ ءَ اوں.   من وتی ذمہ واری ءَ گوں ایمانداری ءَ پیلو کتگ.   من یک گیشتر تنخواہ ءِ خواستگار آں.",
+    "output": "I have been working for this organization for a long time.   I have fulfilled my responsibilities with sincerity.   I am requesting a higher salary.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے منصوبہ کدی سرجم بیت؟   ما باید گیشتر ترندی ءَ کار بہ کنیں۔   آخری تاریخ باز نزیک انت.",
+    "output": "When will this project be completed?   We need to work more quickly.   The deadline is very close.",
+    "context": "professional_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے تاریخی واقعہ باز اہم ات.   چہ شما ءَ اے بارو ءَ چیزے زانگ ءَ انت؟   اے واقعہ کدی بوتگ ات؟",
+    "output": "This historical event was very important.   Do you know anything about it?   When did this event happen?",
+    "context": "educational_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "اے شہر ءَ گندگ ءِ واستہ جوانیں جاگہ کجا انت؟   شما چے تجویز کن ات؟   من تاریخ ءُ ثقافت ءَ دوست داراں.",
+    "output": "Where are some good places to visit in this city?   What do you recommend?   I like history and culture.",
+    "context": "travel_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "تو نوکیں فلم دیستگ؟   ہاں، باز جوان ات.   چہ ژانر ءِ ات؟",
+    "output": "Have you seen the new movie?   Yes, it was very good.   What genre was it?",
+    "context": "chat_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "فردا گندگ ءَ رویں؟   کجا رویں؟   مہربانی کن ات، یک جاگہے تجویز کن.",
+    "output": "Shall we meet tomorrow?   Where shall we go?   Please suggest a place.",
+    "context": "chat_scenarios"
+  },
+  {
+    "instruction": "Translate the following Balochi text to English:",
+    "input": "چہ نوکیں خبراں تئی سرپدی ہست؟   ہاں، من نیوز ونتگ.   اے بارو ءَ تئی نظر چی انت؟",
+    "output": "Are you aware of the latest news?   Yes, I read the news.   What is your opinion on this?",
+    "context": "chat_scenarios"
+  }
+]

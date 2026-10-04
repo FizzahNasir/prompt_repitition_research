@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Dataset Completion Status by Language and Task (2026-10-04)}
+\label{tab:dataset_status}
+\footnotesize
+\begin{tabular}{llllccccc}
+\toprule
+Language & Code & Script & Translation & \multicolumn{5}{c}{Tasks} \\
+\cmidrule(l){4-9}
+ &  &  & Origin & GSM8K & ARC & OBQA & CSQA & Ret.\\
+\midrule
+Punjabi  & pa   & Shahmukhi (RTL) & trans.    & 250 & 300 & 495 & 288 & 6/6 \\
+Urdu     & ur   & Nastaliq (RTL)  & trans.    & 250 & 300 & 5767 & 288 & 6/6 \\
+Pashto   & ps   & Extended Arabic & trans.    & 250 & 892 & 513 & 561 & 6/6 \\
+Arabic   & ar   & Arabic (RTL)    & native    & 250 & 300 & 445 & 245 & 6/6 \\
+Persian  & fa   & Farsi (RTL)     & native    & 1564 & 300 & 500 & 300 & 6/6 \\
+Sindhi   & sd   & Sindhi (RTL)    & native    & 99 & 99 & 99 & 300 & 6/6 \\
+Balochi  & bal  & Perso-Arabic    & mixed     & 108 & 58 & \textcolor{red}{0} & \textcolor{red}{0} & 6/6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{1em}
+\textbf{Notes:} OBQA = OpenBookQA, CSQA = CommonSenseQA, Ret. = Retrieval tasks (NameIndex, MiddleMatch, ScriptMixed). 
+\textbf{Translation Origin:} trans. = machine-translated from English/Arabic; native = original native content; mixed = combination of translated monolingual data + native name pools for retrieval tasks.
+\textbf{Blocked (red):} Balochi OpenBookQA and CommonSenseQA require translation from English sources; blocked due to OpenAI credit exhaustion and Gemini free-tier quota limits.

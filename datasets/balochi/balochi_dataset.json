@@ -1,0 +1,2309 @@
+[
+  {
+    "dataset_metadata": {
+      "name": "Comprehensive Balochi Multilingual Corpus",
+      "version": "2.0.0",
+      "purpose": "Large Language Model Training",
+      "languages": [
+        "Balochi",
+        "English",
+        "Urdu",
+        "Persian"
+      ],
+      "total_text_pairs": "Significantly expanded from initial 50000 (see summary)",
+      "domains": [
+        "general_conversation",
+        "literature",
+        "news",
+        "academic",
+        "technical",
+        "cultural",
+        "historical",
+        "travel",
+        "education",
+        "assistant_interactions",
+        "chat"
+      ],
+      "creation_date": "2024-12-13",
+      "license": "CC-BY-SA 4.0",
+      "data_collection_methods": [
+        "Native speaker interviews (simulated)",
+        "Literary sources (simulated)",
+        "Academic publications (simulated)",
+        "Media translations (simulated)"
+      ]
+    },
+    "language_pair_statistics": {
+      "balochi_to_english": {
+        "total_pairs": "Estimated based on expanded dataset",
+        "domains_covered": [
+          "general_conversation",
+          "technical",
+          "academic",
+          "travel",
+          "education",
+          "assistant_interactions",
+          "chat"
+        ],
+        "translation_quality_score": "Simulated (high)"
+      },
+      "balochi_to_urdu": {
+        "total_pairs": "Estimated based on expanded dataset",
+        "domains_covered": [
+          "cultural",
+          "conversational",
+          "news",
+          "travel",
+          "education",
+          "assistant_interactions",
+          "chat"
+        ],
+        "translation_quality_score": "Simulated (high)"
+      },
+      "balochi_to_persian": {
+        "total_pairs": "Estimated based on expanded dataset",
+        "domains_covered": [
+          "literary",
+          "historical",
+          "academic",
+          "travel",
+          "education",
+          "assistant_interactions",
+          "chat"
+        ],
+        "translation_quality_score": "Simulated (high)"
+      }
+    },
+    "conversation_samples": {
+      "daily_interactions": [],
+      "professional_scenarios": [],
+      "educational_scenarios": [],
+      "travel_scenarios": [],
+      "chat_scenarios": [],
+      "assistant_interactions": []
+    },
+    "technical_terminology": {
+      "computing": [],
+      "scientific": [],
+      "medical": [],
+      "linguistics": [],
+      "internet": [],
+      "physics": [],
+      "geography": [],
+      "literature": []
+    },
+    "dialectal_variations": {}
+  },
+  {
+    "dataset_metadata": {},
+    "language_pair_statistics": {},
+    "conversation_samples": {
+      "daily_interactions": [
+        {
+          "context": "Greeting a friend",
+          "balochi": [
+            "تو چون ئے؟ وش آتک ئے!",
+            "من ءَ لہتیں مشکل انت",
+            "تئی کار چون انت؟"
+          ],
+          "english": [
+            "How are you? Welcome!",
+            "I'm having some difficulties",
+            "How is yourgoing?"
+          ],
+          "urdu": [
+            "آپ کیسے ہیں؟ خوش آمدید!",
+            "مجھے کچھ مشکلات ہو رہی ہیں",
+            "آپ کا کام کیسا چل رہا ہے؟"
+          ],
+          "persian": [
+            "چطور هستید؟ خوش آمدید!",
+            "من با برخی مشکلات مواجه هستم",
+            "کارتان چطور پیش می‌رود؟"
+          ]
+        },
+        {
+          "context": "Discussing family",
+          "balochi": [
+            "منی ھاندان ءَ پنچ مردم اَنت",
+            "منی پت استاد اِنت",
+            "منی مات لوگبانک اِنت"
+          ],
+          "english": [
+            "My family has five members",
+            "My father is a teacher",
+            "My mother is a housewife"
+          ],
+          "urdu": [
+            "میری فیملی میں پانچ افراد ہیں",
+            "میرے والد ایک استاد ہیں",
+            "میری والدہ گھر کی خاتون ہیں"
+          ],
+          "persian": [
+            "خانواده من پنج نفر است",
+            "پدرم یک معلم است",
+            "مادرم خانه‌دار است"
+          ]
+        },
+        {
+          "context": "Ordering food",
+          "balochi": [
+            "من ءَ چپس ءِ گوں برگر لوٹ اِیت۔,، ",
+            "سافٹ ڈرنک ھم بیار۔,،",
+            "بل چنچو اِنت؟"
+          ],
+          "english": [
+            "I'll have a burger with chips.",
+            "Bring a soft drink too.",
+            "How much is the bill?"
+          ],
+          "urdu": [
+            "مجھے ایک برگر اور چپس دیجیے۔",
+            "ایک مشروب بھی لائیں۔",
+            "بل کتنے کا ہے؟"
+          ],
+          "persian": [
+            "یک همبرگر با سیب زمینی سرخ‌کرده بدهید.",
+            "یک نوشابه هم بیاورید.",
+            "صورتحساب چند است؟"
+          ]
+        },
+        {
+          "context": "Asking for directions",
+          "balochi": [
+            "اے جاہ کجا اِنت؟",
+            "سیدھا برو",
+            " پدا اولی چپ ءَ بہ رو۔",
+            "مہربانی ءَ من ءَ راہ ءَ بہ گش۔"
+          ],
+          "english": [
+            "Where is this place?",
+            "Go straight, then take the first left.",
+            "Please tell me the way."
+          ],
+          "urdu": [
+            "یہ جگہ کہاں ہے؟",
+            "سیدھے جائیں، پھر پہلی بائیں مڑیں۔",
+            "مہربانی فرما کر راستہ بتائیں۔"
+          ],
+          "persian": [
+            "اینجا کجاست؟",
+            "مستقیم بروید، سپس اولین چپ را بگیرید.",
+            "لطفاً راه را بگویید."
+          ]
+        },
+        {
+          "context": "Talking about the weather",
+          "balochi": [
+            "مرچی سک گرم اِنت۔",
+            "آسمان جمبر اِنت",
+            " بوت کنت کہ ھئور بہ بیت",
+            "موسم وش انت"
+          ],
+          "english": [
+            "It's very hot today.",
+            "The sky is cloudy, it might rain.",
+            "The weather is very nice."
+          ],
+          "urdu": [
+            "آج بہت گرمی ہے۔",
+            "آسمان پر بادل ہیں، شاید بارش ہو۔",
+            "موسم بہت اچھا ہے۔"
+          ],
+          "persian": [
+            "امروز خیلی گرم است.",
+            "آسمان ابری است، شاید باران بیاید.",
+            "هوا خیلی خوب است."
+          ]
+        },
+        {
+          "context": "Making plans",
+          "balochi": [
+            "ما فردا سینما ءَ رویں؟",
+            "ہاں، باز وش انت.",
+            "چہ وخت ءَ رویں؟"
+          ],
+          "english": [
+            "Shall we go to the cinema tomorrow?",
+            "Yes, that sounds great.",
+            "What time shall we go?"
+          ],
+          "urdu": [
+            "کیا ہم کل سینما جائیں؟",
+            "ہاں، بہت اچھا رہے گا۔",
+            "ہم کس وقت جائیں؟"
+          ],
+          "persian": [
+            "فردا به سینما برویم؟",
+            "بله، خیلی خوب است.",
+            "چه ساعتی برویم؟"
+          ]
+        }
+      ],
+      "professional_scenarios": [
+        {
+          "context": "Job interview",
+          "balochi": [
+            "من کمپیوٹر سائنس ءِ ماہر آں",
+            "من پروگرامنگ ءِ تہا کار کناں",
+            "من ءَ پنچ سال ءِ تجربہ اِنت"
+          ],
+          "english": [
+            "I am a computer science expert",
+            "I work in programming",
+            "I have five years of experience"
+          ],
+          "urdu": [
+            "میں کمپیوٹر سائنس کا ماہر ہوں",
+            "میں پروگرامنگ میں کام کرتا ہوں",
+            "میرے پاس پانچ سال کا تجربہ ہے"
+          ],
+          "persian": [
+            "من متخصص علوم کامپیوتر هستم",
+            "من در برنامه‌نویسی کار می‌کنم",
+            "من پنج سال تجربه دارم"
+          ]
+        },
+        {
+          "context": "Business meeting",
+          "balochi": [
+            "ما نوکیں منصوبہ ءِ سرا گپ ءُ تران کنگ ءَ ایں",
+            "اے منصوبہ سک باز المی انت۔",
+            "مارا گیشتر محنت کنگ لوٹیت۔"
+          ],
+          "english": [
+            "We are discussing the new project.",
+            "This project is very important.",
+            "We need to work harder."
+          ],
+          "urdu": [
+            "ہم نئے منصوبے کے بارے میں بات کر رہے ہیں۔",
+            "یہ منصوبہ بہت اہم ہے۔",
+            "ہمیں مزید محنت کرنی چاہیے۔"
+          ],
+          "persian": [
+            "ما در مورد پروژه جدید صحبت می‌کنیم.",
+            "این پروژه بسیار مهم است.",
+            "ما باید بیشتر تلاش کنیم."
+          ]
+        },
+        {
+          "context": "Presenting a project",
+          "balochi": [
+            "من شمے دیما وتی منصوبہ پیش دارگ ءَ آں.",
+            "اے منصوبہ ءِ مولود مردمانی کمک کنگ اِنت.",
+            "من امید داراں کہ شما آئی ءَ پسند کن اِت."
+          ],
+          "english": [
+            "I am presenting my project to you.",
+            "The aim of this project is to help people.",
+            "I hope you like it."
+          ],
+          "urdu": [
+            "میں آپ کے سامنے اپنا منصوبہ پیش کر رہا ہوں۔",
+            "اس منصوبے کا مقصد لوگوں کی مدد کرنا ہے۔",
+            "مجھے امید ہے کہ آپ اسے پسند کریں گے۔"
+          ],
+          "persian": [
+            "من پروژه خود را به شما ارائه می‌دهم.",
+            "هدف این پروژه کمک به مردم است.",
+            "امیدوارم که آن را دوست داشته باشید."
+          ]
+        }
+      ],
+      "educational_scenarios": [
+        {
+          "context": "Asking a question in class",
+          "balochi": [
+            "استاد، اے سوال ءِ جواب چے اِنت؟,من اے گپ ءَ سرپد نہ بوتگاں",
+            "مہربانی کن ات، گیشتر وضاحت بدے."
+          ],
+          "english": [
+            "Teacher, what is the answer to this question?",
+            "I didn't understand this.",
+            "Please explain further."
+          ],
+          "urdu": [
+            "استاد، اس سوال کا جواب کیا ہے؟",
+            "میں یہ بات نہیں سمجھا۔",
+            "مہربانی فرما کر مزید وضاحت کریں۔"
+          ],
+          "persian": [
+            "استاد، پاسخ این سوال چیست؟",
+            "من این مطلب را متوجه نشدم.",
+            "لطفاً بیشتر توضیح دهید."
+          ]
+        },
+        {
+          "context": "Discussing a book",
+          "balochi": [
+            "اے کتاب باز دلچسپ ات.",
+            "چہ شما ءَ ہم اے کتاب ونتگ؟",
+            "اے کتاب ءِ مستریں ھیال چے بوتگ؟”"
+          ],
+          "english": [
+            "This book was very interesting.",
+            "Have you also read this book?",
+            "What was the main idea of this book?"
+          ],
+          "urdu": [
+            "یہ کتاب بہت دلچسپ تھی۔",
+            "کیا آپ نے بھی یہ کتاب پڑھی ہے؟",
+            "اس کتاب کا مرکزی خیال کیا تھا؟"
+          ],
+          "persian": [
+            "این کتاب خیلی جالب بود.",
+            "آیا شما هم این کتاب را خوانده‌اید؟",
+            "ایده اصلی این کتاب چه بود؟"
+          ]
+        }
+      ]
+    },
+    "technical_terminology": {
+      "computing": [
+        {
+          "balochi": [
+            "سافٹ ویر یک کمپیوٹر پروگرام ءِ ات",
+            "ہارڈ ویر کمپیوٹر ءِ فزیکی اجزا ات",
+            "انٹرنیٹ یک جہانی نیٹ ورک ءِ ات"
+          ],
+          "english": [
+            "Software is a computer program",
+            "Hardware is the physical components of a computer",
+            "The internet is a global network"
+          ],
+          "urdu": [
+            "سافٹ ویئر ایک کمپیوٹر پروگرام ہے",
+            "ہارڈ ویئر کمپیوٹر کے فزیکی اجزاء ہیں",
+            "انٹرنیٹ ایک عالمی نیٹ ورک ہے"
+          ],
+          "persian": [
+            "نرم‌افزار یک برنامه کامپیوتری است",
+            "سخت‌افزار اجزای فیزیکی کامپیوتر است",
+            "اینترنت یک شبکه جهانی است"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "dataset_metadata": {},
+    "language_pair_statistics": {},
+    "conversation_samples": {
+      "daily_interactions": [
+        {
+          "context": "Discussing hobbies",
+          "balochi": [
+            "منی شوق کتاب وانگ انت.",
+            "من گیتار ہم جنیں.",
+            "تئی شوق چے اَنت؟”"
+          ],
+          "english": [
+            "My hobby is reading books.",
+            "I also play the guitar.",
+            "What are your hobbies?"
+          ],
+          "urdu": [
+            "میرا شوق کتابیں پڑھنا ہے۔",
+            "میں گٹار بھی بجاتا ہوں۔",
+            "آپ کے شوق کیا ہیں؟"
+          ],
+          "persian": [
+            "سرگرمی مورد علاقه من کتاب خواندن است.",
+            "من گیتار هم می‌زنم.",
+            "سرگرمی‌های شما چیست؟"
+          ]
+        },
+        {
+          "context": "Talking about travel",
+          "balochi": [
+            "من کوئٹہ ءَ سفر کتگ.",
+            "آئی یک باز جوانیں شہرے.",
+            "تو کجا سفر کتگ؟"
+          ],
+          "english": [
+            "I have traveled to Quetta.",
+            "It is a very beautiful city.",
+            "Where have you traveled?"
+          ],
+          "urdu": [
+            "میں کوئٹہ کا سفر کر چکا ہوں۔",
+            "یہ ایک بہت خوبصورت شہر ہے۔",
+            "آپ کہاں سفر کر چکے ہیں؟"
+          ],
+          "persian": [
+            "من به کویته سفر کرده‌ام.",
+            "آن یک شهر بسیار زیبا است.",
+            "شما به کجا سفر کرده‌اید؟"
+          ]
+        },
+        {
+          "context": "Shopping at a market",
+          "balochi": [
+            "اے قیمت چنت انت؟",
+            "مہربانی کن ات، کم کن ات.",
+            "من اے کپڑا ءَ زوراں."
+          ],
+          "english": [
+            "How much does this cost?",
+            "Please reduce the price.",
+            "I will take this cloth."
+          ],
+          "urdu": [
+            "اس کی قیمت کتنی ہے؟",
+            "مہربانی فرما کر قیمت کم کریں۔",
+            "میں یہ کپڑا لوں گا۔"
+          ],
+          "persian": [
+            "این چقدر قیمت دارد؟",
+            "لطفاً قیمت را کم کنید.",
+            "من این لباس را می‌گیرم."
+          ]
+        },
+        {
+          "context": "Visiting a doctor",
+          "balochi": [
+            "می سر درد کنت.",
+            "من ءَ دوا بدے.",
+            "باز مہربانی."
+          ],
+          "english": [
+            "I have a headache.",
+            "Give me some medicine.",
+            "Thank you very much."
+          ],
+          "urdu": [
+            "میرے سر میں درد ہے۔",
+            "مجھے کچھ دوا دیں۔",
+            "بہت شکریہ۔"
+          ],
+          "persian": [
+            "من سردرد دارم.",
+            "به من دارو بدهید.",
+            "خیلی ممنون."
+          ]
+        }
+      ],
+      "professional_scenarios": [
+        {
+          "context": "Negotiating a deal",
+          "balochi": [
+            "اے آفر باز جوان انت.",
+            "بلے ما گیشتر رعایت لوٹیں.",
+            "اگاں اے شرطاں منگہ بہ بیت، گڑا ما راضی ایں."
+          ],
+          "english": [
+            "This offer is very good.",
+            "But we want more discount.",
+            "If these conditions are accepted, then we agree."
+          ],
+          "urdu": [
+            "یہ آفر بہت اچھی ہے۔",
+            "لیکن ہم مزید رعایت چاہتے ہیں۔",
+            "اگر یہ شرائط منظور ہو جائیں تو ہم راضی ہیں۔"
+          ],
+          "persian": [
+            "این پیشنهاد خیلی خوب است.",
+            "اما ما تخفیف بیشتری می‌خواهیم.",
+            "اگر این شرایط پذیرفته شوند، ما موافق هستیم."
+          ]
+        },
+        {
+          "context": "Giving feedback on work",
+          "balochi": [
+            "تئی کار باز جوان ات.",
+            "بلے اے جاگہ ءَ گیشتر توجہ دیگ لوٹیت.",
+            "گیشتر کوشست کن."
+          ],
+          "english": [
+            "Your work was very good.",
+            "But this area needs more attention.",
+            "Try harder."
+          ],
+          "urdu": [
+            "تمہارا کام بہت اچھا تھا۔",
+            "لیکن اس جگہ پر مزید توجہ دینے کی ضرورت ہے۔",
+            "مزید کوشش کرو۔"
+          ],
+          "persian": [
+            "کار شما خیلی خوب بود.",
+            "اما این قسمت نیاز به توجه بیشتری دارد.",
+            "بیشتر تلاش کن."
+          ]
+        }
+      ],
+      "educational_scenarios": [
+        {
+          "context": "Asking for clarification on an assignment",
+          "balochi": [
+            "استاد، اے اسائنمنٹ ءِ بارو ءَ یک سوالے ہست.",
+            "مہربانی کن ات، اے گپ ءَ گیشتر وضاحت بدے.",
+            "آخری تاریخ کدی انت؟"
+          ],
+          "english": [
+            "Teacher, I have a question about this assignment.",
+            "Please explain this further.",
+            "What is the deadline?"
+          ],
+          "urdu": [
+            "استاد، مجھے اس اسائنمنٹ کے بارے میں ایک سوال ہے۔",
+            "مہربانی فرما کر اس بات کی مزید وضاحت کریں۔",
+            "آخری تاریخ کیا ہے؟"
+          ],
+          "persian": [
+            "استاد، من یک سوال در مورد این تکلیف دارم.",
+            "لطفاً این مطلب را بیشتر توضیح دهید.",
+            "آخرین مهلت کی است؟"
+          ]
+        },
+        {
+          "context": "Studying for an exam",
+          "balochi": [
+            "امتحان باز نزیک انت، باید گیشتر وانیگ بہ بیت.",
+            "اے کتاب باز کمک کنت.",
+            "سوال باز مشکل انت."
+          ],
+          "english": [
+            "The exam is very close, we need to study more.",
+            "This book helps a lot.",
+            "The questions are very difficult."
+          ],
+          "urdu": [
+            "امتحان بہت قریب ہے، ہمیں مزید پڑھنا چاہیے۔",
+            "یہ کتاب بہت مدد کرتی ہے۔",
+            "سوالات بہت مشکل ہیں۔"
+          ],
+          "persian": [
+            "امتحان خیلی نزدیک است، باید بیشتر مطالعه کنیم.",
+            "این کتاب خیلی کمک می‌کند.",
+            "سوالات خیلی سخت هستند."
+          ]
+        }
+      ],
+      "travel_scenarios": [
+        {
+          "context": "At the airport",
+          "balochi": [
+            "می پاسپورٹ کجا انت؟",
+            "جہاز کدی روانہ بیت؟",
+            "مہربانی کن ات، کمک کن ات."
+          ],
+          "english": [
+            "Where is my passport?",
+            "When does the plane depart?",
+            "Please help me."
+          ],
+          "urdu": [
+            "میرا پاسپورٹ کہاں ہے؟",
+            "جہاز کب روانہ ہوگا؟",
+            "مہربانی فرما کر میری مدد کریں۔"
+          ],
+          "persian": [
+            "گذرنامه من کجاست؟",
+            "هواپیما کی حرکت می‌کند؟",
+            "لطفاً به من کمک کنید."
+          ]
+        },
+        {
+          "context": "Booking a hotel",
+          "balochi": [
+            "یک کمرہ لوٹاں دو شپ ءِ واستہ.",
+            "قیمت چنت انت؟",
+            "صبحانہ ہم شامل انت؟"
+          ],
+          "english": [
+            "I want a room for two nights.",
+            "How much is the price?",
+            "Is breakfast included?"
+          ],
+          "urdu": [
+            "مجھے دو راتوں کے لیے ایک کمرہ چاہیے۔",
+            "قیمت کتنی ہے؟",
+            "کیا ناشتہ بھی شامل ہے؟"
+          ],
+          "persian": [
+            "من یک اتاق برای دو شب می‌خواهم.",
+            "قیمت چقدر است؟",
+            "آیا صبحانه هم شامل می‌شود؟"
+          ]
+        }
+      ]
+    },
+    "technical_terminology": {
+      "computing": [
+        {
+          "balochi": [
+            "ڈیٹا بیس معلومات ءِ یک مجموعہ ءِ ات",
+            "الگوریتم یک مسئلہ ءِ حل کنگ ءِ طریقہ ات",
+            "سائبر سیکیورٹی ڈیجیٹل نظامانی حفاظت ات"
+          ],
+          "english": [
+            "A database is a collection of information",
+            "An algorithm is a method for solving a problem",
+            "Cybersecurity is the protection of digital systems"
+          ],
+          "urdu": [
+            "ڈیٹا بیس معلومات کا ایک مجموعہ ہے۔",
+            "الگوریتم ایک مسئلے کو حل کرنے کا طریقہ ہے۔",
+            "سائبر سیکیورٹی ڈیجیٹل نظاموں کی حفاظت ہے۔"
+          ],
+          "persian": [
+            "پایگاه داده مجموعه‌ای از اطلاعات است.",
+            "الگوریتم روشی برای حل یک مسئله است.",
+            "امنیت سایبری حفاظت از سیستم‌های دیجیتال است."
+          ]
+        }
+      ],
+      "scientific": [
+        {
+          "balochi": [
+            "کیمسٹری مادّہ ءِ ساخت ءُ خاصیتانی علم ات",
+            "فزکس فطرت ءُ توانائی ءِ علم ات",
+            "بیالوجی زندگیں چیزانی علم ات"
+          ],
+          "english": [
+            "Chemistry is the science of the composition and properties of matter",
+            "Physics is the science of nature and energy",
+            "Biology is the science of living things"
+          ],
+          "urdu": [
+            "کیمسٹری مادے کی ساخت اور خصوصیات کا علم ہے۔",
+            "فزکس فطرت اور توانائی کا علم ہے۔",
+            "بیالوجی زندہ چیزوں کا علم ہے۔"
+          ],
+          "persian": [
+            "شیمی علم ساختار و خواص ماده است.",
+            "فیزیک علم طبیعت و انرژی است.",
+            "زیست‌شناسی علم موجودات زنده است."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "dataset_metadata": {},
+    "language_pair_statistics": {},
+    "conversation_samples": {
+      "daily_interactions": [
+        {
+          "context": "Complaining about noise",
+          "balochi": [
+            "اے باز توار انت! من آرام لوٹاں.",
+            "مہربانی کن ات، توار ءَ کم کن ات.",
+            "من وپسگ ءَ اوں."
+          ],
+          "english": [
+            "This is very noisy! I want some peace.",
+            "Please turn down the volume.",
+            "I'm trying to sleep."
+          ],
+          "urdu": [
+            "یہ بہت شور ہے! مجھے سکون چاہیے۔",
+            "مہربانی فرما کر آواز کم کریں۔",
+            "میں سونے کی کوشش کر رہا ہوں۔"
+          ],
+          "persian": [
+            "این خیلی پر سر و صدا است! من آرامش می‌خواهم.",
+            "لطفاً صدا را کم کنید.",
+            "من می‌خواهم بخوابم."
+          ]
+        },
+        {
+          "context": "Expressing gratitude",
+          "balochi": [
+            "باز مہربانی! تئی کمک ءَ من ءَ باز وش بوت.",
+            "من تئی مھر ءَ ھچبر شموشت نہ کناں",
+            "تو باز جوانیں مردمے ئے."
+          ],
+          "english": [
+            "Thank you very much! I really appreciate your help.",
+            "I will never forget your kindness.",
+            "You are a very good person."
+          ],
+          "urdu": [
+            "بہت شکریہ! میں آپ کی مدد کا بہت شکر گزار ہوں۔",
+            "میں آپ کا احسان کبھی نہیں بھولوں گا۔",
+            "آپ بہت اچھے انسان ہیں۔"
+          ],
+          "persian": [
+            "خیلی ممنون! من واقعاً از کمک شما قدردانی می‌کنم.",
+            "من لطف شما را هرگز فراموش نخواهم کرد.",
+            "شما آدم خیلی خوبی هستید."
+          ]
+        }
+      ],
+      "professional_scenarios": [
+        {
+          "context": "Asking for a raise",
+          "balochi": [
+            "من باز وھد ءَ چہ اے ادارہ ءَ کار کنگ ءَ اوں.",
+            "من وتی ذمہ واری ءَ گوں ایمانداری ءَ پیلو کتگ.",
+            "من یک گیشتر تنخواہ ءِ خواستگار آں."
+          ],
+          "english": [
+            "I have been working for this organization for a long time.",
+            "I have fulfilled my responsibilities with sincerity.",
+            "I am requesting a higher salary."
+          ],
+          "urdu": [
+            "میں اس ادارے میں کافی عرصے سے کام کر رہا ہوں۔",
+            "میں نے اپنی ذمہ داریاں ایمانداری سے پوری کی ہیں۔",
+            "میں زیادہ تنخواہ کا خواہاں ہوں۔"
+          ],
+          "persian": [
+            "من مدت زیادی است که برای این سازمان کار می‌کنم.",
+            "من مسئولیت‌های خود را با صداقت انجام داده‌ام.",
+            "من درخواست حقوق بیشتری دارم."
+          ]
+        },
+        {
+          "context": "Discussing project deadlines",
+          "balochi": [
+            "اے منصوبہ کدی سرجم بیت؟",
+            "ما باید گیشتر ترندی ءَ کار بہ کنیں۔",
+            "آخری تاریخ باز نزیک انت."
+          ],
+          "english": [
+            "When will this project be completed?",
+            "We need to work more quickly.",
+            "The deadline is very close."
+          ],
+          "urdu": [
+            "یہ منصوبہ کب مکمل ہوگا؟",
+            "ہمیں زیادہ تیزی سے کام کرنا چاہیے۔",
+            "آخری تاریخ بہت قریب ہے۔"
+          ],
+          "persian": [
+            "این پروژه کی تمام می‌شود؟",
+            "ما باید سریع‌تر کار کنیم.",
+            "آخرین مهلت خیلی نزدیک است."
+          ]
+        }
+      ],
+      "educational_scenarios": [
+        {
+          "context": "Discussing a historical event",
+          "balochi": [
+            "اے تاریخی واقعہ باز اہم ات.",
+            "چہ شما ءَ اے بارو ءَ چیزے زانگ ءَ انت؟",
+            "اے واقعہ کدی بوتگ ات؟"
+          ],
+          "english": [
+            "This historical event was very important.",
+            "Do you know anything about it?",
+            "When did this event happen?"
+          ],
+          "urdu": [
+            "یہ تاریخی واقعہ بہت اہم تھا۔",
+            "کیا آپ اس کے بارے میں کچھ جانتے ہیں؟",
+            "یہ واقعہ کب ہوا تھا؟"
+          ],
+          "persian": [
+            "این رویداد تاریخی بسیار مهم بود.",
+            "آیا شما چیزی در مورد آن می‌دانید؟",
+            "این رویداد کی اتفاق افتاد؟"
+          ]
+        }
+      ],
+      "travel_scenarios": [
+        {
+          "context": "Asking for recommendations",
+          "balochi": [
+            "اے شہر ءَ گندگ ءِ واستہ جوانیں جاگہ کجا انت؟",
+            "شما چے تجویز کن ات؟",
+            "من تاریخ ءُ ثقافت ءَ دوست داراں."
+          ],
+          "english": [
+            "Where are some good places to visit in this city?",
+            "What do you recommend?",
+            "I like history and culture."
+          ],
+          "urdu": [
+            "اس شہر میں دیکھنے کے لیے اچھی جگہیں کہاں ہیں؟",
+            "آپ کیا تجویز کرتے ہیں؟",
+            "مجھے تاریخ اور ثقافت پسند ہے۔"
+          ],
+          "persian": [
+            "جاهای خوب برای بازدید در این شهر کجا هستند؟",
+            "شما چه چیزی را توصیه می‌کنید؟",
+            "من تاریخ و فرهنگ را دوست دارم."
+          ]
+        }
+      ],
+      "chat_scenarios": [
+        {
+          "context": "Casual chat about movies",
+          "balochi": [
+            "تو نوکیں فلم دیستگ؟",
+            "ہاں، باز جوان ات.",
+            "چہ ژانر ءِ ات؟"
+          ],
+          "english": [
+            "Have you seen the new movie?",
+            "Yes, it was very good.",
+            "What genre was it?"
+          ],
+          "urdu": [
+            "کیا تم نے نئی فلم دیکھی ہے؟",
+            "ہاں، بہت اچھی تھی۔",
+            "یہ کس قسم کی تھی؟"
+          ],
+          "persian": [
+            "فیلم جدید را دیده‌ای؟",
+            "بله، خیلی خوب بود.",
+            "چه ژانری بود؟"
+          ]
+        },
+        {
+          "context": "Making plans over chat",
+          "balochi": [
+            "فردا گندگ ءَ رویں؟",
+            "کجا رویں؟",
+            "مہربانی کن ات، یک جاگہے تجویز کن."
+          ],
+          "english": [
+            "Shall we meet tomorrow?",
+            "Where shall we go?",
+            "Please suggest a place."
+          ],
+          "urdu": [
+            "کیا ہم کل ملیں؟",
+            "ہم کہاں جائیں؟",
+            "مہربانی فرما کر ایک جگہ تجویز کریں۔"
+          ],
+          "persian": [
+            "فردا همدیگر را ببینیم؟",
+            "کجا برویم؟",
+            "لطفاً یک جا پیشنهاد کن."
+          ]
+        },
+        {
+          "context": "Chatting about current events",
+          "balochi": [
+            "چہ نوکیں خبراں تئی سرپدی ہست؟",
+            "ہاں، من نیوز ونتگ.",
+            "اے بارو ءَ تئی نظر چی انت؟"
+          ],
+          "english": [
+            "Are you aware of the latest news?",
+            "Yes, I read the news.",
+            "What is your opinion on this?"
+          ],
+          "urdu": [
+            "کیا آپ تازہ ترین خبروں سے واقف ہیں؟",
+            "ہاں، میں نے خبریں پڑھی ہیں۔",
+            "اس بارے میں آپ کی کیا رائے ہے؟"
+          ],
+          "persian": [
+            "آیا شما از آخرین اخبار مطلع هستید؟",
+            "بله، من اخبار را خواندم.",
+            "نظر شما در این مورد چیست؟"
+          ]
+        }
+      ]
+    },
+    "technical_terminology": {
+      "computing": [
+        {
+          "balochi": [
+            "نیٹ ورک کمپیوٹرانی یک مجموعہ ات کہ گوں یکدیگر ءَ منسلک انت",
+            "پروگرامنگ کمپیوٹر ءَ ہدایات دیگ ءِ عمل ات",
+            "ڈیجیٹل معلومات صفر ءُ یک ءِ شکل ءَ محفوظ بنت"
+          ],
+          "english": [
+            "A network is a collection of computers connected to each other",
+            "Programming is the process of giving instructions to a computer",
+            "Digital information is stored in the form of zeros and ones"
+          ],
+          "urdu": [
+            "نیٹ ورک کمپیوٹروں کا ایک مجموعہ ہے جو ایک دوسرے سے منسلک ہیں۔",
+            "پروگرامنگ کمپیوٹر کو ہدایات دینے کا عمل ہے۔",
+            "ڈیجیٹل معلومات صفر اور ایک کی شکل میں محفوظ ہوتی ہیں۔"
+          ],
+          "persian": [
+            "شبکه مجموعه‌ای از کامپیوترها است که به یکدیگر متصل هستند.",
+            "برنامه‌نویسی فرآیند دادن دستورالعمل به کامپیوتر است.",
+            "اطلاعات دیجیتال به صورت صفر و یک ذخیره می‌شوند."
+          ]
+        }
+      ],
+      "scientific": [
+        {
+          "balochi": [
+            "ماحول زندگیں ءُ بے زندگیں چیزانی یکجا بوتگیں مجموعہ ات",
+            "توانائی کار کنگ ءِ صلاحیت ات",
+            "مادّہ ہر چیزے ات کہ وزن ءُ جاگہ بہ گپت"
+          ],
+          "english": [
+            "The environment is the combined collection of living and non-living things",
+            "Energy is the ability to do work",
+            "Matter is anything that has weight and occupies space"
+          ],
+          "urdu": [
+            "ماحول زندہ اور غیر زندہ چیزوں کا مشترکہ مجموعہ ہے۔",
+            "توانائی کام کرنے کی صلاحیت ہے۔",
+            "مادہ ہر وہ چیز ہے جس کا وزن ہو اور جگہ گھیرے۔"
+          ],
+          "persian": [
+            "محیط زیست",
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Sharing funny stories",
+                    "balochi": [
+                      "یک مزاکھیں گپے بوتگ ات، من باز ہند کت.",
+                      "چہ گپے ات؟ منی گوش دارگ لوٹیت.",
+                      "یک گپے بوتگ ات..."
+                    ],
+                    "english": [
+                      "A funny thing happened, I laughed a lot.",
+                      "What was it? I want to hear it.",
+                      "There was this one time..."
+                    ],
+                    "urdu": [
+                      "ایک مزاحیہ بات ہوئی تھی، میں بہت ہنسا۔",
+                      "کیا بات تھی؟ میں سننا چاہتا ہوں۔",
+                      "ایک دفعہ کا ذکر ہے کہ..."
+                    ],
+                    "persian": [
+                      "یک اتفاق خنده‌داری افتاد، من خیلی خندیدم.",
+                      "چی بود؟ من می‌خواهم آن را بشنوم.",
+                      "یک بار..."
+                    ]
+                  },
+                  {
+                    "context": "Discussing music preferences",
+                    "balochi": [
+                      "تو چہ قسم ءِ موسیقی ءَ دوست داری؟",
+                      "من کلاسیکی موسیقی ءَ دوست داراں.",
+                      "منی پسندیدہ ساز گیتار انت."
+                    ],
+                    "english": [
+                      "What kind of music do you like?",
+                      "I like classical music.",
+                      "My favorite instrument is the guitar."
+                    ],
+                    "urdu": [
+                      "تمہیں کس قسم کی موسیقی پسند ہے؟",
+                      "مجھے کلاسیکی موسیقی پسند ہے۔",
+                      "میرا پسندیدہ ساز گٹار ہے۔"
+                    ],
+                    "persian": [
+                      "شما چه نوع موسیقی را دوست دارید؟",
+                      "من موسیقی کلاسیک را دوست دارم.",
+                      "ساز مورد علاقه من گیتار است."
+                    ]
+                  },
+                  {
+                    "context": "Asking for advice on a problem",
+                    "balochi": [
+                      "من یک مشکلے ءِ گوں دیم پہ دیم آں.",
+                      "تو من ءَ چے صلاح دات کن ئے؟",
+                      "من باز پریشان آں."
+                    ],
+                    "english": [
+                      "I am facing a problem.",
+                      "What advice can you give me?",
+                      "I am very worried."
+                    ],
+                    "urdu": [
+                      "مجھے ایک مسئلے کا سامنا ہے۔",
+                      "تم مجھے کیا صلاح دے سکتے ہو؟",
+                      "میں بہت پریشان ہوں۔"
+                    ],
+                    "persian": [
+                      "من با یک مشکل روبرو هستم.",
+                      "شما چه توصیه‌ای می‌توانید به من بدهید؟",
+                      "من خیلی نگران هستم."
+                    ]
+                  },
+                  {
+                    "context": "Sharing weekend plans",
+                    "balochi": [
+                      "تئی ہفتہ ءِ آخر ءِ منصوبہ چی انت؟",
+                      "من کوہ ءَ روگ ءِ منصوبہ داراں.",
+                      "باز وش بیت."
+                    ],
+                    "english": [
+                      "What are your weekend plans?",
+                      "I am planning to go to the mountains.",
+                      "That will be great."
+                    ],
+                    "urdu": [
+                      "آپ کے ہفتے کے آخر کے منصوبے کیا ہیں؟",
+                      "میں پہاڑوں پر جانے کا منصوبہ بنا رہا ہوں۔",
+                      "یہ بہت اچھا ہوگا۔"
+                    ],
+                    "persian": [
+                      "برنامه‌های آخر هفته شما چیست؟",
+                      "من قصد دارم به کوهستان بروم.",
+                      "این عالی خواهد بود."
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Setting a reminder",
+                    "balochi": [
+                      "من ءَ فردا ساعت نہہ ءَ یک یاد دہانی بہ دے.",
+                      "چہ چیز ءِ یاد دہانی؟",
+                      "دوا وارتن ءِ یاد دہانی."
+                    ],
+                    "english": [
+                      "Set a reminder for me tomorrow at 9 o'clock.",
+                      "Reminder for what?",
+                      "Reminder to take medicine."
+                    ],
+                    "urdu": [
+                      "میرے لیے کل نو بجے کا ایک یاد دہانی سیٹ کریں۔",
+                      "کس چیز کی یاد دہانی؟",
+                      "دوا لینے کی یاد دہانی۔"
+                    ],
+                    "persian": [
+                      "یک یادآوری برای من برای فردا ساعت نه تنظیم کن.",
+                      "یادآوری برای چی؟",
+                      "یادآوری برای خوردن دارو."
+                    ]
+                  },
+                  {
+                    "context": "Asking for the weather",
+                    "balochi": [
+                      "مرچی ءِ موسم چطور انت؟",
+                      "باران بیت یا نہ؟",
+                      "سک گرم انت."
+                    ],
+                    "english": [
+                      "How is the weather today?",
+                      "Will it rain or not?",
+                      "It's very hot."
+                    ],
+                    "urdu": [
+                      "آج موسم کیسا ہے؟",
+                      "بارش ہوگی یا نہیں؟",
+                      "بہت گرمی ہے۔"
+                    ],
+                    "persian": [
+                      "هوا امروز چطور است؟",
+                      "باران می‌بارد یا نه؟",
+                      "خیلی گرم است."
+                    ]
+                  },
+                  {
+                    "context": "Asking for directions",
+                    "balochi": [
+                      "نزدیکیں ریسٹورنٹ کجا انت؟",
+                      "چہ گوگل میپس ءَ چار.",
+                      "مہربانی کن ات، راہ ءَ گش ات."
+                    ],
+                    "english": [
+                      "Where is the nearest restaurant?",
+                      "Check on Google Maps.",
+                      "Please tell me the directions."
+                    ],
+                    "urdu": [
+                      "قریب ترین ریسٹورنٹ کہاں ہے؟",
+                      "گوگل میپس پر دیکھیں۔",
+                      "مہربانی فرما کر راستہ بتائیں۔"
+                    ],
+                    "persian": [
+                      "نزدیکترین رستوران کجاست؟",
+                      "در گوگل مپس بررسی کنید.",
+                      "لطفاً مسیر را بگویید."
+                    ]
+                  },
+                  {
+                    "context": "Playing music",
+                    "balochi": [
+                      "موسیقی بجن.",
+                      "چہ قسم ءِ موسیقی؟",
+                      "کلاسیکی موسیقی بجن."
+                    ],
+                    "english": [
+                      "Play some music.",
+                      "What kind of music?",
+                      "Play classical music."
+                    ],
+                    "urdu": [
+                      "موسیقی بجائیں۔",
+                      "کس قسم کی موسیقی؟",
+                      "کلاسیکی موسیقی بجائیں۔"
+                    ],
+                    "persian": [
+                      "موسیقی پخش کن.",
+                      "چه نوع موسیقی؟",
+                      "موسیقی کلاسیک پخش کن."
+                    ]
+                  }
+                ]
+              },
+              "technical_terminology": {},
+              "dialectal_variations": {}
+            },
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Talking about weekend activities",
+                    "balochi": [
+                      "تئی ہفتہ ءِ آخر چطور گوازیت؟",
+                      "من دوستاں گوں شہر ءَ گردگ ءَ رو آں.",
+                      "باز وش گوازیت."
+                    ],
+                    "english": [
+                      "How was your weekend?",
+                      "I went for a walk in the city with friends.",
+                      "It was great."
+                    ],
+                    "urdu": [
+                      "آپ کا ہفتہ آخر کیسا گزرا؟",
+                      "میں دوستوں کے ساتھ شہر میں گھومنے گیا تھا۔",
+                      "بہت اچھا گزرا۔"
+                    ],
+                    "persian": [
+                      "آخر هفته شما چطور بود؟",
+                      "من با دوستانم برای قدم زدن به شهر رفتم.",
+                      "خیلی خوب بود."
+                    ]
+                  },
+                  {
+                    "context": "Discussing future plans",
+                    "balochi": [
+                      "تو آیندہ ءَ چے کنگ ءِ منصوبہ داری؟",
+                      "من یونیورسٹی ءَ وانگ ءِ منصوبہ داراں.",
+                      "وت ءَ گیشتر دیم ءَ برگ لوٹاں."
+                    ],
+                    "english": [
+                      "What are your plans for the future?",
+                      "I plan to study at university.",
+                      "I want to further my education."
+                    ],
+                    "urdu": [
+                      "آپ کے مستقبل کے منصوبے کیا ہیں؟",
+                      "میں یونیورسٹی میں پڑھنے کا منصوبہ بنا رہا ہوں۔",
+                      "میں اپنی تعلیم کو مزید آگے بڑھانا چاہتا ہوں۔"
+                    ],
+                    "persian": [
+                      "برنامه‌های شما برای آینده چیست؟",
+                      "من قصد دارم در دانشگاه تحصیل کنم.",
+                      "من می‌خواهم تحصیلاتم را ادامه دهم."
+                    ]
+                  },
+                  {
+                    "context": "Expressing excitement about an event",
+                    "balochi": [
+                      "من یک کنسرٹ ءَ روگ ءَ باز بے تاب آں.",
+                      "باز جوان بیت.",
+                      "من باز وھد ءَ چہ آئی ءِ انتظار ءَ بوتگ آں."
+                    ],
+                    "english": [
+                      "I'm really excited to go to a concert.",
+                      "It's going to be great.",
+                      "I've been waiting for it for a long time."
+                    ],
+                    "urdu": [
+                      "میں ایک کنسرٹ پر جانے کے لیے بہت پرجوش ہوں۔",
+                      "یہ بہت اچھا ہوگا۔",
+                      "میں کافی عرصے سے اس کا انتظار کر رہا ہوں۔"
+                    ],
+                    "persian": [
+                      "من واقعاً برای رفتن به یک کنسرت هیجان زده‌ام.",
+                      "خیلی عالی خواهد بود.",
+                      "من مدت زیادی منتظر آن بوده‌ام."
+                    ]
+                  },
+                  {
+                    "context": "Talking about a book or movie",
+                    "balochi": [
+                      "اے کتاب باز دلچسپ ات، تو ونتگ ات؟",
+                      "نہ، من نہ ونتگ.",
+                      "تئی نظر چی ات؟"
+                    ],
+                    "english": [
+                      "This book was very interesting, have you read it?",
+                      "No, I haven't read it.",
+                      "What did you think of it?"
+                    ],
+                    "urdu": [
+                      "یہ کتاب بہت دلچسپ تھی، کیا تم نے پڑھی ہے؟",
+                      "نہیں، میں نے نہیں پڑھی۔",
+                      "تمہاری کیا رائے تھی؟"
+                    ],
+                    "persian": [
+                      "این کتاب خیلی جالب بود، آیا آن را خوانده‌ای؟",
+                      "نه، من آن را نخوانده‌ام.",
+                      "نظر تو در مورد آن چه بود؟"
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Setting an alarm",
+                    "balochi": [
+                      "ساعت شش ءَ یک الارمے بہ دے.",
+                      "چہ روچ ءِ واستہ یا سحر ءِ واستہ؟",
+                      "سحر ءِ واستہ."
+                    ],
+                    "english": [
+                      "Set an alarm for 6 o'clock.",
+                      "For today or for tomorrow morning?",
+                      "For tomorrow morning."
+                    ],
+                    "urdu": [
+                      "چھ بجے کا ایک الارم سیٹ کریں۔",
+                      "آج کے لیے یا کل صبح کے لیے؟",
+                      "کل صبح کے لیے۔"
+                    ],
+                    "persian": [
+                      "یک زنگ هشدار برای ساعت شش تنظیم کن.",
+                      "برای امروز یا برای فردا صبح؟",
+                      "برای فردا صبح."
+                    ]
+                  },
+                  {
+                    "context": "Asking for the definition of a word",
+                    "balochi": [
+                      "'جمہوریت' ءِ معنی چی انت؟",
+                      "وکیپیڈیا ءَ چار.",
+                      "مہربانی کن ات، من ءَ بگش ات."
+                    ],
+                    "english": [
+                      "What is the definition of 'democracy'?",
+                      "Check on Wikipedia.",
+                      "Please tell me."
+                    ],
+                    "urdu": [
+                      "'جمہوریت' کی تعریف کیا ہے؟",
+                      "وکیپیڈیا پر دیکھیں۔",
+                      "مہربانی فرما کر مجھے بتائیں۔"
+                    ],
+                    "persian": [
+                      "معنی 'دموکراسی' چیست؟",
+                      "در ویکی‌پدیا بررسی کنید.",
+                      "لطفاً به من بگویید."
+                    ]
+                  },
+                  {
+                    "context": "Converting units",
+                    "balochi": [
+                      "دہ کلومیٹر چنچو میل اِنت؟",
+                      "گوگل ءَ چار.",
+                      "من ءَ حساب کن ات"
+                    ],
+                    "english": [
+                      "How many miles are ten kilometers?",
+                      "Check on Google.",
+                      "Convert it for me."
+                    ],
+                    "urdu": [
+                      "دس کلومیٹر کتنے میل ہوتے ہیں؟",
+                      "گوگل پر دیکھیں۔",
+                      "میرے لیے تبدیل کریں۔"
+                    ],
+                    "persian": [
+                      "ده کیلومتر چند مایل است؟",
+                      "در گوگل بررسی کنید.",
+                      "برای من تبدیلش کنید."
+                    ]
+                  },
+                  {
+                    "context": "Sending a message",
+                    "balochi": [
+                      "دوست ءَ یک پیغامے روان کن.",
+                      "چہ پیغامے؟",
+                      "سلام، چطور ات؟"
+                    ],
+                    "english": [
+                      "Send a message to a friend.",
+                      "What message?",
+                      "Hello, how are you?"
+                    ],
+                    "urdu": [
+                      "ایک دوست کو پیغام بھیجیں۔",
+                      "کیا پیغام؟",
+                      "ہیلو، آپ کیسے ہیں؟"
+                    ],
+                    "persian": [
+                      "یک پیام به یک دوست بفرست.",
+                      "چه پیامی؟",
+                      "سلام، چطوری؟"
+                    ]
+                  }
+                ]
+              },
+              "technical_terminology": {
+                "linguistics": [
+                  {
+                    "balochi": [
+                      "فونیم آواز ءِ بنکی یونٹ ات",
+                      "مورفیم معنی داریں یونٹ ات",
+                      "سینٹیکس جملہ ءِ ساخت ات"
+                    ],
+                    "english": [
+                      "A phoneme is the basic unit of sound",
+                      "A morpheme is a meaningful unit",
+                      "Syntax is the structure of sentences"
+                    ],
+                    "urdu": [
+                      "فونیم آواز کی بنیادی اکائی ہے۔",
+                      "مورفیم معنی دار اکائی ہے۔",
+                      "سینٹیکس جملے کی ساخت ہے۔"
+                    ],
+                    "persian": [
+                      "واج یک واحد اساسی صدا است.",
+                      "تکواژ یک واحد معنی‌دار است.",
+                      "نحو ساختار جملات است."
+                    ]
+                  }
+                ]
+              },
+              "dialectal_variations": {}
+            },
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Discussing food and recipes",
+                    "balochi": [
+                      "تو چہ وڑیں ورگ ءَ دوست داری؟",
+                      "من مسالہ داریں ورگ ءَ دوست داراں.",
+                      "تئی پسندیدہ وراک چی انت؟"
+                    ],
+                    "english": [
+                      "What kind of food do you like?",
+                      "I like spicy food.",
+                      "What is your favorite dish?"
+                    ],
+                    "urdu": [
+                      "تمہیں کس طرح کا کھانا پسند ہے؟",
+                      "مجھے مسالے دار کھانا پسند ہے۔",
+                      "تمہارا پسندیدہ کھانا کیا ہے؟"
+                    ],
+                    "persian": [
+                      "شما چه نوع غذایی را دوست دارید؟",
+                      "من غذای تند را دوست دارم.",
+                      "غذای مورد علاقه شما چیست؟"
+                    ]
+                  },
+                  {
+                    "context": "Talking about pets",
+                    "balochi": [
+                      "تئی گور ءَ پالتو جانورے است؟",
+                      "ہاں، منی یک کسانیں پسگے ہست.",
+                      "آئی ءِ نام چی انت؟"
+                    ],
+                    "english": [
+                      "Do you have a pet?",
+                      "Yes, I have a small dog.",
+                      "What is its name?"
+                    ],
+                    "urdu": [
+                      "کیا تمہارے گھر میں کوئی پالتو جانور ہے؟",
+                      "ہاں، میرے پاس ایک چھوٹا کتا ہے۔",
+                      "اس کا نام کیا ہے؟"
+                    ],
+                    "persian": [
+                      "آیا شما حیوان خانگی دارید؟",
+                      "بله، من یک سگ کوچک دارم.",
+                      "اسم آن چیست؟"
+                    ]
+                  },
+                  {
+                    "context": "Making apologies",
+                    "balochi": [
+                      "من ءَ معاف کن، من دیر کت.",
+                      "پرواہ نیست.",
+                      "باز مہربانی."
+                    ],
+                    "english": [
+                      "I'm sorry, I'm late.",
+                      "It's okay.",
+                      "Thank you very much."
+                    ],
+                    "urdu": [
+                      "مجھے معاف کر دیں، مجھے دیر ہو گئی۔",
+                      "کوئی بات نہیں۔",
+                      "بہت شکریہ۔"
+                    ],
+                    "persian": [
+                      "من را ببخشید، من دیر کردم.",
+                      "اشکالی ندارد.",
+                      "خیلی ممنون."
+                    ]
+                  },
+                  {
+                    "context": "Congratulating someone",
+                    "balochi": [
+                      "ترا مبارک بات!",
+                      "چہ چیز ءِ واستہ؟",
+                      "تئی نوکیں کار ءِ واستہ."
+                    ],
+                    "english": [
+                      "Congratulations!",
+                      "For what?",
+                      "For your new job."
+                    ],
+                    "urdu": [
+                      "آپ کو مبارک ہو!",
+                      "کس چیز کے لیے؟",
+                      "آپ کی نئی نوکری کے لیے۔"
+                    ],
+                    "persian": [
+                      "به شما تبریک می‌گویم!",
+                      "برای چی؟",
+                      "برای شغل جدیدتان."
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Setting a timer",
+                    "balochi": [
+                      "پنج منٹ ءِ واستہ یک ٹائمرے بہ دے.",
+                      "شروع بہ بیت؟",
+                      "ہاں، شروع کن."
+                    ],
+                    "english": [
+                      "Set a timer for five minutes.",
+                      "Start it?",
+                      "Yes, start it."
+                    ],
+                    "urdu": [
+                      "پانچ منٹ کے لیے ایک ٹائمر سیٹ کریں۔",
+                      "شروع کریں؟",
+                      "ہاں، شروع کریں۔"
+                    ],
+                    "persian": [
+                      "یک تایمر برای پنج دقیقه تنظیم کن.",
+                      "شروعش کنم؟",
+                      "بله، شروع کن."
+                    ]
+                  },
+                  {
+                    "context": "Adding an event to the calendar",
+                    "balochi": [
+                      "باندا ساعت دو ءَ یک ملاقاتے کیلنڈر ءَ درج کن.",
+                      "چہ ملاقاتے؟",
+                      "ڈاکٹر ءَ گوں ملاقات."
+                    ],
+                    "english": [
+                      "Add a meeting to the calendar for tomorrow at 2 o'clock.",
+                      "What meeting?",
+                      "Meeting with the doctor."
+                    ],
+                    "urdu": [
+                      "کل دو بجے کی ایک ملاقات کیلنڈر میں شامل کریں۔",
+                      "کون سی ملاقات؟",
+                      "ڈاکٹر کے ساتھ ملاقات۔"
+                    ],
+                    "persian": [
+                      "یک جلسه را برای فردا ساعت دو به تقویم اضافه کن.",
+                      "چه جلسه‌ای؟",
+                      "جلسه با دکتر."
+                    ]
+                  },
+                  {
+                    "context": "Making a phone call",
+                    "balochi": [
+                      "دوست ءَ ٹیلیفون کن.",
+                      "چہ دوست ءَ؟",
+                      "علی ءَ ٹیلیفون کن."
+                    ],
+                    "english": [
+                      "Make a phone call to a friend.",
+                      "Which friend?",
+                      "Call Ali."
+                    ],
+                    "urdu": [
+                      "ایک دوست کو فون کریں۔",
+                      "کس دوست کو؟",
+                      "علی کو فون کریں۔"
+                    ],
+                    "persian": [
+                      "با یک دوست تماس بگیر.",
+                      "با کدام دوست؟",
+                      "با علی تماس بگیر."
+                    ]
+                  },
+                  {
+                    "context": "Opening an app",
+                    "balochi": [
+                      "وٹس ایپ پچ کن.",
+                      "پچ بوت.",
+                      "مہربانی."
+                    ],
+                    "english": [
+                      "Open WhatsApp.",
+                      "It's open.",
+                      "Thank you."
+                    ],
+                    "urdu": [
+                      "واٹس ایپ کھولیں۔",
+                      "کھل گیا۔",
+                      "شکریہ۔"
+                    ],
+                    "persian": [
+                      "واتساپ را باز کن.",
+                      "باز شد.",
+                      "ممنون."
+                    ]
+                  }
+                ],
+                "technical_terminology": {
+                  "internet": [
+                    {
+                      "balochi": [
+                        "ویب سائٹ انٹرنیٹ ءِ یک صفحہ ات",
+                        "ای میل الیکٹرانک پوسٹ ات",
+                        "ڈاؤن لوڈ انٹرنیٹ ءَ چہ فائل زورگ ات"
+                      ],
+                      "english": [
+                        "A website is a page on the internet",
+                        "Email is electronic post",
+                        "Download is retrieving a file from the internet"
+                      ],
+                      "urdu": [
+                        "ویب سائٹ انٹرنیٹ کا ایک صفحہ ہے۔",
+                        "ای میل الیکٹرانک پوسٹ ہے۔",
+                        "ڈاؤن لوڈ انٹرنیٹ سے فائل حاصل کرنا ہے۔"
+                      ],
+                      "persian": [
+                        "وب‌سایت یک صفحه در اینترنت است.",
+                        "ایمیل پست الکترونیکی است.",
+                        "بارگیری دریافت یک فایل از اینترنت است."
+                      ]
+                    }
+                  ]
+                },
+                "dialectal_variations": {}
+              }
+            },
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Planning a party",
+                    "balochi": [
+                      "ما یک پارٹی ءِ منصوبہ بندگ ءَ ایں.",
+                      "کجا بہ بیت؟",
+                      "منی لوگ ءَ وش بیت.",
+                      "چہ وھد ءَ؟",
+                      "ہفتہ ءِ آخر ءَ."
+                    ],
+                    "english": [
+                      "We're planning a party.",
+                      "Where should it be?",
+                      "My house would be good.",
+                      "What time?",
+                      "At the weekend."
+                    ],
+                    "urdu": [
+                      "ہم ایک پارٹی کی منصوبہ بندی کر رہے ہیں۔",
+                      "کہاں ہونی چاہیے؟",
+                      "میرا گھر اچھا رہے گا۔",
+                      "کس وقت؟",
+                      "ہفتے کے آخر میں۔"
+                    ],
+                    "persian": [
+                      "ما در حال برنامه‌ریزی یک مهمانی هستیم.",
+                      "کجا باشد؟",
+                      "خانه من خوب خواهد بود.",
+                      "چه ساعتی؟",
+                      "در آخر هفته."
+                    ]
+                  },
+                  {
+                    "context": "Talking about a problem with a device",
+                    "balochi": [
+                      "منی ٹیلیفون کار نہ کنت.",
+                      "چہ مشکلے ہست؟",
+                      "اسکرین بند بوتگ.",
+                      "تو آئی ءَ مرمت کتگ؟",
+                      "نہ، من نہ زانت"
+                    ],
+                    "english": [
+                      "My phone is not working.",
+                      "What's the problem?",
+                      "The screen is frozen.",
+                      "Have you tried to fix it?",
+                      "No, I don't know how."
+                    ],
+                    "urdu": [
+                      "میرا فون کام نہیں کر رہا ہے۔",
+                      "کیا مسئلہ ہے؟",
+                      "اسکرین فریز ہو گئی ہے۔",
+                      "کیا تم نے اسے ٹھیک کرنے کی کوشش کی ہے؟",
+                      "نہیں، میں نہیں جانتا۔"
+                    ],
+                    "persian": [
+                      "تلفن من کار نمی‌کند.",
+                      "مشکل چیست؟",
+                      "صفحه نمایش یخ زده است.",
+                      "آیا سعی کرده‌ای آن را تعمیر کنی؟",
+                      "نه، من نمی‌دانم."
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Setting a recurring reminder (handling ambiguity)",
+                    "balochi": [
+                      "ہر روچ دوا ءِ یاد دہانی بہ دے.",
+                      "سحر ءَ یا شپ ءَ؟",
+                      "سحر ءَ، ساعت ہشت ءَ."
+                    ],
+                    "english": [
+                      "Set a reminder for medicine every day.",
+                      "In the morning or evening?",
+                      "In the morning, at 8 o'clock."
+                    ],
+                    "urdu": [
+                      "ہر روز دوا کی یاد دہانی سیٹ کریں۔",
+                      "صبح یا شام کو؟",
+                      "صبح کو، آٹھ بجے۔"
+                    ],
+                    "persian": [
+                      "یک یادآوری برای دارو هر روز تنظیم کن.",
+                      "صبح یا شب؟",
+                      "صبح، ساعت هشت."
+                    ]
+                  },
+                  {
+                    "context": "Multi-turn interaction: Checking the weather and then setting a reminder",
+                    "balochi": [
+                      "مرچی ءِ موسم چطور انت؟",
+                      "باران بیت.",
+                      "گڑا من ءَ یاد دہانی بہ دے کہ چھتری ءَ بہ براں.",
+                      "چہ وھد ءَ؟",
+                      "ساعت نہہ ءَ."
+                    ],
+                    "english": [
+                      "How is the weather today?",
+                      "It's raining.",
+                      "Then remind me to take an umbrella.",
+                      "What time?",
+                      "At 9 o'clock."
+                    ],
+                    "urdu": [
+                      "آج موسم کیسا ہے؟",
+                      "بارش ہو رہی ہے۔",
+                      "پھر مجھے یاد دہانی کرائیں کہ چھتری لے جاؤں۔",
+                      "کس وقت؟",
+                      "نو بجے۔"
+                    ],
+                    "persian": [
+                      "هوا امروز چطور است؟",
+                      "باران می‌بارد.",
+                      "پس به من یادآوری کن که چتر ببرم.",
+                      "چه ساعتی؟",
+                      "ساعت نه."
+                    ]
+                  },
+                  {
+                    "context": "Handling an error/misunderstanding",
+                    "balochi": [
+                      "موسیقی بجن.",
+                      "چہ قسم ءِ موسیقی؟",
+                      "لالہ.",
+                      "من اے قسم ءِ موسیقی ءَ نہ زاناں. دگہ چیزے لوٹیت؟",
+                      "پاپ موسیقی بجن."
+                    ],
+                    "english": [
+                      "Play music.",
+                      "What kind of music?",
+                      "Laleh.",
+                      "I don't know that type of music. Do you want something else?",
+                      "Play pop music."
+                    ],
+                    "urdu": [
+                      "موسیقی بجائیں۔",
+                      "کس قسم کی موسیقی؟",
+                      "لالہ۔",
+                      "میں اس قسم کی موسیقی نہیں جانتا۔ کیا آپ کچھ اور چاہتے ہیں؟",
+                      "پاپ موسیقی بجائیں۔"
+                    ],
+                    "persian": [
+                      "موسیقی پخش کن.",
+                      "چه نوع موسیقی؟",
+                      "لاله.",
+                      "من این نوع موسیقی را نمی‌شناسم. چیز دیگری می‌خواهید؟",
+                      "موسیقی پاپ پخش کن."
+                    ]
+                  }
+                ],
+                "technical_terminology": {
+                  "software_development": [
+                    {
+                      "balochi": [
+                        "ڈی بگنگ پروگرام ءِ غلطیاں گیشینگ ءِ عمل ات",
+                        "کوڈنگ کمپیوٹر پروگرام نویسگ ءِ عمل ات",
+                        "الگوریتم مسئلہ ءِ حل ءِ واستہ ہدایات ءِ مجموعہ ات"
+                      ],
+                      "english": [
+                        "Debugging is the process of fixing errors in a program",
+                        "Coding is the process of writing computer programs",
+                        "An algorithm is a set of instructions for solving a problem"
+                      ],
+                      "urdu": [
+                        "ڈی بگنگ پروگرام میں غلطیوں کو ٹھیک کرنے کا عمل ہے۔",
+                        "کوڈنگ کمپیوٹر پروگرام لکھنے کا عمل ہے۔",
+                        "الگوریتم کسی مسئلے کو حل کرنے کے لیے ہدایات کا مجموعہ ہے۔"
+                      ],
+                      "persian": [
+                        "اشکال‌زدایی فرآیند رفع خطاها در یک برنامه است.",
+                        "کدنویسی فرآیند نوشتن برنامه‌های کامپیوتری است.",
+                        "الگوریتم مجموعه‌ای از دستورالعمل‌ها برای حل یک مسئله است."
+                      ]
+                    }
+                  ]
+                },
+                "dialectal_variations": {}
+              }
+            },
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Talking about a favorite movie",
+                    "balochi": [
+                      "تئی پسندیدہ فلم چی انت؟",
+                      "منی پسندیدہ فلم 'دی گارڈین' انت.",
+                      "چہ بارو ءَ انت؟",
+                      "اے یک ایکشن فلمے."
+                    ],
+                    "english": [
+                      "What is your favorite movie?",
+                      "My favorite movie is 'The Guardian'.",
+                      "What is it about?",
+                      "It's an action movie."
+                    ],
+                    "urdu": [
+                      "تمہاری پسندیدہ فلم کون سی ہے؟",
+                      "میری پسندیدہ فلم 'دی گارڈین' ہے۔",
+                      "یہ کس بارے میں ہے؟",
+                      "یہ ایک ایکشن فلم ہے۔"
+                    ],
+                    "persian": [
+                      "فیلم مورد علاقه شما چیست؟",
+                      "فیلم مورد علاقه من 'نگهبان' است.",
+                      "درباره چیست؟",
+                      "این یک فیلم اکشن است."
+                    ]
+                  },
+                  {
+                    "context": "Discussing weekend plans with friends (multi-turn)",
+                    "balochi": [
+                      "ہفتہ ءِ آخر ءَ چے کنیں؟",
+                      "ما کوہ ءَ رویں؟",
+                      "ہاں، باز وش بیت. کجا رویں؟",
+                      "مری ءَ رویں.",
+                      "باز جوان انت! کدی روانہ بہ ایں؟",
+                      "سحر ءَ ساعت نہہ ءَ."
+                    ],
+                    "english": [
+                      "What are we doing this weekend?",
+                      "Should we go to the mountains?",
+                      "Yes, that would be great. Where should we go?",
+                      "Let's go to Murree.",
+                      "Great! When should we leave?",
+                      "At 9 o'clock in the morning."
+                    ],
+                    "urdu": [
+                      "ہم اس ہفتے کے آخر میں کیا کر رہے ہیں؟",
+                      "کیا ہمیں پہاڑوں پر جانا چاہیے؟",
+                      "ہاں، یہ بہت اچھا ہوگا۔ ہمیں کہاں جانا چاہیے؟",
+                      "آئیں مری چلتے ہیں۔",
+                      "بہت خوب! ہمیں کب روانہ ہونا چاہیے؟",
+                      "صبح نو بجے۔"
+                    ],
+                    "persian": [
+                      "این آخر هفته چکار می‌کنیم؟",
+                      "آیا باید به کوهستان برویم؟",
+                      "بله، عالی خواهد بود. کجا برویم؟",
+                      "بیایید به مری برویم.",
+                      "عالیه! کی باید حرکت کنیم؟",
+                      "ساعت نه صبح."
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Performing a calculation",
+                    "balochi": [
+                      " پنزاہ ءَ سی ءَ گوں ضرب کن.",
+                      "چہ جوابے؟",
+                      "هزار و پانصد  چہ (چار سد ءُ پنجاہ  راست کنگ بوتگ)"
+                    ],
+                    "english": [
+                      "Multiply 50 by 30.",
+                      "What's the answer?",
+                      "1500 (corrected from 450)."
+                    ],
+                    "urdu": [
+                      "پچاس کو تیس سے ضرب دیں۔",
+                      "کیا جواب ہے؟",
+                      "پندرہ سو (450 سے درست کیا گیا)۔"
+                    ],
+                    "persian": [
+                      "۵۰ را در ۳۰ ضرب کن.",
+                      "جواب چیست؟",
+                      "هزار و پانصد (از ۴۵۰ تصحیح شد)."
+                    ]
+                  },
+                  {
+                    "context": "Setting a timer for a specific task",
+                    "balochi": [
+                      "پاستہ پچگ ءِ واستہ بیست منٹ ءِ ٹائمر بہ دے.",
+                      "شروع بہ بیت؟",
+                      "ہاں."
+                    ],
+                    "english": [
+                      "Set a timer for 20 minutes for cooking pasta.",
+                      "Start it?",
+                      "Yes."
+                    ],
+                    "urdu": [
+                      "پاستا پکانے کے لیے بیس منٹ کا ٹائمر سیٹ کریں۔",
+                      "شروع کریں؟",
+                      "ہاں۔"
+                    ],
+                    "persian": [
+                      "یک تایمر ۲۰ دقیقه‌ای برای پختن پاستا تنظیم کن.",
+                      "شروعش کنم؟",
+                      "بله."
+                    ]
+                  },
+                  {
+                    "context": "Controlling smart home devices (hypothetical)",
+                    "balochi": [
+                      "لیونگ روم ءِ روشنائی بند کن.",
+                      "بند بوت انت.",
+                      "مہربانی."
+                    ],
+                    "english": [
+                      "Turn off the lights in the living room.",
+                      "They're off.",
+                      "Thank you."
+                    ],
+                    "urdu": [
+                      "لیونگ روم کی لائٹس بند کر دیں۔",
+                      "بند ہو گئیں۔",
+                      "شکریہ۔"
+                    ],
+                    "persian": [
+                      "چراغ‌های اتاق نشیمن را خاموش کن.",
+                      "خاموش شدند.",
+                      "ممنون."
+                    ]
+                  },
+                  {
+                    "context": "Playing a specific song/artist (hypothetical)",
+                    "balochi": [
+                      "عاطف اسلم ءِ گانا بہ جن اِت۔",
+                      "کجام گانا؟",
+                      "تری میری ءَ بہ جن اِت"
+                    ],
+                    "english": [
+                      "Play songs by Atif Aslam.",
+                      "Which song?",
+                      "Play 'Teri Meri'."
+                    ],
+                    "urdu": [
+                      "عاطف اسلم کے گانے بجائیں۔",
+                      "کون سا گانا؟",
+                      "'تیری میری' بجائیں۔"
+                    ],
+                    "persian": [
+                      "آهنگ‌هایی از عاطف اسلم پخش کن.",
+                      "کدام آهنگ؟",
+                      "'تیری میری' را پخش کن."
+                    ]
+                  },
+                  {
+                    "context": "Answering a general knowledge question",
+                    "balochi": [
+                      "فرانس ءِ دارالحکومت چی انت؟",
+                      "پیرس.",
+                      "باز جوان."
+                    ],
+                    "english": [
+                      "What is the capital of France?",
+                      "Paris.",
+                      "Very good."
+                    ],
+                    "urdu": [
+                      "فرانس کا دارالحکومت کیا ہے؟",
+                      "پیرس۔",
+                      "بہت خوب۔"
+                    ],
+                    "persian": [
+                      "پایتخت فرانسه چیست؟",
+                      "پاریس.",
+                      "خیلی خوب."
+                    ]
+                  }
+                ],
+                "technical_terminology": {
+                  "geography": [
+                    {
+                      "balochi": [
+                        "کوہ زمین ءِ جہل ءِ مزنیں طبیعی بلندی یے",
+                        "دریا یک مزنیں طبیعی آپ ءِ رودراتک اِنت",
+                        "صحرا گرم ءُ خشکیں جاگہ ات"
+                      ],
+                      "english": [
+                        "A mountain is a large natural elevation of the earth's surface",
+                        "A river is a large natural stream of water",
+                        "A desert is a dry, barren area of land"
+                      ],
+                      "urdu": [
+                        "پہاڑ زمین کی سطح کی ایک بڑی قدرتی بلندی ہے۔",
+                        "دریا پانی کا ایک بڑا قدرتی ذخیرہ ہے۔",
+                        "صحرا زمین کا ایک خشک، بنجر علاقہ ہے۔"
+                      ],
+                      "persian": [
+                        "کوه یک برآمدگی طبیعی بزرگ از سطح زمین است.",
+                        "رودخانه یک جریان طبیعی بزرگ آب است.",
+                        "بیابان یک منطقه خشک و بی‌آب از زمین است."
+                      ]
+                    }
+                  ]
+                },
+                "dialectal_variations": {}
+              }
+            },
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Giving and receiving compliments",
+                    "balochi": [
+                      "تئی لباس باز جوان انت.",
+                      "باز مہربانی، تئی ہم باز وش انت.",
+                      "رنگ ہم باز جوان انت."
+                    ],
+                    "english": [
+                      "Your dress is very nice.",
+                      "Thank you very much, yours is also very beautiful.",
+                      "The color is also very nice."
+                    ],
+                    "urdu": [
+                      "آپ کا لباس بہت خوبصورت ہے۔",
+                      "بہت شکریہ، آپ کا بھی بہت اچھا ہے۔",
+                      "رنگ بھی بہت اچھا ہے۔"
+                    ],
+                    "persian": [
+                      "لباس شما خیلی زیباست.",
+                      "خیلی ممنون، لباس شما هم خیلی زیباست.",
+                      "رنگ آن هم خیلی زیباست."
+                    ]
+                  },
+                  {
+                    "context": "Discussing a news story (with opinions)",
+                    "balochi": [
+                      "تو نوکیں خبر ونتگ؟",
+                      "ہاں، باز افسوسناک ات.",
+                      "منی خیال ءَ حکومت باید گیشتر کار بہ کنت.",
+                      "ہاں، تو راست گشگ ءَ ئے."
+                    ],
+                    "english": [
+                      "Have you read the latest news?",
+                      "Yes, it was very sad.",
+                      "In my opinion, the government should do more.",
+                      "Yes, you are right."
+                    ],
+                    "urdu": [
+                      "کیا تم نے تازہ ترین خبر پڑھی ہے؟",
+                      "ہاں، یہ بہت افسوسناک تھی۔",
+                      "میری رائے میں حکومت کو مزید کام کرنا چاہیے۔",
+                      "ہاں، تم صحیح کہہ رہے ہو۔"
+                    ],
+                    "persian": [
+                      "آیا شما آخرین خبر را خوانده‌اید؟",
+                      "بله، خیلی ناراحت‌کننده بود.",
+                      "به نظر من، دولت باید بیشتر کار کند.",
+                      "بله، شما درست می‌گویید."
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Setting a reminder with specific details",
+                    "balochi": [
+                      "من ءَ باندا ساعت دہ ءَ یاد دہانی بہ دے کہ ڈاکٹر ءَ ٹیلیفون بہ کن آں.",
+                      "ٹھیک انت، یاد دہانی درج بوت."
+                    ],
+                    "english": [
+                      "Remind me tomorrow at 10 o'clock to call the doctor.",
+                      "Okay, the reminder is set."
+                    ],
+                    "urdu": [
+                      "مجھے کل دس بجے یاد دہانی کرائیں کہ ڈاکٹر کو فون کروں۔",
+                      "ٹھیک ہے، یاد دہانی سیٹ ہو گئی ہے۔"
+                    ],
+                    "persian": [
+                      "به من فردا ساعت ده یادآوری کن که با دکتر تماس بگیرم.",
+                      "باشه، یادآوری تنظیم شد."
+                    ]
+                  },
+                  {
+                    "context": "Handling a complex calculation with units",
+                    "balochi": [
+                      "پنج کلو گرام ءَ دو میٹر ءَ گوں ضرب کن.",
+                      "من اے وڑیں حساب ءَ سرپد نہ باں. گیشتر وضاحت بدے.",
+                      "من لوٹاں کہ پنج کلو گرام ءَ دو ءَ گوں ضرب بہ کن آں.",
+                      "گڑا جواب دہ کلو گرام انت."
+                    ],
+                    "english": [
+                      "Multiply five kilograms by two meters.",
+                      "I don't understand this kind of calculation. Please explain further.",
+                      "I want to multiply five kilograms by two.",
+                      "Then the answer is ten kilograms."
+                    ],
+                    "urdu": [
+                      "پانچ کلوگرام کو دو میٹر سے ضرب دیں۔",
+                      "میں اس طرح کے حساب کو نہیں سمجھتا۔ براہ کرم مزید وضاحت کریں۔",
+                      "میں پانچ کلوگرام کو دو سے ضرب دینا چاہتا ہوں۔",
+                      "تو جواب دس کلوگرام ہے۔"
+                    ],
+                    "persian": [
+                      "پنج کیلوگرم را در دو متر ضرب کن.",
+                      "من این نوع محاسبه را نمی‌فهمم. لطفاً بیشتر توضیح دهید.",
+                      "من می‌خواهم پنج کیلوگرم را در دو ضرب کنم.",
+                      "پس جواب ده کیلوگرم است."
+                    ]
+                  },
+                  {
+                    "context": "Controlling multiple smart home devices",
+                    "balochi": [
+                      "لیونگ روم ءِ روشنائی ءُ ٹی وی ءَ بند کن.",
+                      "بند بوت انت."
+                    ],
+                    "english": [
+                      "Turn off the lights and the TV in the living room.",
+                      "They're off."
+                    ],
+                    "urdu": [
+                      "لیونگ روم کی لائٹس اور ٹی وی بند کر دیں۔",
+                      "بند ہو گئے۔"
+                    ],
+                    "persian": [
+                      "چراغ‌ها و تلویزیون اتاق نشیمن را خاموش کن.",
+                      "خاموش شدند."
+                    ]
+                  }
+                ],
+                "technical_terminology": {
+                  "physics": [
+                    {
+                      "balochi": [
+                        "زور چیزے ءَ حرکت دیگ ءِ صلاحیت ات",
+                        "رفتار وقت ءِ حساب ءَ جاگہ ءِ بدلی ات",
+                        "وزن زمین ءِ کشش ءِ زور ات"
+                      ],
+                      "english": [
+                        "Force is the ability to cause a change in motion",
+                        "Velocity is the rate of change of position with respect to time",
+                        "Weight is the force of gravity on an object"
+                      ],
+                      "urdu": [
+                        "قوت حرکت میں تبدیلی پیدا کرنے کی صلاحیت ہے۔",
+                        "رفتار وقت کے لحاظ سے جگہ کی تبدیلی کی شرح ہے۔",
+                        "وزن کسی چیز پر کشش ثقل کی قوت ہے۔"
+                      ],
+                      "persian": [
+                        "نیرو توانایی ایجاد تغییر در حرکت است.",
+                        "سرعت میزان تغییر موقعیت نسبت به زمان است.",
+                        "وزن نیروی گرانش بر یک جسم است."
+                      ]
+                    }
+                  ]
+                },
+                "dialectal_variations": {}
+              }
+            },
+            {
+              "dataset_metadata": {},
+              "language_pair_statistics": {},
+              "conversation_samples": {
+                "chat_scenarios": [
+                  {
+                    "context": "Talking about a hobby in detail",
+                    "balochi": [
+                      "تئی شوق چی انت؟",
+                      "منی شوق فوٹوگرافی انت.",
+                      "واہ، باز جوان انت! چہ کیمرہ ءَ کارمرز کن ئے؟",
+                      "ہاں، من کینن ءِ کیمرہ ءَ کارمرز کن آں.",
+                      "باز وش انت."
+                    ],
+                    "english": [
+                      "What is your hobby?",
+                      "My hobby is photography.",
+                      "Wow, that's great! What kind of camera do you use?",
+                      "Yes, I use a Canon camera.",
+                      "That's cool."
+                    ],
+                    "urdu": [
+                      "تمہارا شوق کیا ہے؟",
+                      "میرا شوق فوٹوگرافی ہے۔",
+                      "واہ، بہت خوب! تم کس قسم کا کیمرہ استعمال کرتے ہو؟",
+                      "ہاں، میں کینن کا کیمرہ استعمال کرتا ہوں۔",
+                      "بہت اچھا ہے۔"
+                    ],
+                    "persian": [
+                      "سرگرمی مورد علاقه شما چیست؟",
+                      "سرگرمی مورد علاقه من عکاسی است.",
+                      "وای، خیلی عالیه! از چه نوع دوربینی استفاده می‌کنی؟",
+                      "بله، من از یک دوربین کانن استفاده می‌کنم.",
+                      "خیلی خوبه."
+                    ]
+                  },
+                  {
+                    "context": "Making suggestions for a weekend outing",
+                    "balochi": [
+                      "ہفتہ ءِ آخر ءَ کجا رویں؟",
+                      "ما بیچ ءَ رویں؟",
+                      "ہاں، باز وش بیت! چہ بیچ ءَ؟",
+                      "گوادر ءِ بیچ باز جوان انت.",
+                      "ٹھیک انت، گوادر ءَ رویں."
+                    ],
+                    "english": [
+                      "Where should we go this weekend?",
+                      "Should we go to the beach?",
+                      "Yes, that would be great! Which beach?",
+                      "Gwadar beach is very beautiful.",
+                      "Okay, let's go to Gwadar."
+                    ],
+                    "urdu": [
+                      "ہمیں اس ہفتے کے آخر میں کہاں جانا چاہیے؟",
+                      "کیا ہمیں ساحل پر جانا چاہیے؟",
+                      "ہاں، یہ بہت اچھا ہوگا۔ کس ساحل پر؟",
+                      "گوادر کا ساحل بہت خوبصورت ہے۔",
+                      "ٹھیک ہے، گوادر چلتے ہیں۔"
+                    ],
+                    "persian": [
+                      "این آخر هفته کجا برویم؟",
+                      "آیا باید به ساحل برویم؟",
+                      "بله، عالی خواهد بود! کدام ساحل؟",
+                      "ساحل گوادر خیلی زیباست.",
+                      "باشه، به گوادر برویم."
+                    ]
+                  }
+                ],
+                "assistant_interactions": [
+                  {
+                    "context": "Setting a reminder with location",
+                    "balochi": [
+                      "وھدے کہ من مارکیٹ ءَ بہ رس آں، من ءَ یاد دہانی بہ دے کہ وراک بہ زوراں.",
+                      "ٹھیک انت، یاد دہانی درج بوت."
+                    ],
+                    "english": [
+                      "Remind me to buy groceries when I arrive at the market.",
+                      "Okay, the reminder is set."
+                    ],
+                    "urdu": [
+                      "جب میں مارکیٹ پہنچوں تو مجھے یاد دہانی کرائیں کہ گروسری خرید لوں۔",
+                      "ٹھیک ہے، یاد دہانی سیٹ ہو گئی ہے۔"
+                    ],
+                    "persian": [
+                      "وقتی به بازار رسیدم، به من یادآوری کن که مواد غذایی بخرم.",
+                      "باشه، یادآوری تنظیم شد."
+                    ]
+                  },
+                  {
+                    "context": "Asking for information about a specific topic",
+                    "balochi": [
+                      "بلوچستان ءِ تاریخ ءِ بارو ءَ من ءَ گش ات.",
+                      "بلوچستان ءِ تاریخ باز پر ازیں انت. چہ دور ءَ گشگ لوٹیت؟",
+                      "قدیمیں تاریخ."
+                    ],
+                    "english": [
+                      "Tell me about the history of Balochistan.",
+                      "The history of Balochistan is very long. Which period do you want to know about?",
+                      "Ancient history."
+                    ],
+                    "urdu": [
+                      "مجھے بلوچستان کی تاریخ کے بارے میں بتائیں۔",
+                      "بلوچستان کی تاریخ بہت طویل ہے۔ آپ کس دور کے بارے میں جاننا چاہتے ہیں؟",
+                      "قدیم تاریخ۔"
+                    ],
+                    "persian": [
+                      "در مورد تاریخ بلوچستان به من بگویید.",
+                      "تاریخ بلوچستان بسیار طولانی است. در مورد کدام دوره می‌خواهید بدانید؟",
+                      "تاریخ باستان."
+                    ]
+                  },
+                  {
+                    "context": "Handling a request with missing information",
+                    "balochi": [
+                      "ٹیلیفون کن.",
+                      "چہ کس ءَ؟",
+                      "منی پت ءَ.",
+                      "تئی پت ءِ نمبر چی انت؟"
+                    ],
+                    "english": [
+                      "Make a phone call.",
+                      "To whom?",
+                      "To my father.",
+                      "What is your father's number?"
+                    ],
+                    "urdu": [
+                      "فون کریں۔",
+                      "کس کو؟",
+                      "میرے والد کو۔",
+                      "آپ کے والد کا نمبر کیا ہے؟"
+                    ],
+                    "persian": [
+                      "تماس بگیر.",
+                      "با چه کسی؟",
+                      "با پدرم.",
+                      "شماره پدرت چیست؟"
+                    ]
+                  }
+                ],
+                "technical_terminology": {
+                  "literature": [
+                    {
+                      "balochi": [
+                        "شعر احساسات ءِ اظہار ات",
+                        "ناول یک دراجیں کسہے",
+                        "ڈرامہ اسٹیج ءَ پیش دارگ ءِ واستہ ات"
+                      ],
+                      "english": [
+                        "Poetry is the expression of feelings",
+                        "A novel is a long story",
+                        "A drama is a play for the stage"
+                      ],
+                      "urdu": [
+                        "شاعری جذبات کا اظہار ہے۔",
+                        "ناول ایک لمبی کہانی ہے۔",
+                        "ڈرامہ اسٹیج پر پیش کرنے کے لیے ہوتا ہے۔"
+                      ],
+                      "persian": [
+                        "شعر بیان احساسات است.",
+                        "رمان یک داستان طولانی است.",
+                        "نمایشنامه یک نمایش برای صحنه است."
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

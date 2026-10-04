@@ -1,10 +1,13 @@
 # Multilingual Prompt Repetition Research: Full Context Memory
 **Paper Reference:** arXiv:2512.14982 (*Leviathan, Kalman, Matias — Google Research, Dec 2025*)  
-**Project Scope:** Replicating & extending prompt repetition across four Right-to-Left (RTL) low-resource Pakistani languages:
+**Project Scope:** Replicating & extending prompt repetition across 7 Right-to-Left (RTL) languages:
 1. **Punjabi (Shahmukhi script)** (`pa`)
 2. **Urdu** (`ur`)
 3. **Pashto** (`ps`)
 4. **Balochi** (`bal`)
+5. **Arabic** (`ar`)
+6. **Persian/Farsi** (`fa`)
+7. **Sindhi** (`sd`)
 
 ---
 

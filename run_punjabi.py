@@ -115,8 +115,8 @@ def _parse_args():
         epilog=__doc__,
     )
     p.add_argument(
-        "--language", default="pa", choices=["pa", "ur", "ps", "bal"],
-        help="Language to benchmark: pa=Punjabi Shahmukhi (default), ur=Urdu, ps=Pashto, bal=Balochi",
+        "--language", default="pa", choices=["pa", "ur", "ps", "bal", "ar", "fa", "sd"],
+        help="Language to benchmark: pa=Punjabi Shahmukhi, ur=Urdu, ps=Pashto, bal=Balochi, ar=Arabic, fa=Persian, sd=Sindhi",
     )
     p.add_argument(
         "--models", nargs="+", default=["gpt-4o-mini"],
@@ -189,6 +189,18 @@ def main():
         from balochi_datasets_loader import build_dataset
         from experiment_runner import SYSTEM_PROMPT_BAL as system_prompt
         lang_label = "Balochi"
+    elif args.language == "ar":
+        from arabic_datasets_loader import build_dataset
+        from experiment_runner import SYSTEM_PROMPT_AR as system_prompt
+        lang_label = "Arabic"
+    elif args.language == "fa":
+        from persian_datasets_loader import build_dataset
+        from experiment_runner import SYSTEM_PROMPT_FA as system_prompt
+        lang_label = "Persian (Farsi)"
+    elif args.language == "sd":
+        from sindhi_datasets_loader import build_dataset
+        from experiment_runner import SYSTEM_PROMPT_SD as system_prompt
+        lang_label = "Sindhi"
     else:
         from punjabi_datasets_loader import build_dataset
         from experiment_runner import SYSTEM_PROMPT_PA as system_prompt

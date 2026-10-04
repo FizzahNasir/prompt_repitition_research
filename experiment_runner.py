@@ -75,6 +75,17 @@ SYSTEM_PROMPT_PS = "مستقیم ځواب ورکړئ. خپل فکر مه تشر�
 # System prompt for Balochi experiments (same intent, Balochi phrasing)
 SYSTEM_PROMPT_BAL = "تچک ءَ پسو بہ دئے. وتی ھیال ءَ مَہ درشان کن. گام پہ گام مَہ جیڑ."
 
+# System prompt for Arabic experiments (same intent, Arabic phrasing)
+SYSTEM_PROMPT_AR = "أجب بإيجابية مباشرة. لا تشرح تفكيرك. لا تتخطى خطوة بخطوة."
+
+# System prompt for Persian (Farsi) experiments (same intent, Persian phrasing)
+SYSTEM_PROMPT_FA = "فقط به طور مستقیم پاسخ بده. فكر خود را توضيح نده. قدم به قدم فكر نكن."
+
+# System prompt for Sindhi experiments (same intent, Sindhi phrasing)
+# Note: Authoritative source for Sindhi non-reasoning prompt not yet verified.
+# Using template consistent with other RTL languages until native speaker validates.
+SYSTEM_PROMPT_SD = "مستقیم جواب ڏيو. اپنی سوچ کی وضاحت نه کنو. قدم سان قدم تارڪ نه کنو."
+
 # First repeat-bridge phrase used in verbose and triple methods
 REPEAT_PHRASES = {
     "en":  "Please re-read the above and answer:",
@@ -84,6 +95,7 @@ REPEAT_PHRASES = {
     "sd":  "مهرباني ڪري مٿيون ٻيهر پڙهو ۽ جواب ڏيو:",      # Sindhi
     "ps":  "مهرباني وکړئ پورته بیا ولولئ او ځواب ورکړئ:",   # Pashto
     "bal": "مهربانی کن بالا دوباره بخوان و جواب بده:",       # Balochi
+    "fa":  "لطفاً دوباره بالا را بخوانید و پاسخ دهید:",      # Persian/Farsi
 }
 
 # Second bridge phrase used only in the triple (×3) method
@@ -95,6 +107,7 @@ TRIPLE_SECOND_PHRASES = {
     "sd":  "هڪ ٻي ڀيرو:",
     "ps":  "یوه بله ځل:",
     "bal": "یک بار دیگر:",
+    "fa":  "یک بار دیگر:",
 }
 
 

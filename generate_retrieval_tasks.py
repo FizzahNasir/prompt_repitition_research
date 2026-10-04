@@ -1,5 +1,7 @@
 """
-Generates retrieval task datasets for Punjabi (Shahmukhi) and Urdu:
+Generates retrieval task datasets for 7 RTL languages:
+  Punjabi, Urdu, Pashto, Balochi, Arabic, Persian, Sindhi
+
   - NameIndex   (100 items): 50-name list, ask for name at position N
   - MiddleMatch (100 items): 40-name list from 10-name pool, ask for name between A and B
   - ScriptMixed  (20 items): English instruction + native-script name list
@@ -94,6 +96,66 @@ BALOCHI_10_POOL = [
     "میر حمل", "عطا شاد", "میر گل خان", "مہرلب", "گل بی بی",
 ]
 
+# ── Arabic Name Pools (Curated from common Arabic names) ───────────────────────
+
+ARABIC_50_NAMES = [
+    "محمد أحمد", "عائشة فاطمة", "عبدالله محمود", "سارة علي", "خالد حسين",
+    "مريم عبدالرحمن", "إبراهيم صالح", "زينب محمد", "يوسف خالد", "لمى عمر",
+    "أحمد ناصر", "فاطمة عمر", "عمر خليل", "مريم سالم", "يحيى فاروق",
+    "سمية علي", "عبدالعزيز راشد", "هدى عبدالنبي", "ناصر محمد", "جمال رحيم",
+    "شيماء رائد", "عثمان سعيد", "بديعة أمين", "نبيل صفاء", "منى ماجد",
+    "طلال كمال", "غادة صقر", "عادل نور", "سامي مسعد", "دينة فؤاد",
+    "ماجد ربيع", "بشرى عازر", "فاروق جابر", "ميرنا عبدالله", "كريم أيوب",
+    "لورا نزار", "أنس عبدالرازق", "داليا بهجت", "رائد قاسم", "إيمان مرسي",
+    "بكر ماجد", "آية عبدالعزيز", "حسين مصطفى", "نرمين طارق", "صلاح رمضان",
+    "هبة شريف", "مازن سامي", "سلمى عبدالحميد", "أمجد فؤاد", "ياروب فارس",
+]
+
+ARABIC_10_POOL = [
+    "محمد أحمد", "عائشة فاطمة", "عبدالله محمود", "سارة علي", "خالد حسين",
+    "عمر خليل", "يوسف خالد", "إبراهيم صالح", "زينب محمد", "فاطمة عمر",
+]
+
+# ── Persian/Farsi Name Pools (Curated from common Persian names) ─────────────────
+
+PERSIAN_50_NAMES = [
+    "علی رضا", "فاطمه حسینی", "حسین محمدی", "زینب کرمی", "محمد راد",
+    "مریم بهروزی", "رضا علیزاده", "سارا نادری", "عباس غفاری", "لیلا رستمی",
+    "حیدر عبداللهی", "نازنین شهابی", "امید فتاحی", "دانیال مهدوی", "ساناز حسینی",
+    "بهزاد میرزایی", "نگین صدوقی", "پارسا احمدی", "ندا کشاورزی", "سیاوش منصوری",
+    "پیشاوازی", "هیراد صفری", "ماندکا", "سحراب سادات", "تارا کریمی",
+    "بیژن شجاعی", "ریحانه غنی", "سهیل مرادی", "آرزو موسوی", "عماد جلالی",
+    "فرشته دانش", "کیان مهراد", "بهاره خوشرو", "نوید رنجبر", "مروارید دلتا",
+    "ایمان نیکا", "لیموزه شاطر", "غلامحسین دهقانی", "آتنا روحانی", "سینا پناهی",
+    "رناتا عسگری", "نرگس میرغفوری", "بوریس افشاری", "هدیث عزیزی", "پیمان ردا",
+    "دُرَیا بیات", "شهرزاد لطفی", "سپیدار خداپرست", "فاضل نگار", "ایمین کمالی",
+]
+
+PERSIAN_10_POOL = [
+    "علی رضا", "فاطمه حسینی", "حسین محمدی", "زینب کرمی", "محمد راد",
+    "مریم بهروزی", "رضا علیزاده", "سارا نادری", "عباس غفاری", "لیلا رستمی",
+]
+
+# ── Sindhi Name Pools (Curated from common Sindhi names) ────────────────────────
+
+SINDHI_50_NAMES = [
+    "علی محمد", "فاطمة سماد", "حسین خان", "زینب بچر", "محمد علی",
+    "مریم عبداللہ", "رضا حسینی", "سارة احمد", "عباس مولان", "لیلا راشد",
+    "حیدر على", "نازنین سید", "امید خاتون", "دانیال شاه", "ساناز ميمں",
+    "بهزاد مير", "نگین ابراهيم", "پارسا قاسم", "نادا موسي", "سياوش حسن",
+    "پیشاوازي", "هیراد محمد", "سحراب علي", "تارا احمد", "بيژن شاه",
+    "ریحانة غني", "سهیل مرادي", "آرزو موسوي", "عماد جلالي", "فرشته دانش",
+    "کیان مهراد", "بهاره خوشرو", "نوید رنجبر", "مروريد لطف", "ایمان نڪا",
+    "لیموزه شاطر", "غلامحسین دهقانی", "آتنا روحاني", "سينا پناغي", "رناتا عسگري",
+    "نرگس ميرغفوري", "بوريس افشاري", "هديث عزيزي", "پيمان ردا", "دوريا بيات",
+    "شهرزاد لطفي", "سپيدار خداپرست", "فاضل نگار", "ايمين کمالي", "موسوي شاه",
+]
+
+SINDHI_10_POOL = [
+    "علی محمد", "فاطمة سماد", "حسین خان", "زینب بچر", "محمد علی",
+    "مریم عبداللہ", "رضا حسینی", "سارة احمد", "عباس مولان", "لیلا راشد",
+]
+
 # ── Query templates ─────────────────────────────────────────────────────────────
 
 def nameindex_query(pos: int, lang: str) -> str:
@@ -109,6 +171,15 @@ def nameindex_query(pos: int, lang: str) -> str:
     elif lang == "bal":
         ordinal = "اولی" if pos == 1 else f"{pos}می"
         return f"تہر بند ءَ {ordinal} نام چے اِنت؟"
+    elif lang == "ar":
+        ordinal = "أول" if pos == 1 else f"{pos}م"
+        return f"في القائمة {ordinal} اسم ما هو؟"
+    elif lang == "fa":
+        ordinal = "اول" if pos == 1 else f"{pos}م"
+        return f"در لیست {ordinal} اسم چیست؟"
+    elif lang == "sd":
+        ordinal = "پہلا" if pos == 1 else f"{pos}واں"
+        return f"فہرست ۾ {ordinal} ناو کیا ہے؟"
     return f"What is the {pos} name?"
 
 
@@ -121,6 +192,12 @@ def middlematch_query(name_a: str, name_b: str, lang: str) -> str:
         return f"په لیست کې د {name_a} او {name_b} ترمنځ کوم نوم دی؟"
     elif lang == "bal":
         return f"تہر بند ءَ {name_a} ءُ {name_b} ءِ نیام ءَ چے نام اِنت؟"
+    elif lang == "ar":
+        return f"في القائمة ما اسم بين {name_a} و {name_b}؟"
+    elif lang == "fa":
+        return f"در لیست چه اسمی بین {name_a} و {name_b} است؟"
+    elif lang == "sd":
+        return f"فہرست ۾ {name_a} ۅر {name_b} کء اندر کیا ناو ہے؟"
     return f"What name is between {name_a} and {name_b}?"
 
 
@@ -357,6 +434,27 @@ def main():
             "names_50": BALOCHI_50_NAMES,
             "pool_10": BALOCHI_10_POOL,
         },
+        {
+            "lang": "ar",
+            "label": "Arabic",
+            "folder": "arabic",
+            "names_50": ARABIC_50_NAMES,
+            "pool_10": ARABIC_10_POOL,
+        },
+        {
+            "lang": "fa",
+            "label": "Persian",
+            "folder": "persian",
+            "names_50": PERSIAN_50_NAMES,
+            "pool_10": PERSIAN_10_POOL,
+        },
+        {
+            "lang": "sd",
+            "label": "Sindhi",
+            "folder": "sindhi",
+            "names_50": SINDHI_50_NAMES,
+            "pool_10": SINDHI_10_POOL,
+        },
     ]
 
     for cfg in configs:
@@ -375,7 +473,7 @@ def main():
         sm = gen_scriptmixed(cfg["names_50"], lang, n=20)
         save_xlsx(sm, out_dir / f"ScriptMixed_{label}.xlsx", f"ScriptMixed {label}")
 
-    print("\nDone. All retrieval task files written across all 4 languages.")
+    print("\nDone. All retrieval task files written across all 7 languages.")
 
 
 if __name__ == "__main__":
