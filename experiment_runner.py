@@ -36,15 +36,12 @@ except ImportError:
     _RAPIDFUZZ_AVAILABLE = False
 
 
-# ── Models ────────────────────────────────────────────────────────────────────
-# Local LLM models for CPU inference (transformers)
-# All are non-reasoning instruction-tuned models (from arXiv:2512.14982 reference)
+# ── Models ─────────────────────────────────────────────────────────────────────
+# Local LLM models for CPU/GPU inference (transformers)
+# All are non-reasoning instruction-tuned models per arXiv:2512.14982
+# Using open-access models (no gating) for Colab compatibility
 
 LOCAL_MODELS = [
-    "llama3.2-1b",
-    "llama3.2-3b",
-    "llama3.1-8b",
-    "qwen2.5-1.5b",
     "qwen2.5-3b",
     "qwen2.5-7b",
     "mistral-7b-v0.3",
@@ -524,7 +521,7 @@ def run_experiment(
                         row[method] = {"response": None, "correct": False, "error": str(e)}
                         if verbose:
                             print(f"      [{method:<12s}] [ERR] {e}")
-                    time.sleep(INTER_CALL_SLEEP)
+                    # Local inference - no rate limiting needed
 
                 results[model][sc].append(row)
                 # Write after every item — safe to interrupt and resume

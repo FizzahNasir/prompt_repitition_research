@@ -27,12 +27,12 @@ def main():
     )
     p.add_argument(
         "--model", choices=[
-            "llama3.2-1b", "llama3.2-3b", "llama3.1-8b",
             "qwen2.5-1.5b", "qwen2.5-3b", "qwen2.5-7b",
-            "mistral-7b-v0.3", "gemma2-2b"
+            "mistral-7b-v0.3", "gemma2-2b",
+            "llama3.2-1b", "llama3.2-3b", "llama3.1-8b"
         ],
-        default="llama3.2-3b",
-        help="Model to use (default: llama3.2-3b)",
+        default="qwen2.5-3b",
+        help="Model to use (default: qwen2.5-3b). Llama models require HuggingFace login.",
     )
     p.add_argument(
         "--methods", nargs="+",

@@ -35,10 +35,11 @@ def main():
         help="Language(s) to run (default: all)",
     )
     p.add_argument(
-        "--models", nargs="+", default=["llama3.2-3b"],
-        help="Local model key(s) to use (default: llama3.2-3b). "
-             "Options: llama3.2-1b, llama3.2-3b, llama3.1-8b, qwen2.5-1.5b, "
-             "qwen2.5-3b, qwen2.5-7b, mistral-7b-v0.3, gemma2-2b",
+        "--models", nargs="+", default=["qwen2.5-3b"],
+        help="Local model key(s) to use (default: qwen2.5-3b). "
+             "Open models: qwen2.5-1.5b, qwen2.5-3b, qwen2.5-7b, "
+             "mistral-7b-v0.3, gemma2-2b, llama3.2-1b, llama3.2-3b, llama3.1-8b "
+             "(Llama models require HF login)",
     )
     p.add_argument(
         "--methods", nargs="+",

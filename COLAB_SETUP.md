@@ -37,26 +37,26 @@ print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'C
 #### Option A: Run a single language with specific model (dry run first)
 ```python
 # Dry run to verify prompts build correctly
-!python run_all_languages.py --dry-run --language ar --model llama3.2-3b
+!python run_all_languages.py --dry-run --language ar --model qwen2.5-3b
 ```
 
 #### Option B: Run actual experiment on Arabic
 ```python
-!python run_all_languages.py --language ar --model llama3.2-3b --methods baseline repetition
+!python run_all_languages.py --language ar --model qwen2.5-3b --methods baseline repetition
 ```
 
 #### Option C: Run with smaller model for faster iteration
 ```python
-!python colab_run.py --language pa --model llama3.2-1b --methods baseline repetition
+!python colab_run.py --language pa --model qwen2.5-1.5b --methods baseline repetition
 ```
 
 #### Option D: Run all languages (sequential)
 ```python
 # This will take a long time on a single GPU
 # Better to run language-by-language
-!python run_all_languages.py --language ar --model llama3.2-3b
-!python run_all_languages.py --language ur --model llama3.2-3b
-!python run_all_languages.py --language fa --model llama3.2-3b
+!python run_all_languages.py --language ar --model qwen2.5-3b
+!python run_all_languages.py --language ur --model qwen2.5-3b
+!python run_all_languages.py --language fa --model qwen2.5-3b
 # etc.
 ```
 
@@ -74,14 +74,16 @@ print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'C
 ## Available Commands
 
 ### Models:
-- `llama3.2-1b` - Llama 3.2 1B Instruct (fastest)
-- `llama3.2-3b` - Llama 3.2 3B Instruct (recommended starting point)
-- `llama3.1-8b` - Llama 3.1 8B Instruct (best quality, slowest)
-- `qwen2.5-1.5b` - Qwen2.5 1.5B Instruct
-- `qwen2.5-3b` - Qwen2.5 3B Instruct
-- `qwen2.5-7b` - Qwen2.5 7B Instruct
-- `mistral-7b-v0.3` - Mistral 7B Instruct v0.3
-- `gemma2-2b` - Gemma 2 2B IT
+- `qwen2.5-1.5b` - Qwen2.5 1.5B Instruct (fastest, open)
+- `qwen2.5-3b` - Qwen2.5 3B Instruct (recommended starting point, open)
+- `qwen2.5-7b` - Qwen2.5 7B Instruct (best quality, open)
+- `mistral-7b-v0.3` - Mistral 7B Instruct v0.3 (open)
+- `gemma2-2b` - Gemma 2 2B IT (open)
+- `llama3.2-1b` - Llama 3.2 1B Instruct (requires HF login)
+- `llama3.2-3b` - Llama 3.2 3B Instruct (requires HF login)
+- `llama3.1-8b` - Llama 3.1 8B Instruct (requires HF login)
+
+**Note:** Qwen, Mistral, and Gemma models are open-access (no HuggingFace login required). Llama models are gated and need authentication.
 
 ### Methods:
 - `baseline` - Single query (no repetition)
@@ -102,13 +104,15 @@ print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'C
 
 | Model | 100 MCQ items | 250 Math items | 100 Retrieval items |
 |-------|---------------|----------------|---------------------|
-| Llama 3.2 1B | ~5 min | ~15 min | ~5 min |
-| Llama 3.2 3B | ~10 min | ~30 min | ~10 min |
-| Llama 3.1 8B | ~20 min | ~60 min | ~20 min |
+| Qwen2.5 1.5B | ~5 min | ~15 min | ~5 min |
+| Qwen2.5 3B | ~10 min | ~30 min | ~10 min |
+| Qwen2.5 7B | ~15 min | ~45 min | ~15 min |
+| Mistral 7B | ~15 min | ~45 min | ~15 min |
+| Gemma 2 2B | ~8 min | ~25 min | ~8 min |
 
 Total for all 7 languages with baseline + repetition methods:
 - 3B model: ~2-3 hours
-- 8B model: ~4-6 hours
+- 7B model: ~3-4 hours
 
 ## Notes:
 - All models are non-reasoning (instruction-tuned, not reasoning models)
