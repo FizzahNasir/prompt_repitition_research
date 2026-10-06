@@ -1,13 +1,13 @@
 """
 Multilingual Prompt Repetition Benchmark
 Extension of arXiv:2512.14982 for RTL / Low-resource Languages
-(Urdu, Punjabi-Shahmukhi, Sindhi, Balochi, Pashto, Arabic)
+(Arabic, Balochi, Pashto, Persian, Punjabi-Shahmukhi, Sindhi, Urdu)
 
 Implements:
-  5 prompt methods  : baseline, repetition, verbose, triple, padding
+  4 prompt methods  : baseline, repetition, cross_lingual_t1 (English bridge), cross_lingual_t2 (native bridge)
   10 scenario templates
   Task-specific evaluation : MCQ, Math, Retrieval
-  Resume-safe JSON output   (crash → resume from last saved item)
+  Resume-safe JSON output   (crash -> resume from last saved item)
   Win/loss analysis table
 
 Install: pip install litellm openai anthropic google-generativeai
@@ -37,66 +37,45 @@ except ImportError:
 
 
 # ── Models ────────────────────────────────────────────────────────────────────
+# Local LLM models for CPU inference (transformers)
+# All are non-reasoning instruction-tuned models (from arXiv:2512.14982 reference)
 
-TIER1_MODELS = [
-    "gpt-4o",
-    "gpt-4o-mini",
-    "gemini/gemini-2.0-flash",
-    "gemini/gemini-2.0-flash-lite",
-    "claude-sonnet-4-6",
-    "claude-haiku-4-5-20251001",
-    "deepseek/deepseek-chat",
+LOCAL_MODELS = [
+    "llama3.2-1b",
+    "llama3.2-3b",
+    "llama3.1-8b",
+    "qwen2.5-1.5b",
+    "qwen2.5-3b",
+    "qwen2.5-7b",
+    "mistral-7b-v0.3",
+    "gemma2-2b",
 ]
 
-# Seconds to sleep between API calls within one item.
-# Gemini free tier: 15 RPM → need ≥4s. Set to 4.5s to stay safely under the limit.
-# For paid-tier OpenAI/Gemini this can be reduced to 0.4s.
-INTER_CALL_SLEEP = 4.5
-
-TIER2_MODELS = [
-    "together_ai/Qwen/Qwen2.5-72B-Instruct-Turbo",
-    "together_ai/CohereForAI/aya-expanse-32b",
-    "together_ai/meta-llama/Llama-3.1-70B-Instruct-Turbo",
-    "together_ai/inceptionai/jais-adapted-13b-chat",
-]
-
-
-# ── 1. Repeat Phrases (for Verbose & Triple methods) ─────────────────────────
-
-# System prompt for Punjabi experiments (instructs model: answer directly, no CoT)
-SYSTEM_PROMPT_PA = "براہ راست جواب دیو۔ اپنی سوچ دی وضاحت نہ کرو۔ قدم بہ قدم نہ سوچو۔"
-
-# System prompt for Urdu experiments (same intent, Urdu phrasing)
-SYSTEM_PROMPT_UR = "براہ راست جواب دیں۔ اپنی سوچ کی وضاحت نہ کریں۔ قدم بقدم مت سوچیں۔"
-
-# System prompt for Pashto experiments (same intent, Pashto phrasing)
-SYSTEM_PROMPT_PS = "مستقیم ځواب ورکړئ. خپل فکر مه تشریح کوئ. گام په گام مه فکر کوئ."
-
-# System prompt for Balochi experiments (same intent, Balochi phrasing)
-SYSTEM_PROMPT_BAL = "تچک ءَ پسو بہ دئے. وتی ھیال ءَ مَہ درشان کن. گام پہ گام مَہ جیڑ."
-
-# System prompt for Arabic experiments (same intent, Arabic phrasing)
-SYSTEM_PROMPT_AR = "أجب بإيجابية مباشرة. لا تشرح تفكيرك. لا تتخطى خطوة بخطوة."
-
-# System prompt for Persian (Farsi) experiments (same intent, Persian phrasing)
-SYSTEM_PROMPT_FA = "فقط به طور مستقیم پاسخ بده. فكر خود را توضيح نده. قدم به قدم فكر نكن."
-
-# System prompt for Sindhi experiments (same intent, Sindhi phrasing)
-# Note: Authoritative source for Sindhi non-reasoning prompt not yet verified.
-# Using template consistent with other RTL languages until native speaker validates.
-SYSTEM_PROMPT_SD = "مستقیم جواب ڏيو. اپنی سوچ کی وضاحت نه کنو. قدم سان قدم تارڪ نه کنو."
-
-# First repeat-bridge phrase used in verbose and triple methods
-REPEAT_PHRASES = {
-    "en":  "Please re-read the above and answer:",
-    "ar":  "يرجى إعادة قراءة ما سبق والإجابة:",
-    "ur":  "براہ کرم اوپر دوبارہ پڑھیں اور جواب دیں:",
-    "pa":  "میں دوبارہ آکھدا ہاں:",                         # Shahmukhi Punjabi
-    "sd":  "مهرباني ڪري مٿيون ٻيهر پڙهو ۽ جواب ڏيو:",      # Sindhi
-    "ps":  "مهرباني وکړئ پورته بیا ولولئ او ځواب ورکړئ:",   # Pashto
-    "bal": "مهربانی کن بالا دوباره بخوان و جواب بده:",       # Balochi
-    "fa":  "لطفاً دوباره بالا را بخوانید و پاسخ دهید:",      # Persian/Farsi
+# Model resolution for HuggingFace transformers
+MODEL_MAP = {
+    "llama3.2-1b":      "meta-llama/Llama-3.2-1B-Instruct",
+    "llama3.2-3b":      "meta-llama/Llama-3.2-3B-Instruct",
+    "llama3.1-8b":      "meta-llama/Llama-3.1-8B-Instruct",
+    "qwen2.5-1.5b":     "Qwen/Qwen2.5-1.5B-Instruct",
+    "qwen2.5-3b":       "Qwen/Qwen2.5-3B-Instruct",
+    "qwen2.5-7b":       "Qwen/Qwen2.5-7B-Instruct",
+    "mistral-7b-v0.3":  "mistralai/Mistral-7B-Instruct-v0.3",
+    "gemma2-2b":        "google/gemma-2b-it",
 }
+
+import torch
+USE_CUDA = torch.cuda.is_available()
+
+
+# ── 1. System Prompts & Repeat Phrases ──────────────────────────────────────────
+
+SYSTEM_PROMPT_PA = "براہ راست جواب دیو۔ اپنی سوچ دی وضاحت نہ کرو۔ قدم بہ قدم نہ سوچو۔"
+SYSTEM_PROMPT_UR = "براہ راست جواب دیں۔ اپنی سوچ کی وضاحت نہ کریں۔ قدم بقدم مت سوچیں۔"
+SYSTEM_PROMPT_PS = "مستقیم ځواب ورکړئ. خپل فکر مه تشریح کوئ. گام په گام مه فکر کوئ."
+SYSTEM_PROMPT_BAL = "تچک ءَ پسو بہ دئے. وتی ھیال ءَ مَہ درشان کن. گام پہ گام مَہ جیڑ."
+SYSTEM_PROMPT_AR = "أجب بإيجابية مباشرة. لا تشرح تفكيرك. لا تتخطى خطوة بخطوة."
+SYSTEM_PROMPT_FA = "فقط به طور مستقیم پاسخ بده. فكر خود را توضيح نده. قدم به قدم فكر نكن."
+SYSTEM_PROMPT_SD = "مستقیم جواب ڏيو. اپنی سوچ کی وضاحت نه کنو. قدم سان قدم تارڪ نه کنو."
 
 # Second bridge phrase used only in the triple (×3) method
 TRIPLE_SECOND_PHRASES = {
@@ -111,21 +90,38 @@ TRIPLE_SECOND_PHRASES = {
 }
 
 
-# ── 2. The 5 Prompt Methods ───────────────────────────────────────────────────
+# ── 2. The 4 Prompt Methods ────────────────────────────────────────────────────
+# 
+# Based on arXiv:2512.14982 extension for RTL languages:
+#   Method 1 (baseline):     Single instance of the query
+#   Method 2 (repetition):   Query repeated twice (in-language)
+#   Method 3 (cross_lingual_t1): Query in target language + English bridge + Query repeated
+#   Method 4 (cross_lingual_t2): Query in target language + Target-language bridge + Query repeated
+#
+# English is ALWAYS the reference language for cross-lingual T1.
+# Target language is used for T2 bridges.
 
-METHODS = ["baseline", "repetition", "verbose", "triple", "padding"]
+METHODS = ["baseline", "repetition", "cross_lingual_t1", "cross_lingual_t2"]
+
+ENGLISH_REPEAT_PHRASE = "Let me repeat that:"
+NATIVE_REPEAT_PHRASES = {
+    "ar":  "لنكرر ذلك:",
+    "ur":  "میں دوبارہ کہتا ہوں:",
+    "pa":  "میں دوبارہ آکھدا ہاں:",
+    "ps":  "زه بیا وایم:",
+    "bal": "من پدا گشاں:",
+    "fa":  "بیا دوباره می‌گویم:",
+    "sd":  "مه ٻيهر کيا آں:",
+}
 
 def build_all_methods(base_prompt: str, language: str = "en") -> dict:
-    """Build all 5 prompt variants from a single base prompt."""
-    phrase1 = REPEAT_PHRASES.get(language, REPEAT_PHRASES["en"])
-    phrase2 = TRIPLE_SECOND_PHRASES.get(language, TRIPLE_SECOND_PHRASES["en"])
-    padding = "." * len(base_prompt)
+    """Build all 4 prompt variants from a single base prompt."""
+    native_phrase = NATIVE_REPEAT_PHRASES.get(language, NATIVE_REPEAT_PHRASES["ar"])
     return {
-        "baseline":   base_prompt,
-        "repetition": f"{base_prompt}\n\n{base_prompt}",
-        "verbose":    f"{base_prompt}\n\n{phrase1}\n\n{base_prompt}",
-        "triple":     f"{base_prompt}\n\n{phrase1}\n\n{base_prompt}\n\n{phrase2}\n\n{base_prompt}",
-        "padding":    f"{base_prompt}\n\n{padding}",
+        "baseline":           base_prompt,
+        "repetition":         f"{base_prompt}\n\n{base_prompt}",
+        "cross_lingual_t1":   f"{base_prompt}\n\n{ENGLISH_REPEAT_PHRASE}\n\n{base_prompt}",
+        "cross_lingual_t2":   f"{base_prompt}\n\n{native_phrase}\n\n{base_prompt}",
     }
 
 
@@ -277,7 +273,25 @@ def is_correct(task: str, response: str, answer: str) -> bool:
     return str(answer).strip().lower() in response.lower()
 
 
-# ── 5. API Call with Exponential Retry ───────────────────────────────────────
+# ── 5. Local Model Call ─────────────────────────────────────────────────────
+
+_model_cache = {}
+
+def _load_model(model_key: str):
+    """Load a local HuggingFace model with tokenizer (cached)."""
+    if model_key not in _model_cache:
+        from transformers import AutoTokenizer, AutoModelForCausalLM
+        hf_name = MODEL_MAP[model_key]
+        print(f"  Loading model: {hf_name}")
+        tokenizer = AutoTokenizer.from_pretrained(hf_name)
+        model = AutoModelForCausalLM.from_pretrained(
+            hf_name,
+            torch_dtype=torch.float16 if USE_CUDA else torch.float32,
+            device_map="auto" if USE_CUDA else "cpu",
+        )
+        _model_cache[model_key] = (tokenizer, model)
+    return _model_cache[model_key]
+
 
 def call_model(
     model: str,
@@ -287,45 +301,69 @@ def call_model(
     retries: int = 3,
 ) -> dict:
     """
-    Call the model and return a dict:
+    Call a local model and return a dict:
       {response, prompt_tokens, output_tokens, latency_ms}
-    max_tokens=100 matches the original paper (prevents CoT responses).
+    
+    Uses HuggingFace transformers for local inference.
+    max_tokens=100 matches the paper (prevents CoT responses).
+    temperature=0 (deterministic) per paper specification.
     """
-    if not LITELLM_AVAILABLE:
-        raise RuntimeError("litellm not installed. Run: pip install litellm")
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    
+    tokenizer, model_obj = _load_model(model)
+    hf_name = MODEL_MAP[model]
+    
+    # Build chat template
     messages = []
     if system_prompt:
         messages.append({"role": "system", "content": system_prompt})
     messages.append({"role": "user", "content": prompt})
-
-    for attempt in range(retries):
-        try:
-            t0 = time.perf_counter()
-            r = litellm.completion(
-                model=model,
-                messages=messages,
-                temperature=0.0,
-                max_tokens=max_tokens,
-            )
-            latency_ms = (time.perf_counter() - t0) * 1000
-            usage = r.usage or {}
-            return {
-                "response":      r.choices[0].message.content.strip(),
-                "prompt_tokens": getattr(usage, "prompt_tokens", None),
-                "output_tokens": getattr(usage, "completion_tokens", None),
-                "latency_ms":    round(latency_ms, 1),
-            }
-        except Exception as e:
-            if attempt == retries - 1:
-                raise
-            # Rate-limit errors: respect provider hint (Gemini free tier asks ~31s)
-            err_str = str(e).lower()
-            if "ratelimit" in err_str or "rate_limit" in err_str or "429" in err_str or "quota" in err_str:
-                wait = 35 * (2 ** attempt)   # 35s, 70s
-            else:
-                wait = 2 ** attempt          # 1s, 2s for transient errors
-            print(f"      Retry {attempt + 1}/{retries}: {e} — waiting {wait}s")
-            time.sleep(wait)
+    
+    # Apply chat template
+    try:
+        inputs = tokenizer.apply_chat_template(
+            messages,
+            add_generation_prompt=True,
+            return_tensors="pt",
+        )
+    except Exception:
+        # Fallback for tokenizers without chat template
+        formatted = ""
+        if system_prompt:
+            formatted += f"System: {system_prompt}\n\n"
+        formatted += f"User: {prompt}\n\nAssistant:"
+        inputs = tokenizer(formatted, return_tensors="pt")
+    
+    input_ids = inputs.input_ids
+    if USE_CUDA:
+        input_ids = input_ids.cuda()
+    
+    prompt_tokens = input_ids.shape[1]
+    
+    t0 = time.perf_counter()
+    
+    with torch.no_grad():
+        outputs = model_obj.generate(
+            input_ids,
+            max_new_tokens=max_tokens,
+            temperature=0.0,
+            do_sample=False,
+            pad_token_id=tokenizer.eos_token_id,
+        )
+    
+    latency_ms = (time.perf_counter() - t0) * 1000
+    
+    # Decode response (skip the input prompt)
+    response_ids = outputs[0][prompt_tokens:]
+    response = tokenizer.decode(response_ids, skip_special_tokens=True).strip()
+    output_tokens = len(response_ids)
+    
+    return {
+        "response":       response,
+        "prompt_tokens":  prompt_tokens,
+        "output_tokens":  output_tokens,
+        "latency_ms":     round(latency_ms, 1),
+    }
 
 
 # ── 6. CSV sink ───────────────────────────────────────────────────────────────
@@ -355,25 +393,29 @@ def run_experiment(
     csv_file: str = "results.csv",
     scenarios: list = None,
     system_prompt: str = None,
+    methods: list = None,
     verbose: bool = True,
     dry_run: bool = False,
 ) -> dict:
     """
-    Run all 5 prompt methods × selected scenarios × dataset items for each model.
+    Run prompt methods x selected scenarios x dataset items for each model.
     Saves JSON after every item (resume-safe) and appends to CSV after every call.
 
     Args:
         models:        List of litellm model strings.
-        dataset:       List of item dicts (from punjabi_loader.build_dataset or sample_data).
+        dataset:       List of item dicts.
         output_file:   Resume-safe JSON path. Auto-named if None.
         csv_file:      Flat CSV path for analysis. Appended to, never overwritten.
         scenarios:     Subset of SCENARIOS keys to run. Defaults to all.
         system_prompt: Optional system message sent with every call.
+        methods:       Subset of METHODS to run. Defaults to all.
         verbose:       Print per-item progress.
         dry_run:       Skip API calls; print prompt sizes only.
     """
     if scenarios is None:
         scenarios = list(SCENARIOS.keys())
+    if methods is None:
+        methods = METHODS
     if output_file is None:
         output_file = f"results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 
@@ -389,13 +431,14 @@ def run_experiment(
     )
     print(f"\n{'='*65}")
     print(f"Benchmark: {len(models)} model(s) x {len(scenarios)} scenario(s)")
-    print(f"           ~{compatible_count} compatible (model x scenario x item) x {len(METHODS)} methods")
+    print(f"           ~{compatible_count} compatible (model x scenario x item) x {len(methods)} methods")
+    print(f"Methods:   {methods}")
     print(f"JSON:      {output_file}")
     print(f"CSV:       {csv_file}")
     if system_prompt:
-        print(f"SysPrompt: {system_prompt[:60]}{'…' if len(system_prompt) > 60 else ''}")
+        print(f"SysPrompt: {system_prompt[:60]}{chr(8230) if len(system_prompt) > 60 else ''}")
     if dry_run:
-        print("MODE:      DRY RUN — no API calls, prompt sizes only")
+        print("MODE:      DRY RUN - no API calls, prompt sizes only")
     print(f"{'='*65}\n")
 
     for model in models:
@@ -438,7 +481,7 @@ def run_experiment(
                     "correct_answer": answer,
                 }
 
-                for method in METHODS:
+                for method in methods:
                     prompt = prompts[method]
                     if dry_run:
                         print(f"      [{method:<12s}] {len(prompt):>5} chars")

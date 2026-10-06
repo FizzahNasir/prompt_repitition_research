@@ -135,6 +135,12 @@ def _parse_args():
         help="Override scenario selection (default: auto-derived from task types)",
     )
     p.add_argument(
+        "--methods", nargs="+", default=["baseline", "repetition"],
+        metavar="METHOD",
+        choices=["baseline", "repetition", "cross_lingual_t1", "cross_lingual_t2"],
+        help="Prompt method(s) to evaluate (default: baseline repetition)",
+    )
+    p.add_argument(
         "--dry-run", action="store_true",
         help="No API calls — verify prompts build correctly and print sizes",
     )
@@ -243,6 +249,7 @@ def main():
         csv_file      = output_csv,
         scenarios     = scenarios,
         system_prompt = system_prompt,
+        methods       = args.methods,
         verbose       = True,
         dry_run       = args.dry_run,
     )
