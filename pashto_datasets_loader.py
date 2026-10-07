@@ -8,8 +8,8 @@ Files consumed (datasets/pashto/):
   arc_pashto.csv                              ~892 items (ARC-Challenge)
   openbookqa_pashto.csv                       ~513 items (OpenBookQA)
   COMMONSENSE PASHTO - commonsenseqa_pashto.csv ~561 items (CommonSenseQA)
-  NameIndex_Pashto.xlsx                       100 items
-  MiddleMatch_Pashto.xlsx                     100 items
+  NameIndex_Pashto.xlsx                       300 items
+  MiddleMatch_Pashto.xlsx                     300 items
   ScriptMixed_Pashto.xlsx                      20 items
 
 Total: ~2,446 items (varies by exact row counts)
@@ -24,7 +24,7 @@ import openpyxl
 
 BASE = Path(__file__).parent / "datasets" / "pashto"
 
-_ANSWER_SUFFIX_PS = "\nد یوه نوم څخه ځواب ورکړه."
+_ANSWER_SUFFIX_PS = "\nیوازې په یوه نوم ځواب ورکړئ."
 
 _ANSWER_MAP = {
     "A": "A", "B": "B", "C": "C", "D": "D", "E": "E",
@@ -50,6 +50,44 @@ def _str(value) -> str:
     if isinstance(value, float):
         return str(int(value))
     return str(value).strip()
+
+
+# ── Shared item hygiene ───────────────────────────────────────────────────────
+
+_LANG = "ps"
+_DIGIT_TO_LETTER = {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E"}
+_LIST_SEP = "،"   # retrieval lists are "<header>\n<name>، <name>، ..."
+
+
+def _letter(key) -> str:
+    """Normalise an MCQ key: numeric "1".."5" (or 1.0) -> "A".."E"; letters upper-cased."""
+    k = _str(key).upper()
+    return _DIGIT_TO_LETTER.get(k, k)
+
+
+def _letter_options(options: dict) -> dict:
+    """Re-key an options dict so numeric keys "1".."5" become "A".."E"."""
+    return {_letter(k): v for k, v in options.items()}
+
+
+def _has_duplicate_options(options: dict) -> bool:
+    vals = [str(v).strip() for v in options.values()]
+    return len(set(vals)) < len(vals)
+
+
+def _drop_duplicate_option_items(items: list, task: str) -> list:
+    """Drop MCQ items whose options collapsed to identical text (translation artefact)."""
+    kept = [it for it in items if "options" not in it or not _has_duplicate_options(it["options"])]
+    if len(kept) < len(items):
+        print(f"  [{_LANG}] {task}: dropped {len(items) - len(kept)} items with identical option texts")
+    return kept
+
+
+def _parse_candidates(long_data: str) -> list:
+    """Distinct names (first-appearance order) from a NameIndex/MiddleMatch Long Data cell."""
+    body = long_data.split("\n", 1)[1] if "\n" in long_data else long_data
+    names = [n.strip() for n in body.split(_LIST_SEP) if n.strip()]
+    return list(dict.fromkeys(names))
 
 
 def _parse_dict_str(value: str) -> dict:
@@ -115,10 +153,10 @@ def _load_arc() -> list:
         for i, row in enumerate(reader, start=1):
             question = row.get("pashto_question", "") or row.get("question", "")
             choices_str = row.get("pashto_choices", "") or row.get("choices", "")
-            answer = _str(row.get("answerKey", "")).upper()
+            answer = _letter(row.get("answerKey", ""))
             if not question or not answer:
                 continue
-            options = _parse_choices(choices_str)
+            options = _letter_options(_parse_choices(choices_str))
             if not options or answer not in options:
                 continue
             sh_opts, sh_correct = _shuffle_options(options, answer, seed=i)
@@ -144,10 +182,10 @@ def _load_openbookqa() -> list:
         for i, row in enumerate(reader, start=1):
             question = row.get("pashto_question", "") or row.get("question_stem", "")
             choices_str = row.get("pashto_choices", "") or row.get("choices", "")
-            answer = _str(row.get("answerKey", "")).upper()
+            answer = _letter(row.get("answerKey", ""))
             if not question or not answer:
                 continue
-            options = _parse_choices(choices_str)
+            options = _letter_options(_parse_choices(choices_str))
             if not options or answer not in options:
                 continue
             sh_opts, sh_correct = _shuffle_options(options, answer, seed=i)
@@ -185,10 +223,10 @@ def _load_commonsenseqa() -> list:
         for i, row in enumerate(reader, start=1):
             question = row.get("pashto_question", "") or row.get("question", "")
             choices_str = row.get("pashto_choices", "") or row.get("choices", "")
-            answer = _str(row.get("answerKey", "")).upper()
+            answer = _letter(row.get("answerKey", ""))
             if not question or not answer:
                 continue
-            options = _parse_choices(choices_str)
+            options = _letter_options(_parse_choices(choices_str))
             if not options or answer not in options:
                 continue
             sh_opts, sh_correct = _shuffle_options(options, answer, seed=i)
@@ -239,6 +277,7 @@ def _load_retrieval(filename: str, task: str, id_prefix: str) -> list:
             item["query"]               = q
         else:
             item["query"] = q + _ANSWER_SUFFIX_PS
+            item["candidates"] = _parse_candidates(ld)
         items.append(item)
     wb.close()
     return items
@@ -267,8 +306,13 @@ def build_dataset(tasks: list = None) -> list:
         if tasks and task_name not in tasks:
             continue
         items = loader()
+        items = _drop_duplicate_option_items(items, task_name)
         print(f"  {task_name:<15} {len(items):>4} items")
         dataset.extend(items)
+    ids = [it["id"] for it in dataset]
+    if len(ids) != len(set(ids)):
+        dupes = sorted({i for i in ids if ids.count(i) > 1})
+        raise RuntimeError(f"{_LANG}: duplicate item ids: {dupes[:10]}")
     return dataset
 
 

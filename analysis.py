@@ -32,14 +32,13 @@ import matplotlib.ticker as mticker
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 
-METHODS = ["baseline", "repetition", "verbose", "triple", "padding"]
+METHODS = ["baseline", "repetition", "cross_lingual_t1", "cross_lingual_t2"]
 
 METHOD_COLORS = {
-    "baseline":   "#4C72B0",
-    "repetition": "#DD8452",
-    "verbose":    "#55A868",
-    "triple":     "#C44E52",
-    "padding":    "#8172B2",
+    "baseline":         "#4C72B0",
+    "repetition":       "#DD8452",
+    "cross_lingual_t1": "#55A868",
+    "cross_lingual_t2": "#C44E52",
 }
 
 # Compact display labels for scenarios (strip numeric prefix)
@@ -178,7 +177,8 @@ def print_accuracy_table(acc: pd.DataFrame) -> None:
 
 def _mcnemar_p(b: int, c: int) -> float:
     """
-    McNemar's test with continuity correction (Edwards 1948).
+    McNemar's test without continuity correction, matching arXiv:2512.14982
+    and statsmodels mcnemar(exact=False, correction=False).
     b = baseline correct & method wrong
     c = baseline wrong & method correct
     Returns p-value (two-sided). Returns nan when b+c < 1.
@@ -186,21 +186,18 @@ def _mcnemar_p(b: int, c: int) -> float:
     n = b + c
     if n == 0:
         return float("nan")
-    if n < 25:
-        # Exact binomial: P(X <= min(b,c)) * 2, X ~ Bin(n, 0.5)
-        from scipy.stats import binom
-        p = 2 * binom.cdf(min(b, c), n, 0.5)
-        return min(p, 1.0)
-    # Chi-squared with continuity correction
-    chi2_stat = (abs(b - c) - 1) ** 2 / n
+    chi2_stat = (b - c) ** 2 / n
     from scipy.stats import chi2
     return float(chi2.sf(chi2_stat, df=1))
+
+
+ALPHA = 0.1  # significance threshold used by the paper
 
 
 def compute_mcnemar(df: pd.DataFrame) -> pd.DataFrame:
     """
     For each (model, task, scenario, method≠baseline) compute:
-        b, c, n_discordant, p_value, significant (α=0.05)
+        b, c, n_discordant, p_value, significant (α=ALPHA=0.1)
     where b = baseline wins, c = method wins on discordant pairs.
     """
     if "task" not in df.columns:
@@ -243,7 +240,7 @@ def compute_mcnemar(df: pd.DataFrame) -> pd.DataFrame:
                 "c_method_wins": c,
                 "n_discordant":  b + c,
                 "p_value":       round(p, 4) if not math.isnan(p) else float("nan"),
-                "significant":   (not math.isnan(p)) and (p < 0.05),
+                "significant":   (not math.isnan(p)) and (p < ALPHA),
                 "direction":     "method_better" if c > b else ("baseline_better" if b > c else "tie"),
             })
 

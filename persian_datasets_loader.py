@@ -65,6 +65,44 @@ def _find_file(*names) -> Path:
     return BASE / names[0]
 
 
+# ── Shared item hygiene ───────────────────────────────────────────────────────
+
+_LANG = "fa"
+_DIGIT_TO_LETTER = {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E"}
+_LIST_SEP = "،"   # retrieval lists are "<header>\n<name>، <name>، ..."
+
+
+def _letter(key) -> str:
+    """Normalise an MCQ key: numeric "1".."5" (or 1.0) -> "A".."E"; letters upper-cased."""
+    k = _str(key).upper()
+    return _DIGIT_TO_LETTER.get(k, k)
+
+
+def _letter_options(options: dict) -> dict:
+    """Re-key an options dict so numeric keys "1".."5" become "A".."E"."""
+    return {_letter(k): v for k, v in options.items()}
+
+
+def _has_duplicate_options(options: dict) -> bool:
+    vals = [str(v).strip() for v in options.values()]
+    return len(set(vals)) < len(vals)
+
+
+def _drop_duplicate_option_items(items: list, task: str) -> list:
+    """Drop MCQ items whose options collapsed to identical text (translation artefact)."""
+    kept = [it for it in items if "options" not in it or not _has_duplicate_options(it["options"])]
+    if len(kept) < len(items):
+        print(f"  [{_LANG}] {task}: dropped {len(items) - len(kept)} items with identical option texts")
+    return kept
+
+
+def _parse_candidates(long_data: str) -> list:
+    """Distinct names (first-appearance order) from a NameIndex/MiddleMatch Long Data cell."""
+    body = long_data.split("\n", 1)[1] if "\n" in long_data else long_data
+    names = [n.strip() for n in body.split(_LIST_SEP) if n.strip()]
+    return list(dict.fromkeys(names))
+
+
 def _shuffle_options(options: dict, correct: str, seed: int = 42):
     rng = random.Random(seed)
     pairs = list(options.items())
@@ -279,16 +317,19 @@ def _load_retrieval(filename: str, task: str, id_prefix: str, suffix: str = None
             item["query"] = q
         else:
             item["query"] = q + (suffix or "\nلطفاً فقط یک نام بگویید.")
+            item["candidates"] = _parse_candidates(ld)
         items.append(item)
     wb.close()
     return items
 
 
+# ARC / OpenBookQA / CommonSenseQA / GSM8K: Google translations of the same English test
+# items used for Urdu and Punjabi (translate_benchmarks.py). The native _load_* functions
+# above are kept for reference but not used: their items were not the paper's benchmarks.
+from translated_benchmarks import loaders as _translated_loaders
+
 _FILES = [
-    (_load_mgsm,                    "GSM8K"),
-    (_load_arc,                     "ARC"),
-    (_load_openbookqa,              "OpenBookQA"),
-    (_load_commonsenseqa,           "CommonSenseQA"),
+    *_translated_loaders("fa", "Persian", "persian"),
      (lambda: _load_retrieval("NameIndex_Persian.xlsx",    "NameIndex",   "ni_fa"),  "NameIndex"),
      (lambda: _load_retrieval("MiddleMatch_Persian.xlsx", "MiddleMatch", "mm_fa"),  "MiddleMatch"),
      (lambda: _load_retrieval("ScriptMixed_Persian.xlsx", "ScriptMixed", "sm_fa",
@@ -306,8 +347,13 @@ def build_dataset(tasks: list = None) -> list:
         if tasks and task_name not in tasks:
             continue
         items = loader()
+        items = _drop_duplicate_option_items(items, task_name)
         print(f"  {task_name:<15} {len(items):>4} items")
         dataset.extend(items)
+    ids = [it["id"] for it in dataset]
+    if len(ids) != len(set(ids)):
+        dupes = sorted({i for i in ids if ids.count(i) > 1})
+        raise RuntimeError(f"{_LANG}: duplicate item ids: {dupes[:10]}")
     return dataset
 
 

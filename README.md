@@ -1,11 +1,10 @@
 # Multilingual Prompt Repetition Research for RTL Languages
 
-This repository replicates and extends [arXiv:2512.14982](https://arxiv.org/abs/2512.14982) (*Leviathan et al., Dec 2025, Google Research: "Prompt Repetition Improves Non-Reasoning LLMs"*) applied to **seven Right-to-Left (RTL) languages** using Perso-Arabic orthographies:
+This repository replicates and extends [arXiv:2512.14982](https://arxiv.org/abs/2512.14982) (*Leviathan et al., Dec 2025, Google Research: "Prompt Repetition Improves Non-Reasoning LLMs"*) applied to **six Right-to-Left (RTL) languages** using Perso-Arabic orthographies:
 
 - **Punjabi** (Shahmukhi script) - `pa`
 - **Urdu** - `ur`
 - **Pashto** - `ps`
-- **Balochi** - `bal`
 - **Arabic** (Modern Standard) - `ar`
 - **Persian/Farsi** - `fa`
 - **Sindhi** - `sd`
@@ -20,13 +19,14 @@ Prompt repetition has been shown to improve performance in non-reasoning LLMs. T
 - **System prompts**: Strict non-reasoning (e.g., "براہ راست جواب دیو۔ اپنی سوچ دی وضاحت نہ کرو۔")
 - **max_tokens**: 100 (prevents chain-of-thought generation)
 - **Statistical significance**: McNemar test ($p < 0.1$, `correction=False`)
-- **Retrieval evaluation**: Fuzzy substring matching with threshold $\ge 0.80$
+- **Retrieval evaluation**: Exact name match after Perso-Arabic spelling normalization (fuzzy matching was dropped: distinct names such as صفیہ بیگم / روبینہ بیگم score ≥ 0.80)
+- **Prompt formats**: as in the paper's Appendix A.3/A.4 (MCQ options as `A. text`, answer line `The answer is <ANSWER>.`, repeated copies on consecutive lines)
 
 ## Script Integrity
 
 - Punjabi in this project uses **Shahmukhi** (Perso-Arabic, RTL) script only.
 - Indian Gurmukhi script (LTR) is **not** used.
-- Pashto, Balochi, Arabic, Persian, and Sindhi all use their respective Perso-Arabic rtl orthographies.
+- Pashto, Arabic, Persian, and Sindhi all use their respective Perso-Arabic rtl orthographies.
 
 ## Dataset Structure
 
@@ -52,7 +52,8 @@ datasets/
 | Arabic   | ar   | 250   | 300 | 445        | 245           | 100       | 100         | 20          | 7/7 ✅ |
 | Persian  | fa   | 1564  | 300 | 500        | 300           | 100       | 100         | 20          | 7/7 ✅ |
 | Sindhi   | sd   | 99    | 99  | 99         | 300           | 100       | 100         | 20          | 7/7 ✅ |
-| Balochi  | bal  | 108   | 58  | BLOCKED    | BLOCKED       | 100       | 100         | 20          | 5/7 ⚠️ |
+
+> **Balochi (`bal`) dropped from the experiments:** 2 of its 3 MCQ benchmarks (OpenBookQA, CommonSenseQA) could not be obtained. Its datasets and loader are kept in the repo but it is no longer a run option.
 
 ### Translation Status
 
@@ -83,7 +84,7 @@ datasets/
 
 - `experiment_runner.py` - Main experiment execution engine
 - `analysis.py` / `analysis.ipynb` - Analysis and visualization
-- `run_punjabi.py` - CLI entry point supporting `--language {pa|ur|ps|bal|ar|fa|sd}`
+- `run_punjabi.py` - CLI entry point supporting `--language {pa|ur|ps|ar|fa|sd}`
 - `punjabi_datasets_loader.py` - Punjabi dataset loader
 - `urdu_datasets_loader.py` - Urdu dataset loader
 - `pashto_datasets_loader.py` - Pashto dataset loader

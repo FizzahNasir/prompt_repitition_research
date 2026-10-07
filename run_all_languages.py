@@ -1,7 +1,7 @@
 """
-run_all_languages.py — Batch runner for all 7 RTL languages
+run_all_languages.py — Batch runner for all 6 RTL languages
 
-Runs baseline + repetition methods across all 7 languages in sequence.
+Runs baseline + repetition methods across all 6 languages in sequence.
 Each language runs separately with its own dataset, system prompt, and results file.
 
 Usage:
@@ -18,7 +18,6 @@ _LANGUAGES = {
     "pa":  ("Punjabi (Shahmukhi)",    "punjabi_datasets_loader",  "SYSTEM_PROMPT_PA"),
     "ur":  ("Urdu",                   "urdu_datasets_loader",     "SYSTEM_PROMPT_UR"),
     "ps":  ("Pashto",                 "pashto_datasets_loader",   "SYSTEM_PROMPT_PS"),
-    "bal": ("Balochi",                "balochi_datasets_loader",    "SYSTEM_PROMPT_BAL"),
     "ar":  ("Arabic",                 "arabic_datasets_loader",     "SYSTEM_PROMPT_AR"),
     "fa":  ("Persian (Farsi)",        "persian_datasets_loader",    "SYSTEM_PROMPT_FA"),
     "sd":  ("Sindhi",                 "sindhi_datasets_loader",     "SYSTEM_PROMPT_SD"),
@@ -27,7 +26,7 @@ _LANGUAGES = {
 
 def main():
     p = argparse.ArgumentParser(
-        description="Batch runner for all 7 RTL prompt repetition languages"
+        description="Batch runner for all 6 RTL prompt repetition languages"
     )
     p.add_argument(
         "--language", nargs="+", choices=list(_LANGUAGES.keys()) + ["all"],

@@ -95,7 +95,6 @@ print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'C
 - `pa` - Punjabi (Shahmukhi)
 - `ur` - Urdu
 - `ps` - Pashto
-- `bal` - Balochi (5/7 tasks - missing OpenBookQA & CommonSenseQA)
 - `ar` - Arabic
 - `fa` - Persian
 - `sd` - Sindhi
@@ -110,7 +109,7 @@ print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'C
 | Mistral 7B | ~15 min | ~45 min | ~15 min |
 | Gemma 2 2B | ~8 min | ~25 min | ~8 min |
 
-Total for all 7 languages with baseline + repetition methods:
+Total for all 6 languages with baseline + repetition methods:
 - 3B model: ~2-3 hours
 - 7B model: ~3-4 hours
 
