@@ -29,7 +29,7 @@ _TASK_SCENARIOS = {
     "GSM8K":         ["4_Question_Only"],
     "NameIndex":     ["10_Data_First_Retrieval"],
     "MiddleMatch":   ["10_Data_First_Retrieval"],
-    "ScriptMixed":   ["8_English_to_RTL", "4_Question_Only"],
+    "ScriptMixed":   ["8_English_to_RTL"],
 }
 
 _ALL_TASKS = sorted(_TASK_SCENARIOS.keys())
@@ -115,8 +115,8 @@ def _parse_args():
         epilog=__doc__,
     )
     p.add_argument(
-        "--language", default="pa", choices=["pa", "ur", "ps", "bal", "ar", "fa", "sd"],
-        help="Language to benchmark: pa=Punjabi Shahmukhi, ur=Urdu, ps=Pashto, bal=Balochi, ar=Arabic, fa=Persian, sd=Sindhi",
+        "--language", default="pa", choices=["pa", "ur", "ps", "ar", "fa", "sd"],
+        help="Language to benchmark: pa=Punjabi Shahmukhi, ur=Urdu, ps=Pashto, ar=Arabic, fa=Persian, sd=Sindhi",
     )
     p.add_argument(
         "--models", nargs="+", default=["gpt-4o-mini"],
@@ -191,10 +191,6 @@ def main():
         from pashto_datasets_loader import build_dataset
         from experiment_runner import SYSTEM_PROMPT_PS as system_prompt
         lang_label = "Pashto"
-    elif args.language == "bal":
-        from balochi_datasets_loader import build_dataset
-        from experiment_runner import SYSTEM_PROMPT_BAL as system_prompt
-        lang_label = "Balochi"
     elif args.language == "ar":
         from arabic_datasets_loader import build_dataset
         from experiment_runner import SYSTEM_PROMPT_AR as system_prompt

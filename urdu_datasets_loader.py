@@ -6,13 +6,13 @@ and returns a unified list of item dicts compatible with experiment_runner.py.
 Files consumed (datasets/urdu/):
   MGSM_Urdu_GoogleTranslate.xlsx            250 items
   ARC_Urdu_GoogleTranslate.xlsx             300 items
-  OpenBookQA_Urdu_merged.xlsx             5,767 items
+  openbookqa_urdu_test.csv                  500 items (OpenBookQA test split)
   CommonSenseQA_Urdu_GoogleTranslate.xlsx   289 usable items
-  NameIndex_Urdu.xlsx                       100 items
-  MiddleMatch_Urdu.xlsx                     100 items
+  NameIndex_Urdu.xlsx                       300 items
+  MiddleMatch_Urdu.xlsx                     300 items
   ScriptMixed_Urdu.xlsx                      20 items
 
-Total: ~6,826 items
+Total: ~1,960 items (after dropping collapsed-option MCQs)
 """
 
 import random
@@ -59,6 +59,44 @@ def _find_file(*names) -> Path:
     return BASE / names[0]
 
 
+# ── Shared item hygiene ───────────────────────────────────────────────────────
+
+_LANG = "ur"
+_DIGIT_TO_LETTER = {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E"}
+_LIST_SEP = "،"   # retrieval lists are "<header>\n<name>، <name>، ..."
+
+
+def _letter(key) -> str:
+    """Normalise an MCQ key: numeric "1".."5" (or 1.0) -> "A".."E"; letters upper-cased."""
+    k = _str(key).upper()
+    return _DIGIT_TO_LETTER.get(k, k)
+
+
+def _letter_options(options: dict) -> dict:
+    """Re-key an options dict so numeric keys "1".."5" become "A".."E"."""
+    return {_letter(k): v for k, v in options.items()}
+
+
+def _has_duplicate_options(options: dict) -> bool:
+    vals = [str(v).strip() for v in options.values()]
+    return len(set(vals)) < len(vals)
+
+
+def _drop_duplicate_option_items(items: list, task: str) -> list:
+    """Drop MCQ items whose options collapsed to identical text (translation artefact)."""
+    kept = [it for it in items if "options" not in it or not _has_duplicate_options(it["options"])]
+    if len(kept) < len(items):
+        print(f"  [{_LANG}] {task}: dropped {len(items) - len(kept)} items with identical option texts")
+    return kept
+
+
+def _parse_candidates(long_data: str) -> list:
+    """Distinct names (first-appearance order) from a NameIndex/MiddleMatch Long Data cell."""
+    body = long_data.split("\n", 1)[1] if "\n" in long_data else long_data
+    names = [n.strip() for n in body.split(_LIST_SEP) if n.strip()]
+    return list(dict.fromkeys(names))
+
+
 # ── File loaders ──────────────────────────────────────────────────────────────
 
 def _load_mgsm() -> list:
@@ -93,7 +131,9 @@ def _load_arc() -> list:
         if not native_q:
             continue
         options = {"A": _str(opt_a), "B": _str(opt_b), "C": _str(opt_c), "D": _str(opt_d)}
-        correct = str(answer).strip().upper()
+        correct = _letter(answer)
+        if correct not in options:
+            continue
         sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
         items.append({
             "id":                      f"arc_ur_{i:03d}",
@@ -109,31 +149,42 @@ def _load_arc() -> list:
     return items
 
 
+def _parse_hf_choices(value: str) -> dict:
+    """Parse a stringified HF choices dict, e.g.
+    "{'label': array(['A', ...], dtype=object), 'text': array([...], dtype=object)}"
+    -> {"A": text, ...}. Evaluated with no builtins; only `array`/`object` are defined."""
+    parsed = eval(str(value), {"__builtins__": {}},
+                  {"array": lambda x, dtype=None: list(x), "object": object})
+    return {_letter(k): _str(t) for k, t in zip(parsed["label"], parsed["text"])}
+
+
 def _load_openbookqa() -> list:
-    # Cols: # | Split | ID | English Question | Urdu Question | Eng A-D | Urdu A-D | Answer
-    # Note: no Status column; compact row numbering (no gaps from skipped rows)
-    file_path = _find_file("OpenBookQA_Urdu_merged.xlsx", "OpenBookQA_Urdu.xlsx")
-    wb = openpyxl.load_workbook(file_path, read_only=True, data_only=True)
-    ws = wb.active
+    # openbookqa_urdu_test.csv: the 500-item OpenBookQA test split.
+    # Cols: id | question_stem | choices | urdu_question_stem | urdu_choices | answerKey
+    import csv
+    file_path = BASE / "openbookqa_urdu_test.csv"
     items = []
-    for i, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=1):
-        _, _split, _id, _en, native_q, _ea, _eb, _ec, _ed, opt_a, opt_b, opt_c, opt_d, answer = row[:14]
-        if not native_q:
-            continue
-        options = {"A": _str(opt_a), "B": _str(opt_b), "C": _str(opt_c), "D": _str(opt_d)}
-        correct = str(answer).strip().upper()
-        sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
-        items.append({
-            "id":                      f"obqa_ur_{i:04d}",
-            "language":                "ur",
-            "task":                    "OpenBookQA",
-            "question":                str(native_q).strip(),
-            "options":                 options,
-            "shuffled_options":        sh_opts,
-            "correct_answer":          correct,
-            "shuffled_correct_answer": sh_correct,
-        })
-    wb.close()
+    with open(file_path, encoding="utf-8-sig", newline="") as f:
+        for i, row in enumerate(csv.DictReader(f), start=1):
+            native_q = _str(row.get("urdu_question_stem"))
+            if not native_q:
+                continue
+            options = _parse_hf_choices(row["urdu_choices"])
+            correct = _letter(row.get("answerKey"))
+            if correct not in options:
+                continue
+            sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
+            items.append({
+                "id":                      f"obqa_ur_{i:03d}",
+                "source_id":               _str(row.get("id")),
+                "language":                "ur",
+                "task":                    "OpenBookQA",
+                "question":                native_q,
+                "options":                 options,
+                "shuffled_options":        sh_opts,
+                "correct_answer":          correct,
+                "shuffled_correct_answer": sh_correct,
+            })
     return items
 
 
@@ -151,7 +202,9 @@ def _load_commonsenseqa() -> list:
             "A": _str(opt_a), "B": _str(opt_b), "C": _str(opt_c),
             "D": _str(opt_d), "E": _str(opt_e),
         }
-        correct = _ARABIC_TO_LATIN.get(str(answer).strip(), str(answer).strip().upper())
+        correct = _ARABIC_TO_LATIN.get(_str(answer), _letter(answer))
+        if correct not in options:
+            continue
         sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
         items.append({
             "id":                      f"csqa_ur_{i:03d}",
@@ -196,6 +249,7 @@ def _load_retrieval(filename: str, task: str, id_prefix: str) -> list:
             item["query"]               = q           # no suffix (prompt has "Reply with one name only.")
         else:
             item["query"] = q + _ANSWER_SUFFIX_UR
+            item["candidates"] = _parse_candidates(ld)
         items.append(item)
     wb.close()
     return items
@@ -224,8 +278,13 @@ def build_dataset(tasks: list = None) -> list:
         if tasks and task_name not in tasks:
             continue
         items = loader()
+        items = _drop_duplicate_option_items(items, task_name)
         print(f"  {task_name:<15} {len(items):>4} items")
         dataset.extend(items)
+    ids = [it["id"] for it in dataset]
+    if len(ids) != len(set(ids)):
+        dupes = sorted({i for i in ids if ids.count(i) > 1})
+        raise RuntimeError(f"{_LANG}: duplicate item ids: {dupes[:10]}")
     return dataset
 
 

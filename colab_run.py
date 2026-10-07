@@ -21,7 +21,7 @@ def main():
         description="Run experiments on Google Colab with GPU"
     )
     p.add_argument(
-        "--language", choices=["pa", "ur", "ps", "bal", "ar", "fa", "sd", "all"],
+        "--language", choices=["pa", "ur", "ps", "ar", "fa", "sd", "all"],
         default="all",
         help="Language to run (default: all)",
     )
@@ -56,7 +56,7 @@ def main():
     from experiment_runner import run_experiment, LOCAL_MODELS
 
     # Language selection
-    all_langs = ["pa", "ur", "ps", "bal", "ar", "fa", "sd"]
+    all_langs = ["pa", "ur", "ps", "ar", "fa", "sd"]
     langs = all_langs if args.language == "all" else [args.language]
 
     from run_punjabi import _select_scenarios
@@ -66,7 +66,6 @@ def main():
             "pa":  ("Punjabi (Shahmukhi)",    "punjabi_datasets_loader",  "SYSTEM_PROMPT_PA"),
             "ur":  ("Urdu",                   "urdu_datasets_loader",     "SYSTEM_PROMPT_UR"),
             "ps":  ("Pashto",                 "pashto_datasets_loader",   "SYSTEM_PROMPT_PS"),
-            "bal": ("Balochi",                "balochi_datasets_loader",    "SYSTEM_PROMPT_BAL"),
             "ar":  ("Arabic",                 "arabic_datasets_loader",     "SYSTEM_PROMPT_AR"),
             "fa":  ("Persian (Farsi)",        "persian_datasets_loader",    "SYSTEM_PROMPT_FA"),
             "sd":  ("Sindhi",                 "sindhi_datasets_loader",     "SYSTEM_PROMPT_SD"),

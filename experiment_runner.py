@@ -29,12 +29,6 @@ except ImportError:
     LITELLM_AVAILABLE = False
     print("litellm not installed. Run: pip install litellm")
 
-try:
-    from rapidfuzz import fuzz as _rfuzz
-    _RAPIDFUZZ_AVAILABLE = True
-except ImportError:
-    _RAPIDFUZZ_AVAILABLE = False
-
 
 # ── Models ─────────────────────────────────────────────────────────────────────
 # Local LLM models for CPU/GPU inference (transformers)
@@ -57,22 +51,26 @@ MODEL_MAP = {
     "qwen2.5-3b":       "Qwen/Qwen2.5-3B-Instruct",
     "qwen2.5-7b":       "Qwen/Qwen2.5-7B-Instruct",
     "mistral-7b-v0.3":  "mistralai/Mistral-7B-Instruct-v0.3",
-    "gemma2-2b":        "google/gemma-2b-it",
+    "gemma2-2b":        "google/gemma-2-2b-it",
 }
 
-import torch
-USE_CUDA = torch.cuda.is_available()
+try:
+    import torch
+    USE_CUDA = torch.cuda.is_available()
+except ImportError:  # prompt building / scoring / dry runs don't need torch
+    torch = None
+    USE_CUDA = False
 
 
 # ── 1. System Prompts & Repeat Phrases ──────────────────────────────────────────
 
 SYSTEM_PROMPT_PA = "براہ راست جواب دیو۔ اپنی سوچ دی وضاحت نہ کرو۔ قدم بہ قدم نہ سوچو۔"
 SYSTEM_PROMPT_UR = "براہ راست جواب دیں۔ اپنی سوچ کی وضاحت نہ کریں۔ قدم بقدم مت سوچیں۔"
-SYSTEM_PROMPT_PS = "مستقیم ځواب ورکړئ. خپل فکر مه تشریح کوئ. گام په گام مه فکر کوئ."
+SYSTEM_PROMPT_PS = "مستقیم ځواب ورکړئ. خپل فکر مه تشریح کوئ. ګام په ګام مه فکر کوئ."
 SYSTEM_PROMPT_BAL = "تچک ءَ پسو بہ دئے. وتی ھیال ءَ مَہ درشان کن. گام پہ گام مَہ جیڑ."
-SYSTEM_PROMPT_AR = "أجب بإيجابية مباشرة. لا تشرح تفكيرك. لا تتخطى خطوة بخطوة."
-SYSTEM_PROMPT_FA = "فقط به طور مستقیم پاسخ بده. فكر خود را توضيح نده. قدم به قدم فكر نكن."
-SYSTEM_PROMPT_SD = "مستقیم جواب ڏيو. اپنی سوچ کی وضاحت نه کنو. قدم سان قدم تارڪ نه کنو."
+SYSTEM_PROMPT_AR = "أجب مباشرةً. لا تشرح طريقة تفكيرك. لا تفكر خطوة بخطوة."
+SYSTEM_PROMPT_FA = "فقط به طور مستقیم پاسخ بده. فکر خود را توضیح نده. قدم به قدم فکر نکن."
+SYSTEM_PROMPT_SD = "سڌو جواب ڏيو. پنهنجي سوچ جي وضاحت نه ڪريو. قدم بقدم نه سوچيو."
 
 # Second bridge phrase used only in the triple (×3) method
 TRIPLE_SECOND_PHRASES = {
@@ -116,15 +114,23 @@ def build_all_methods(base_prompt: str, language: str = "en") -> dict:
     native_phrase = NATIVE_REPEAT_PHRASES.get(language, NATIVE_REPEAT_PHRASES["ar"])
     return {
         "baseline":           base_prompt,
-        "repetition":         f"{base_prompt}\n\n{base_prompt}",
-        "cross_lingual_t1":   f"{base_prompt}\n\n{ENGLISH_REPEAT_PHRASE}\n\n{base_prompt}",
-        "cross_lingual_t2":   f"{base_prompt}\n\n{native_phrase}\n\n{base_prompt}",
+        # Paper A.4 puts the copies on consecutive lines: <QUERY>\n<QUERY>
+        "repetition":         f"{base_prompt}\n{base_prompt}",
+        "cross_lingual_t1":   f"{base_prompt}\n{ENGLISH_REPEAT_PHRASE}\n{base_prompt}",
+        "cross_lingual_t2":   f"{base_prompt}\n{native_phrase}\n{base_prompt}",
     }
 
 
 # ── 3. The 10 Scenario Templates ──────────────────────────────────────────────
 # Each entry lists required item fields and a format string.
 # Items missing any required field are silently skipped for that scenario.
+#
+# Scenarios 2, 3, 4 and 10 follow arXiv:2512.14982 Appendix A.3/A.4: no section labels,
+# options as "A. text", and the paper's English answer-format line, kept verbatim in every
+# language so answer extraction is comparable.
+
+MCQ_FORMAT_LINE  = "Reply with one letter ({letters}) in the format: The answer is <ANSWER>."
+MATH_FORMAT_LINE = "Reply with only the final number in the format: The answer is <ANSWER>."
 
 SCENARIOS = {
     "1_Instruction_First": {
@@ -138,23 +144,15 @@ SCENARIOS = {
     },
     "2_Question_First": {
         "fields": ["question", "options"],
-        "template": (
-            "Question: {question}\n\n"
-            "Options:\n{options}\n\n"
-            "Reply with just the correct option letter."
-        ),
+        "template": "{question}\n{options}\n" + MCQ_FORMAT_LINE,
     },
     "3_Options_First": {
         "fields": ["question", "options"],
-        "template": (
-            "Options:\n{options}\n\n"
-            "Question: {question}\n\n"
-            "Reply with just the correct option letter."
-        ),
+        "template": "{options}\n{question}\n" + MCQ_FORMAT_LINE,
     },
     "4_Question_Only": {
         "fields": ["question"],
-        "template": "{question}",
+        "template": "{question}\n" + MATH_FORMAT_LINE,
     },
     "5_Shuffled_Options": {
         "fields": ["question", "shuffled_options"],
@@ -193,14 +191,14 @@ SCENARIOS = {
     },
     "10_Data_First_Retrieval": {
         "fields": ["long_data", "query"],
-        "template": "Data:\n{long_data}\n\nQuery: {query}",
+        "template": "{long_data}\n{query}",
     },
 }
 
 
 def _format_options(opts) -> str:
     if isinstance(opts, dict):
-        return "\n".join(f"{k}) {v}" for k, v in opts.items())
+        return "\n".join(f"{k}. {v}" for k, v in opts.items())
     return str(opts)
 
 
@@ -208,6 +206,11 @@ def build_base_prompt(scenario_name: str, item: dict):
     """Format item into a base prompt for the given scenario. Returns None if fields missing."""
     s = SCENARIOS[scenario_name]
     ctx = dict(item)
+
+    # Letters for the answer-format line, e.g. 'A', 'B', 'C', 'D'
+    opts = item.get("shuffled_options" if scenario_name == "5_Shuffled_Options" else "options")
+    if isinstance(opts, dict):
+        ctx["letters"] = ", ".join(f"'{k}'" for k in opts)
 
     # Pre-format option dicts into labeled strings
     for key in ("options", "shuffled_options"):
@@ -230,44 +233,84 @@ MCQ_TASKS  = {"ARC", "OpenBookQA", "MMLU", "MMLU_Pro", "CommonSenseQA"}
 MATH_TASKS = {"GSM8K", "MATH", "TokenizationControl"}
 RETR_TASKS = {"NameIndex", "MiddleMatch", "ScriptMixed"}
 
-FUZZY_THRESHOLD = 80  # rapidfuzz score 0–100; matches plan spec (≥ 0.8)
+_ANSWER_IS = re.compile(r"answer\s+is", re.IGNORECASE)
 
-
-def _fuzzy_match(answer: str, response: str) -> bool:
-    """Return True if answer appears in response, allowing for Shahmukhi spelling variation."""
-    ans = answer.strip()
-    if ans.lower() in response.lower():
-        return True  # fast path: exact substring
-    if _RAPIDFUZZ_AVAILABLE:
-        # partial_ratio: best alignment of the shorter string within the longer
-        return _rfuzz.partial_ratio(ans, response) >= FUZZY_THRESHOLD
-    # difflib fallback: compare answer against each whitespace token in response
-    import difflib
-    ans_l = ans.lower()
-    for token in response.split():
-        if difflib.SequenceMatcher(None, ans_l, token.lower()).ratio() >= FUZZY_THRESHOLD / 100:
-            return True
-    return False
+# Arabic-Indic and Extended (Persian/Urdu) digits, Arabic decimal/thousands separators
+_DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹٫٬", "01234567890123456789.,")
+_NUM = r"-?\d+(?:,\d{3})*(?:\.\d+)?"
 
 
 def _extract_mcq(text: str):
-    m = re.search(r'\b([A-Ja-j])\b', text.strip())
-    return m.group(1).upper() if m else None
+    """Letter from 'The answer is X' (paper format); else a leading or standalone letter."""
+    t = text.strip()
+    m = re.findall(r"(?i:answer\s+is)\s*[:：]?\s*[\(\[<\*\"']*\s*([A-J])(?![A-Za-z])", t)
+    if m:
+        return m[-1]
+    m = re.match(r"[\(\[<\*\s]*([A-J])(?![A-Za-z])", t)
+    if m:
+        return m.group(1)
+    m = re.findall(r"(?<![A-Za-z])([A-J])(?![A-Za-z])", t)
+    return m[0] if m else None
 
 
 def _extract_number(text: str):
-    nums = re.findall(r'-?\d[\d,]*\.?\d*', text)
+    """Number after 'The answer is' (paper format); else the last number in the reply."""
+    t = text.translate(_DIGITS)
+    nums = (re.findall(r"(?i:answer\s+is)\D{0,3}?(" + _NUM + ")", t, re.ASCII)
+            or re.findall(_NUM, t, re.ASCII))
     return nums[-1].replace(",", "") if nums else None
 
 
-def is_correct(task: str, response: str, answer: str) -> bool:
+def _normalize_name(s: str) -> str:
+    """Fold spelling variants of Perso-Arabic letters, drop diacritics/ZWNJ/punctuation."""
+    s = str(s)
+    s = re.sub(r"[ً-ٰٟۖ-ۭ‌‍‏‎ـ]", "", s)
+    for src, dst in (("ي", "ی"), ("ى", "ی"), ("ې", "ی"), ("ے", "ی"), ("ك", "ک"), ("ڪ", "ک"),
+                     ("ة", "ه"), ("ۃ", "ه"), ("ہ", "ه"), ("ۀ", "ه"), ("ھ", "ه"),
+                     ("أ", "ا"), ("إ", "ا"), ("آ", "ا"), ("ٱ", "ا")):
+        s = s.replace(src, dst)
+    s = re.sub(r"[^\w\s]", " ", s)
+    return " ".join(s.lower().split())
+
+
+def _answer_span(response: str) -> str:
+    """Text after the last 'answer is', else the first non-empty line."""
+    parts = _ANSWER_IS.split(response)
+    if len(parts) > 1:
+        return parts[-1]
+    for line in response.splitlines():
+        if line.strip():
+            return line
+    return ""
+
+
+def is_correct(task: str, response: str, answer: str, distractors=None) -> bool:
+    """Score one response.
+
+    MCQ:       extracted letter == answer letter.
+    Math:      extracted number == answer (numeric compare, any digit script).
+    Retrieval: exact (normalized) name match in the answer span, as in the paper. If
+               `distractors` (other names from the list) are given, the span must not
+               also contain one of them, so echoing the whole list doesn't count.
+    """
+    response = response or ""
     if task in MCQ_TASKS:
-        return _extract_mcq(response) == str(answer).upper()
+        return _extract_mcq(response) == str(answer).strip().upper()
     if task in MATH_TASKS:
         got = _extract_number(response)
-        return got == str(answer).replace(",", "") if got else False
-    # Retrieval: correct name should appear somewhere in the response
-    return str(answer).strip().lower() in response.lower()
+        try:
+            return got is not None and abs(float(got) - float(str(answer).translate(_DIGITS).replace(",", ""))) < 1e-6
+        except ValueError:
+            return False
+    span = f" {_normalize_name(_answer_span(response))} "
+    target = _normalize_name(answer)
+    if not target or f" {target} " not in span:
+        return False
+    for d in distractors or []:
+        d = _normalize_name(d)
+        if d and d != target and d not in target and f" {d} " in span:
+            return False
+    return True
 
 
 # ── 5. Local Model Call ─────────────────────────────────────────────────────
@@ -302,7 +345,7 @@ def call_model(
       {response, prompt_tokens, output_tokens, latency_ms}
     
     Uses HuggingFace transformers for local inference.
-    max_tokens=100 matches the paper (prevents CoT responses).
+    max_tokens=100 is this project's choice (the paper gives no limit); it prevents CoT responses.
     temperature=0 (deterministic) per paper specification.
     """
     from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -445,9 +488,12 @@ def run_experiment(
         for sc in scenarios:
             results[model].setdefault(sc, [])
             done_ids = {r["item_id"] for r in results[model][sc]}
+            from run_punjabi import _TASK_SCENARIOS
             todo = [
                 it for it in dataset
-                if it.get("id") not in done_ids and build_base_prompt(sc, it) is not None
+                if it.get("id") not in done_ids
+                and sc in _TASK_SCENARIOS.get(it.get("task", ""), [sc])
+                and build_base_prompt(sc, it) is not None
             ]
             if not todo:
                 continue

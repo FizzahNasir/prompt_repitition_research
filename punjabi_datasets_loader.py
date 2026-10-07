@@ -8,11 +8,11 @@ Files consumed (datasets/punjabi/):
   ARC_Punjabi_GoogleTranslate.xlsx            300 items
   OpenBookQA_Punjabi_GoogleTranslate.xlsx     495 items
   CommonSenseQA_Punjabi_GoogleTranslate.xlsx  289 usable items
-  NameIndex_Punjabi.xlsx                      100 items
-  MiddleMatch_Punjabi.xlsx                    100 items
+  NameIndex_Punjabi.xlsx                      300 items
+  MiddleMatch_Punjabi.xlsx                    300 items
   ScriptMixed_Punjabi.xlsx                     20 items
 
-Total: ~1,554 items
+Total: ~1,933 items (after dropping collapsed-option MCQs)
 """
 
 import random
@@ -59,6 +59,44 @@ def _find_file(*names) -> Path:
     return BASE / names[0]
 
 
+# ── Shared item hygiene ───────────────────────────────────────────────────────
+
+_LANG = "pa"
+_DIGIT_TO_LETTER = {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E"}
+_LIST_SEP = "،"   # retrieval lists are "<header>\n<name>، <name>، ..."
+
+
+def _letter(key) -> str:
+    """Normalise an MCQ key: numeric "1".."5" (or 1.0) -> "A".."E"; letters upper-cased."""
+    k = _str(key).upper()
+    return _DIGIT_TO_LETTER.get(k, k)
+
+
+def _letter_options(options: dict) -> dict:
+    """Re-key an options dict so numeric keys "1".."5" become "A".."E"."""
+    return {_letter(k): v for k, v in options.items()}
+
+
+def _has_duplicate_options(options: dict) -> bool:
+    vals = [str(v).strip() for v in options.values()]
+    return len(set(vals)) < len(vals)
+
+
+def _drop_duplicate_option_items(items: list, task: str) -> list:
+    """Drop MCQ items whose options collapsed to identical text (translation artefact)."""
+    kept = [it for it in items if "options" not in it or not _has_duplicate_options(it["options"])]
+    if len(kept) < len(items):
+        print(f"  [{_LANG}] {task}: dropped {len(items) - len(kept)} items with identical option texts")
+    return kept
+
+
+def _parse_candidates(long_data: str) -> list:
+    """Distinct names (first-appearance order) from a NameIndex/MiddleMatch Long Data cell."""
+    body = long_data.split("\n", 1)[1] if "\n" in long_data else long_data
+    names = [n.strip() for n in body.split(_LIST_SEP) if n.strip()]
+    return list(dict.fromkeys(names))
+
+
 # ── File loaders ──────────────────────────────────────────────────────────────
 
 def _load_mgsm() -> list:
@@ -93,7 +131,9 @@ def _load_arc() -> list:
         if not native_q:
             continue
         options = {"A": _str(opt_a), "B": _str(opt_b), "C": _str(opt_c), "D": _str(opt_d)}
-        correct = str(answer).strip().upper()
+        correct = _letter(answer)
+        if correct not in options:
+            continue
         sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
         items.append({
             "id":                      f"arc_pa_{i:03d}",
@@ -120,7 +160,9 @@ def _load_openbookqa() -> list:
         if not native_q:
             continue
         options = {"A": _str(opt_a), "B": _str(opt_b), "C": _str(opt_c), "D": _str(opt_d)}
-        correct = str(answer).strip().upper()
+        correct = _letter(answer)
+        if correct not in options:
+            continue
         sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
         items.append({
             "id":                      f"obqa_pa_{i:03d}",
@@ -150,7 +192,9 @@ def _load_commonsenseqa() -> list:
             "A": _str(opt_a), "B": _str(opt_b), "C": _str(opt_c),
             "D": _str(opt_d), "E": _str(opt_e),
         }
-        correct = _ARABIC_TO_LATIN.get(str(answer).strip(), str(answer).strip().upper())
+        correct = _ARABIC_TO_LATIN.get(_str(answer), _letter(answer))
+        if correct not in options:
+            continue
         sh_opts, sh_correct = _shuffle_options(options, correct, seed=i)
         items.append({
             "id":                      f"csqa_pa_{i:03d}",
@@ -195,6 +239,7 @@ def _load_retrieval(filename: str, task: str, id_prefix: str) -> list:
             item["query"]               = q           # no answer suffix (prompt has "Reply with one name only.")
         else:
             item["query"] = q + _ANSWER_SUFFIX_PA
+            item["candidates"] = _parse_candidates(ld)
         items.append(item)
     wb.close()
     return items
@@ -223,8 +268,13 @@ def build_dataset(tasks: list = None) -> list:
         if tasks and task_name not in tasks:
             continue
         items = loader()
+        items = _drop_duplicate_option_items(items, task_name)
         print(f"  {task_name:<15} {len(items):>4} items")
         dataset.extend(items)
+    ids = [it["id"] for it in dataset]
+    if len(ids) != len(set(ids)):
+        dupes = sorted({i for i in ids if ids.count(i) > 1})
+        raise RuntimeError(f"{_LANG}: duplicate item ids: {dupes[:10]}")
     return dataset
 
 
