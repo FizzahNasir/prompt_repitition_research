@@ -55,6 +55,8 @@ EN = ROOT / "datasets" / "english"
 LANGS = {"ar": ("Arabic", "arabic"), "fa": ("Persian", "persian"), "sd": ("Sindhi", "sindhi")}
 TASKS = ["ARC", "OpenBookQA", "CommonSenseQA", "MGSM"]
 STATUS = "Machine translated (Google), needs review"
+NLLB_STATUS = "Machine translated (NLLB-200), needs review"
+NLLB_CODES = {"ar": "arb_Arab", "fa": "pes_Arab", "sd": "snd_Arab"}
 DEFAULT_CACHE = Path(tempfile.gettempdir()) / "translate_benchmarks_cache.json"
 
 ARC_SKIP = {121, 123}          # rows absent from the Urdu/Punjabi ARC files
@@ -132,10 +134,12 @@ class Translator:
     GTX_URL = "https://translate.googleapis.com/translate_a/single"
 
     def __init__(self, cache_path: Path, delay: float = 2.0, max_chars: int = 4500,
-                 max_lines: int = 60, backend: str = "auto"):
+                 max_lines: int = 60, backend: str = "auto", nllb_model: str = None):
         self.cache_path = Path(cache_path)
         self.delay, self.max_chars, self.max_lines = delay, max_chars, max_lines
-        self.backend = backend            # auto | deep | gtx
+        self.backend = backend            # auto | deep | gtx | nllb
+        self.nllb_model = nllb_model
+        self._nllb = None
         self.cache = {}
         if self.cache_path.exists():
             self.cache = json.loads(self.cache_path.read_text(encoding="utf-8"))
@@ -144,9 +148,46 @@ class Translator:
         self.n_requests = 0
         self._dirty = 0
 
-    @staticmethod
-    def key(lang, text):
-        return f"{lang}\t{text}"
+    def key(self, lang, text):
+        # NLLB output is cached separately so it never mixes with Google translations
+        return f"nllb-{lang}\t{text}" if self.backend == "nllb" else f"{lang}\t{text}"
+
+    # -- NLLB-200 (local model, no network quota) --
+    def _nllb_translate(self, texts, lang, batch_size=16):
+        if self._nllb is None:
+            import torch
+            from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+            tok = AutoTokenizer.from_pretrained(self.nllb_model, src_lang="eng_Latn")
+            model = AutoModelForSeq2SeqLM.from_pretrained(self.nllb_model)
+            model.to("cuda" if torch.cuda.is_available() else "cpu").eval()
+            self._nllb = (tok, model, torch)
+            print(f"  NLLB model loaded: {self.nllb_model} on {model.device}", flush=True)
+        tok, model, torch = self._nllb
+        target = tok.convert_tokens_to_ids(NLLB_CODES[lang])
+        out = []
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
+            enc = tok(batch, return_tensors="pt", padding=True, truncation=True,
+                      max_length=512).to(model.device)
+            with torch.no_grad():
+                gen = model.generate(**enc, forced_bos_token_id=target, num_beams=4,
+                                     max_new_tokens=int(enc["input_ids"].shape[1] * 2) + 20)
+            out.extend(tok.batch_decode(gen, skip_special_tokens=True))
+        return out
+
+    def _translate_nllb(self, todo, lang):
+        # NLLB is sentence-level: translate line by line, re-join multi-line strings.
+        lines = list(dict.fromkeys(l for t in todo for l in t.split("\n") if l.strip()))
+        done, step = {}, 128
+        for i in range(0, len(lines), step):
+            for src, out in zip(lines[i:i + step], self._nllb_translate(lines[i:i + step], lang)):
+                done[src] = out
+            for t in todo:
+                parts = [l for l in t.split("\n") if l.strip()]
+                if self.key(lang, t) not in self.cache and all(l in done for l in parts):
+                    self._store(lang, t, "\n".join(done.get(l, l) for l in t.split("\n")))
+            self.save()
+            print(f"    {min(i + step, len(lines))}/{len(lines)} lines", flush=True)
 
     def save(self):
         tmp = self.cache_path.with_suffix(".tmp")
@@ -220,6 +261,10 @@ class Translator:
         if todo:
             print(f"  [{lang}] {label}: {len(todo)} new strings to translate "
                   f"({len(set(texts)) - len(todo)} cached)")
+        if self.backend == "nllb":
+            if todo:
+                self._translate_nllb(todo, lang)
+            return {t: self.cache.get(self.key(lang, t), "") for t in texts}
         chunk, size, done = [], 0, 0
         for t in todo + [None]:
             flush = t is None or (chunk and (size + len(t) > self.max_chars or len(chunk) >= self.max_lines))
@@ -341,12 +386,14 @@ def write_xlsx(path: Path, sheet: str, header: list, rows: list):
 def build(task: str, lang: str, tr: Translator) -> dict:
     name, folder = LANGS[lang]
     items = load_source(task)
-    out_path = ROOT / "datasets" / folder / f"{task}_{name}_GoogleTranslate.xlsx"
+    nllb = tr.backend == "nllb"
+    engine, status = ("NLLB", NLLB_STATUS) if nllb else ("Google Translate", STATUS)
+    out_path = ROOT / "datasets" / folder / f"{task}_{name}_{'NLLB' if nllb else 'GoogleTranslate'}.xlsx"
     qc = {"file": str(out_path.relative_to(ROOT)), "rows": len(items)}
 
     if task == "MGSM":
         tmap = tr.translate_many([it["question"] for it in items], lang, f"{task}")
-        header = ["#", "English Question", f"Google Translate {name}", "Answer", "Equation", "Status",
+        header = ["#", "English Question", f"{engine} {name}", "Answer", "Equation", "Status",
                   "Source Index", "Number Check"]
         rows, mism, wordonly = [], [], 0
         for n, it in enumerate(items, start=1):
@@ -367,7 +414,7 @@ def build(task: str, lang: str, tr: Translator) -> dict:
             ans = it["answer"]
             ans = int(ans) if float(ans).is_integer() else float(ans)
             eq = None if pd.isna(it["equation"]) else it["equation"]
-            rows.append([n, it["question"], t, ans, eq, STATUS, it["src_index"], check])
+            rows.append([n, it["question"], t, ans, eq, status, it["src_index"], check])
         qc.update(empty=sum(1 for r in rows if not r[2].strip()),
                   number_mismatch=len(mism), number_mismatch_rows=mism, number_word_only=wordonly,
                   arabic_script=sum(has_arabic(r[2]) for r in rows),
@@ -395,7 +442,7 @@ def build(task: str, lang: str, tr: Translator) -> dict:
             flag = ("Yes (also in English)" if en_dup else "Yes") if is_dup else ""
             extra = [it["in_set"]] if task in ("CommonSenseQA", "OpenBookQA") else []
             rows.append([n, it["question"], q] + it["options"] + opts
-                        + [it["answer"], STATUS, it["src_id"], it["src_index"]] + extra + [flag])
+                        + [it["answer"], status, it["src_id"], it["src_index"]] + extra + [flag])
             native_texts.append(" ".join([q] + opts))
         qc.update(empty=empty, duplicate_option_items=dup,
                   arabic_script=sum(has_arabic(t) for t in native_texts), native_texts=native_texts)
@@ -448,13 +495,16 @@ def main():
     ap.add_argument("--tasks", nargs="+", default=TASKS, choices=TASKS)
     ap.add_argument("--cache", default=str(DEFAULT_CACHE))
     ap.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
-    ap.add_argument("--backend", default="auto", choices=["auto", "deep", "gtx"])
+    ap.add_argument("--backend", default="auto", choices=["auto", "deep", "gtx", "nllb"])
+    ap.add_argument("--nllb-model", default="facebook/nllb-200-distilled-1.3B",
+                    help="NLLB checkpoint for --backend nllb (writes *_NLLB.xlsx)")
     args = ap.parse_args()
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 
     t0 = time.time()
-    tr = Translator(Path(args.cache), delay=args.delay, backend=args.backend)
+    tr = Translator(Path(args.cache), delay=args.delay, backend=args.backend,
+                    nllb_model=args.nllb_model)
     print(f"cache: {args.cache} ({len(tr.cache)} entries)")
     summary = []
     try:

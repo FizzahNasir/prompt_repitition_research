@@ -49,15 +49,18 @@ def _shuffle_options(options: dict, correct: str, seed: int):
 def load(lang: str, lang_name: str, task: str, folder: str) -> list:
     """Items for one translated benchmark, e.g. load("fa", "Persian", "ARC", "persian")."""
     stem, prefix = _TASK_FILES[task]
-    path = DATASETS / folder / f"{stem}_{lang_name}_GoogleTranslate.xlsx"
+    # One engine per language: if any NLLB file exists for it, use NLLB for every task.
+    engine = "NLLB" if any((DATASETS / folder).glob(f"*_{lang_name}_NLLB.xlsx")) else "GoogleTranslate"
+    path = DATASETS / folder / f"{stem}_{lang_name}_{engine}.xlsx"
     if not path.exists():
         print(f"  [{lang}] {task}: {path.name} not found, skipping")
         return []
     df = pd.read_excel(path)
+    mgsm_col = df.columns[2]  # "Google Translate <Lang>" or "NLLB <Lang>"
     items = []
     for i, row in enumerate(df.to_dict("records"), start=1):
         if task == "GSM8K":
-            q = _s(row.get(f"Google Translate {lang_name}"))
+            q = _s(row.get(mgsm_col))
             if not q:
                 continue
             items.append({"id": f"{prefix}_{lang}_{i:03d}", "language": lang, "task": task,
