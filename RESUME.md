@@ -71,7 +71,7 @@ The current branch is **`kaggle-tests-1-2`**, the one the notebook clones. Do no
 - Translation engines (must be disclosed in the paper):
   - pa/ur via Google Translate (existing).
   - ar via Google Translate (gtx endpoint).
-  - fa/sd via **NLLB-200 1.3B**, sentence-level.
+  - fa/sd via **NLLB-200 1.3B**, merged row by row from two passes using automatic QA flags. MCQ files use the sentence-level pass, falling back to the whole-line pass. MGSM uses the whole-line pass (formal register, fewer unit/decimal conversions), falling back to the sentence-level pass. Rows defective in both passes were excluded: fa 4 (CSQA 1, MGSM 3) and sd 8 (ARC 3, OBQA 1, MGSM 4). The source pass for each row is in the `NLLB Pass` column. Final counts: fa 1932 items, sd 1922.
 - Retrieval scoring is exact normalised name match. Fuzzy ≥ 0.80 was dropped because distinct names such as صفیہ بیگم / روبینہ بیگم score above it.
 - System prompts and native retrieval strings were machine-checked only; they still need a native-speaker review.
 - Also disclose:
