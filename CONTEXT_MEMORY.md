@@ -59,9 +59,9 @@ While the original paper focused primarily on English and high-resource benchmar
 | **ARC-Challenge** | Science MCQ (4 choices) | 300 | `2_Question_First`, `3_Options_First` | Choice letter extraction (A–D, Alif–Dal) |
 | **OpenBookQA** | Science Fact MCQ (4 choices) | 495 | `2_Question_First`, `3_Options_First` | Choice letter extraction (A–D, Alif–Dal) |
 | **CommonSenseQA** | Everyday Reasoning (5 choices) | 289 | `2_Question_First`, `3_Options_First` | Choice letter extraction (A–E, Alif–Hey) |
-| **NameIndex** | Long-context Retrieval (50 names) | 100 | `10_Data_First_Retrieval` | Fuzzy string match ($\ge 0.80$ similarity) |
-| **MiddleMatch** | Contextual Retrieval (40 names) | 100 | `10_Data_First_Retrieval` | Fuzzy string match ($\ge 0.80$ similarity) |
-| **ScriptMixed** | Code-Switching (English + RTL) | 20 | `8_English_to_RTL` | Fuzzy string match ($\ge 0.80$ similarity) |
+| **NameIndex** | Long-context Retrieval (50 names) | 100 | `10_Data_First_Retrieval` | Exact name match (normalized spelling) |
+| **MiddleMatch** | Contextual Retrieval (40 names) | 100 | `10_Data_First_Retrieval` | Exact name match (normalized spelling) |
+| **ScriptMixed** | Code-Switching (English + RTL) | 20 | `8_English_to_RTL` | Exact name match (normalized spelling) |
 
 ---
 

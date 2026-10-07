@@ -21,7 +21,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import analysis
 import experiment_runner as er
-from pr_runner import read_jsonl
+from pr_runner import load_dataset, question_names, read_jsonl
 
 PAPER_TASKS = {"ARC", "OpenBookQA", "GSM8K", "NameIndex", "MiddleMatch"}
 
@@ -33,8 +33,28 @@ def load_raw(results_dir: Path) -> pd.DataFrame:
     if not rows:
         sys.exit(f"No results found under {results_dir / 'raw'}")
     df = pd.DataFrame(rows)
-    df = df.drop_duplicates(["model", "key"], keep="last")
+    # A key can be in two files (e.g. ar.jsonl and ar.shard0of2.jsonl): a successful
+    # row wins over an errored or skipped one, as in pr_runner.merge_rows.
+    failed = df["response"].isna()
+    if "error" in df:
+        failed |= df["error"].notna()
+    df = (df.assign(_failed=failed).sort_values("_failed", kind="stable")
+            .drop_duplicates(["model", "key"], keep="first").drop(columns="_failed"))
     return df
+
+
+def add_anchors(df: pd.DataFrame) -> list:
+    """MiddleMatch question names per row; rebuilt from the loaders for rows written
+    before pr_runner stored them."""
+    stored = df["anchors"] if "anchors" in df else [None] * len(df)
+    rows = list(zip(df["task"], df["language"], df["item_id"], stored))
+    names = {}
+    for lang in {l for t, l, _, a in rows if t == "MiddleMatch" and not isinstance(a, list)}:
+        for item in load_dataset(lang):
+            if item.get("task") == "MiddleMatch":
+                names[(lang, item.get("id"))] = question_names(item)
+    return [a if isinstance(a, list) else names.get((l, i)) if t == "MiddleMatch" else None
+            for t, l, i, a in rows]
 
 
 def main():
@@ -57,12 +77,24 @@ def main():
         ok &= df["error"].isna()
     df = df[ok].copy()
     distractors = df["distractors"] if "distractors" in df else [None] * len(df)
-    df["is_correct"] = [int(bool(er.is_correct(t, r, a, d if isinstance(d, list) else None)))
-                        for t, r, a, d in zip(df["task"], df["response"], df["correct_answer"], distractors)]
-    df = df.drop(columns=["distractors"], errors="ignore")
+    anchors = add_anchors(df)
+    df["is_correct"] = [int(bool(er.is_correct(t, r, a, d if isinstance(d, list) else None, n)))
+                        for t, r, a, d, n in zip(df["task"], df["response"], df["correct_answer"],
+                                                 distractors, anchors)]
+    df = df.drop(columns=["distractors", "anchors"], errors="ignore")
     print(f"{len(df):,} scored generations | {n_err} errored | {n_skip} skipped (prompt too long)")
 
     df.to_csv(out / "scored.csv", index=False, encoding="utf-8")
+
+    # Accuracy only over items every method answered, so a method whose longer prompt was
+    # skipped or errored isn't scored on a different item set (McNemar pairs anyway).
+    item = ["model", "language", "task", "scenario", "item_id"]
+    paired = (df.groupby(item)["method"].transform("nunique")
+              == df.groupby(["model", "language"])["method"].transform("nunique"))
+    if (~paired).any():
+        print(f"{int((~paired).sum()):,} generations without a counterpart in every method "
+              f"left out of the accuracy table")
+    df = df[paired]
 
     acc_parts, mc_parts = [], []
     for lang, ldf in df.groupby("language"):

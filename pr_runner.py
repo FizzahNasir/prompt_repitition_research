@@ -70,6 +70,19 @@ def log(msg: str) -> None:
 
 # ── Job construction ──────────────────────────────────────────────────────────
 
+def question_names(item: dict) -> list:
+    """List names that appear in the question itself (MiddleMatch's two anchors)."""
+    if item.get("task") != "MiddleMatch":
+        return []
+    return [c for c in item.get("candidates") or [] if c in str(item.get("query", ""))]
+
+
+def load_dataset(lang: str) -> list:
+    loader_mod, _ = LANGUAGES[lang]
+    with contextlib.redirect_stdout(io.StringIO()):
+        return importlib.import_module(loader_mod).build_dataset()
+
+
 def build_jobs(lang: str, methods: list, skip_tasks: set, tasks: set = None) -> list:
     """Every (item × scenario × method) prompt for one language.
 
@@ -79,9 +92,7 @@ def build_jobs(lang: str, methods: list, skip_tasks: set, tasks: set = None) -> 
     import experiment_runner as er
     from run_punjabi import _TASK_SCENARIOS
 
-    loader_mod, prompt_attr = LANGUAGES[lang]
-    with contextlib.redirect_stdout(io.StringIO()):
-        dataset = importlib.import_module(loader_mod).build_dataset()
+    dataset = load_dataset(lang)
 
     jobs = []
     for item in dataset:
@@ -101,6 +112,7 @@ def build_jobs(lang: str, methods: list, skip_tasks: set, tasks: set = None) -> 
             # question itself, e.g. MiddleMatch's anchors, are expected in a reply).
             distractors = [c for c in item.get("candidates") or []
                            if c != answer and c not in str(item.get("query", ""))]
+            anchors = question_names(item)
             for method in methods:
                 jobs.append({
                     "key":            f"{lang}|{task}|{sc}|{item.get('id')}|{method}",
@@ -111,12 +123,13 @@ def build_jobs(lang: str, methods: list, skip_tasks: set, tasks: set = None) -> 
                     "item_id":        item.get("id"),
                     "correct_answer": answer,
                     "distractors":    distractors,
+                    "anchors":        anchors,
                     "prompt":         variants[method],
                 })
     keys = [j["key"] for j in jobs]
     if len(keys) != len(set(keys)):
         raise RuntimeError(f"{lang}: duplicate job keys — item ids are not unique")
-    return jobs, getattr(er, prompt_attr)
+    return jobs, getattr(er, LANGUAGES[lang][1])
 
 
 # ── Persistence ───────────────────────────────────────────────────────────────
@@ -495,7 +508,7 @@ def main():
                     text, n_out, finish = gens[k]
                     row.update(response=text, output_tokens=n_out, finish_reason=finish,
                                is_correct=bool(er.is_correct(j["task"], text, j["correct_answer"],
-                                                             j["distractors"])),
+                                                             j["distractors"], j["anchors"])),
                                latency_ms_per_prompt=round(dt * 1000 / max(len(ids), 1), 1),
                                error=None)
                 rows.append(row)

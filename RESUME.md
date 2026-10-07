@@ -1,70 +1,94 @@
 # Resume Point: Tests 1–2 (baseline + repetition), 8 models, 6 languages
 
-_Last updated: 2026-10-07 18:25 PKT_
+_Last updated: 2026-10-07 23:45 PKT_
 
 ## Where things stand
 
 | Item | State | Where the output is |
 |---|---|---|
-| Qwen 1.5B / 3B / 7B | ✅ **Done**: 78,396 generations, 0 errors (Kaggle version 3) | `results/qwen_v3/raw_jsonl.zip` + `analysis/`; Kaggle dataset `fiznasir/pr-results-checkpoint` |
-| Llama 3.2 1B / 3B, Gemma-2 2B, Mistral 7B, Llama 3.1 8B | ⏳ **Running**: Kaggle notebook `fiznasir/prompt-repetition-tests-1-2` **version 4**, started 18:16 PKT, ETA ~21:00–23:00 | Kaggle output of version 4; live mirror in HF dataset `<hf-user>/prompt-repetition-results` (`raw/<model>/`) |
-| Persian (fa) + Sindhi (sd) translations of ARC / OpenBookQA / CommonSenseQA / MGSM | ⏳ **Running**: Kaggle CPU job `fiznasir/pr-translate-fa-sd-nllb` (NLLB-200 1.3B), started 16:47 PKT, ETA ~19:00–21:00 | Kaggle output of that job: `out/*_NLLB.xlsx` |
+| Qwen 1.5B / 3B / 7B, Mistral 7B | ✅ **Done** on every item available so far (26,132 generations each, 0 errors) | Kaggle dataset `fiznasir/pr-results-checkpoint` (flat `<model>__<lang>[.shardIofN].jsonl`) |
+| Llama 3.2 1B / 3B, Llama 3.1 8B, Gemma-2 2B | ⏳ **Not run yet.** Version 4 skipped them because no `HF_TOKEN` secret was attached. To be run as **version 5** | Kaggle output of version 5 + HF mirror `<hf-user>/prompt-repetition-results` |
+| Persian (fa) + Sindhi (sd) NLLB translations of ARC / OpenBookQA / CommonSenseQA / MGSM | ⏳ **Re-translating.** GPU job `fiznasir/pr-translate-fa-sd-nllb-gpu` **version 2** | Kaggle output: `out/*_NLLB.xlsx` |
+
+Checkpoint note: the Google-translated Sindhi GSM8K rows were **removed** from the checkpoint, because Sindhi switches to NLLB and the item ids are the same. Run with `SKIP = ["sd:GSM8K"]` until the NLLB files are in the repo.
+
+NLLB version 1 failed QA:
+- NLLB-200 drops sentences when given multi-sentence input, often the question itself.
+- It also loops on some inputs.
+- `translate_benchmarks.py` now translates sentence by sentence, retries looping outputs and folds Persian ي/ك to ی/ک (cache prefix `nllb2-`).
+- The CPU job `fiznasir/pr-translate-fa-sd-nllb` runs the old code. It is obsolete; ignore or stop it.
 
 What each language currently covers:
 - **pa, ur, ps, ar:** all 7 tasks.
-- **fa:** NameIndex, MiddleMatch and ScriptMixed only, until the NLLB files are added.
-- **sd:** retrieval tasks plus MGSM (Google), until the NLLB files are added. Once they are, all Sindhi tasks switch to NLLB, keeping one engine per language.
+- **fa, sd:** NameIndex, MiddleMatch, ScriptMixed, until the NLLB files are added. Then Persian and Sindhi also get ARC, OpenBookQA, CommonSenseQA and MGSM, all from NLLB.
 
-The current branch is **`kaggle-tests-1-2`**, the one the notebook clones.
+The current branch is **`kaggle-tests-1-2`**, the one the notebook clones. Do not delete it: PR #2 uses it as its head branch.
 
 ## Next steps (in order)
 
-1. **Check that both Kaggle jobs finished.** Use `kaggle kernels status fiznasir/<slug>`, or go to kaggle.com → *View Active Events*.
-
-2. **Add the NLLB translations:**
-   ```bash
-   kaggle kernels output fiznasir/pr-translate-fa-sd-nllb -p /tmp/nllb
-   cp /tmp/nllb/out/*_Persian_NLLB.xlsx datasets/persian/
-   cp /tmp/nllb/out/*_Sindhi_NLLB.xlsx  datasets/sindhi/
-   python -c "import persian_datasets_loader as p, sindhi_datasets_loader as s; p.build_dataset(); s.build_dataset()"
-   ```
-   - Check the quality summary in the job log: empty translations, identical options, the MGSM number check, and Sindhi letters present.
-   - Then commit and push to `kaggle-tests-1-2`.
-   - `translated_benchmarks.py` uses the `_NLLB` files automatically for any language that has them.
-
-3. **Refresh the results checkpoint with version 4's output:**
-   ```bash
-   kaggle kernels output fiznasir/prompt-repetition-tests-1-2 -p /tmp/v4
-   # flatten raw/<model>/<file> -> <model>__<file>, then:
-   kaggle datasets version -p <flat dir> -m "add v4 models"   # dataset fiznasir/pr-results-checkpoint
-   ```
-
-4. **Top-up run (version 5) for the new fa/sd items:**
-   - Push the notebook again with `dataset_sources: ["fiznasir/pr-results-checkpoint"]`.
-   - All 8 models run, and only the new fa/sd jobs execute (about 3k per model, roughly 1.5–2 h total).
-   - The HF mirror also restores progress if the checkpoint is stale.
-
-5. **Final analysis:** `python score_results.py --results <dir with raw/>`. The notebook's last cell also does this. It writes `accuracy_table.csv`, `mcnemar_results.csv` and `wins_summary.csv`.
+1. **Start version 5 from the Kaggle editor, not with `kaggle kernels push`.** Secrets attached in the UI are dropped by API pushes.
+   - In cell 2, set `MODELS = ["llama3.2-1b", "llama3.2-3b", "llama3.1-8b", "gemma2-2b"]` and `SKIP = ["sd:GSM8K"]`.
+   - Input: `pr-results-checkpoint` (latest version). Secret `HF_TOKEN` must be a **write** token and ticked. GPU T4 ×2, internet on.
+   - Save Version → Save & Run All.
+   - The log must show `HF mirror: <user>/prompt-repetition-results`, and its `git log` line must show the pushed commit.
+   - Estimate: 4.5–7.5 h. Gemma runs last because it runs in fp32 and is slow if vLLM falls back to transformers.
+2. **When NLLB version 2 passes QA:** copy `out/*_Persian_NLLB.xlsx` → `datasets/persian/` and `out/*_Sindhi_NLLB.xlsx` → `datasets/sindhi/`. Then run `python -c "import persian_datasets_loader as p, sindhi_datasets_loader as s; p.build_dataset(); s.build_dataset()"`, commit and push.
+3. **When version 5 finishes:** download its output. Check that the 4 gated models are complete. Flatten `raw/<model>/<file>` to `<model>__<file>` and upload all files as a new checkpoint version. A dataset version replaces every file, so include all 8 models.
+4. **Version 6 top-up:**
+   - Set `MODELS` to all 8 and `SKIP = []`.
+   - Only the new fa/sd NLLB items run: about 9.1–9.6k prompts per model, about 2.5–3 h in total.
+5. **Final analysis:** `python score_results.py --results <dir with raw/>`. Add exact-McNemar p-values as a robustness column: 9 of 67 significant results in the 4-model data depend on the chi-square variant.
 
 ## How the pieces fit
 
-- **`pr_runner.py`:** one model per call. It appends to `raw/<model>/<lang>[.shardIofN].jsonl` with fsync per chunk, mirrors to HF if `HF_RESULTS_REPO`/`HF_TOKEN` are set, and skips anything already done. It never repeats work.
-- **`run_experiments.ipynb`:** loops over the 8 models on Kaggle T4×2. Small models run as one shard per GPU; 7–8B models and Gemma (fp32) use tensor parallelism across both GPUs. It restores earlier results from `/kaggle/input` and the HF mirror, and stops itself at 11.3 h.
-- **`score_results.py`:** re-scores raw responses and runs McNemar (no continuity correction, p < 0.1, as in the paper).
-- **Kaggle API pushes** use `kernel-metadata.json` with `machine_shape: NvidiaTeslaT4`, internet on, private. The `HF_TOKEN` secret is attached in the Kaggle UI (the API can't set secrets).
-- **Kaggle gotcha:** after installing vLLM 0.30.0, uninstall `torchaudio` (the notebook does this), or transformers fails with a CUDA-version mismatch.
+- **`pr_runner.py`:**
+  - Runs one model per call.
+  - Appends to `raw/<model>/<lang>[.shardIofN].jsonl` with fsync per chunk.
+  - Mirrors to HF if `HF_RESULTS_REPO`/`HF_TOKEN` are set; this needs a write token, or every model crashes at startup.
+  - Skips anything already done. Jobs store `distractors` and `anchors` (MiddleMatch question names).
+- **`run_experiments.ipynb`:**
+  - Loops over `MODELS` on Kaggle T4×2.
+  - Small models run as one shard per GPU. 7–8B models and Gemma (fp32) use tensor parallelism.
+  - Restores from `/kaggle/input` and the HF mirror, and stops itself at 11.3 h.
+  - If `llama3.2-1b` (the smoke-test model) lacks a licence, the whole run aborts. Other gated failures only show in the status dict.
+- **`score_results.py`:**
+  - Re-scores raw responses with the current `experiment_runner.is_correct`.
+  - Rebuilds MiddleMatch anchors from the loaders for old rows.
+  - Prefers successful rows on duplicate keys and computes accuracy over paired items only.
+  - McNemar: chi-square, no continuity correction, p < 0.1, as in the paper.
+- **Scoring:**
+  - MCQ and math answers are extracted from the reply.
+  - Retrieval uses **exact name match after Perso-Arabic spelling normalisation**, not fuzzy matching. A restated MiddleMatch question is removed before matching.
+- **Kaggle gotchas:**
+  - Uninstall `torchaudio` after installing vLLM 0.30.0 (the notebook does this).
+  - On Windows, set `PYTHONIOENCODING=utf-8` for `kaggle` downloads (charmap error).
+  - Run `kaggle datasets version` from a short working directory with a relative `-p` (path-length error).
 
 ## Decisions on record
 
 - Balochi was dropped: 2 of its 3 MCQ benchmarks were missing.
-- Conditions follow arXiv:2512.14982 (A.3/A.4 prompt formats, McNemar p < 0.1), except for the 8 chosen models and the repo's 4 tests. Tests 1–2 (baseline, repetition) run first; tests 3–4 can be added later with `--methods ... cross_lingual_t1 cross_lingual_t2`, reusing the finished rows.
-- Translation engines: pa/ur via Google Translate (existing); ar via Google Translate (gtx endpoint, before Google rate-limited this IP); fa/sd via **NLLB-200 1.3B**. This must be disclosed in the paper.
+- Conditions follow arXiv:2512.14982 (A.3/A.4 prompt formats, McNemar p < 0.1), except for the 8 chosen models and the repo's 4 tests. Tests 1–2 (baseline, repetition) run first. Tests 3–4 can be added later with `--methods ... cross_lingual_t1 cross_lingual_t2`, reusing the finished rows.
+- Translation engines (must be disclosed in the paper):
+  - pa/ur via Google Translate (existing).
+  - ar via Google Translate (gtx endpoint).
+  - fa/sd via **NLLB-200 1.3B**, sentence-level.
+- Retrieval scoring is exact normalised name match. Fuzzy ≥ 0.80 was dropped because distinct names such as صفیہ بیگم / روبینہ بیگم score above it.
 - System prompts and native retrieval strings were machine-checked only; they still need a native-speaker review.
+- Also disclose:
+  - Gemma's system prompt is merged into the user turn.
+  - Llama 3.x chat templates insert a "Today Date".
 
-## Early Qwen results (tests 1–2)
+## Results so far (4 models, fixed scorer)
 
-Significant wins for repetition over baseline (McNemar, p < 0.1):
-- **All tasks:** 47 wins / 6 losses out of 141 tests.
-- **Paper tasks only:** 23 / 6 out of 99.
-- The largest gains are on options-first MCQ and ScriptMixed.
-- NameIndex accuracy is about 1–5% for both methods. This is real, not a scoring bug: the correct name appears anywhere in the reply only 3.4% of the time.
+Significant wins / losses for repetition over baseline (McNemar, p < 0.1):
+- **All tasks:** 56 / 7 out of 188 tests.
+- **Paper tasks only:** 27 / 5 out of 132.
+
+| Model | All tasks |
+|---|---|
+| Qwen-1.5B | 13 / 1 |
+| Qwen-3B | 19 / 3 |
+| Qwen-7B | 15 / 2 |
+| Mistral-7B | 10 / 4 |
+
+These per-model counts are from the old scorer; the fixed scorer changes 8 outcomes, 7 of them MiddleMatch. The largest gains are on options-first MCQ and ScriptMixed. NameIndex accuracy is about 1–5% for both methods.

@@ -62,6 +62,31 @@ DEFAULT_CACHE = Path(tempfile.gettempdir()) / "translate_benchmarks_cache.json"
 ARC_SKIP = {121, 123}          # rows absent from the Urdu/Punjabi ARC files
 ARC_N, CSQA_N = 300, 300
 
+# Sentence boundary for NLLB: . ? ! then whitespace and a capital, digit or opening
+# quote/bracket. Decimals (2.50) and lower-case continuations ("e.g. the") stay intact.
+_SENT_SPLIT = re.compile(r"(?<=[.?!])\s+(?=[\"'(\[$]?[A-Z0-9])")
+_FA_FOLD = str.maketrans("يكى", "یکی")   # NLLB's pes_Arab often emits Arabic yeh/kaf
+
+
+_ABBREV = ("Mr.", "Mrs.", "Ms.", "Dr.", "St.", "Mt.", "Jr.", "Sr.", "vs.", "No.", "U.S.")
+
+
+def _sentences(line: str) -> list:
+    out = []
+    for s in _SENT_SPLIT.split(line.strip()):
+        if out and out[-1].endswith(_ABBREV):     # "Mount St. Helens", "Dr. Wertz"
+            out[-1] += " " + s
+        elif s:
+            out.append(s)
+    return out
+
+
+def _degenerate(src: str, out: str) -> bool:
+    """NLLB repetition loop: output far longer than the source, or a token 4+ times in a row."""
+    toks = out.split()
+    return (len(out) > 2.5 * len(src) + 20
+            or any(toks[i] == toks[i + 1] == toks[i + 2] == toks[i + 3] for i in range(len(toks) - 3)))
+
 
 # ── Source loading ────────────────────────────────────────────────────────────
 
@@ -150,10 +175,11 @@ class Translator:
 
     def key(self, lang, text):
         # NLLB output is cached separately so it never mixes with Google translations
-        return f"nllb-{lang}\t{text}" if self.backend == "nllb" else f"{lang}\t{text}"
+        # (nllb2: sentence-level; nllb- entries were whole-line and dropped sentences)
+        return f"nllb2-{lang}\t{text}" if self.backend == "nllb" else f"{lang}\t{text}"
 
     # -- NLLB-200 (local model, no network quota) --
-    def _nllb_translate(self, texts, lang, batch_size=16):
+    def _nllb_translate(self, texts, lang, batch_size=16, strict=False):
         if self._nllb is None:
             import torch
             from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
@@ -164,6 +190,9 @@ class Translator:
             print(f"  NLLB model loaded: {self.nllb_model} on {model.device}", flush=True)
         tok, model, torch = self._nllb
         target = tok.convert_tokens_to_ids(NLLB_CODES[lang])
+        # Retries of looping outputs get a repetition penalty; normal outputs don't, since
+        # blocking repeated n-grams would also mangle legitimately repeated names/numbers.
+        extra = {"repetition_penalty": 1.3, "no_repeat_ngram_size": 3} if strict else {}
         out = []
         for i in range(0, len(texts), batch_size):
             batch = texts[i:i + batch_size]
@@ -171,23 +200,37 @@ class Translator:
                       max_length=512).to(model.device)
             with torch.no_grad():
                 gen = model.generate(**enc, forced_bos_token_id=target, num_beams=4,
-                                     max_new_tokens=int(enc["input_ids"].shape[1] * 2) + 20)
+                                     max_new_tokens=int(enc["input_ids"].shape[1] * 2) + 20,
+                                     **extra)
             out.extend(tok.batch_decode(gen, skip_special_tokens=True))
+        if lang == "fa":
+            out = [o.translate(_FA_FOLD) for o in out]
+        bad = [k for k, (s, o) in enumerate(zip(texts, out)) if _degenerate(s, o)]
+        if bad and not strict:
+            print(f"    {len(bad)} looping outputs, retrying with a repetition penalty", flush=True)
+            for k, o in zip(bad, self._nllb_translate([texts[k] for k in bad], lang, strict=True)):
+                out[k] = o
+                if _degenerate(texts[k], o):
+                    print(f"    WARNING still looping: {texts[k][:80]!r}", flush=True)
         return out
 
     def _translate_nllb(self, todo, lang):
-        # NLLB is sentence-level: translate line by line, re-join multi-line strings.
+        # NLLB translates one sentence well but drops sentences from longer input, so
+        # translate each sentence of each line separately and re-join.
         lines = list(dict.fromkeys(l for t in todo for l in t.split("\n") if l.strip()))
+        sents = list(dict.fromkeys(s for l in lines for s in _sentences(l)))
         done, step = {}, 128
-        for i in range(0, len(lines), step):
-            for src, out in zip(lines[i:i + step], self._nllb_translate(lines[i:i + step], lang)):
+        for i in range(0, len(sents), step):
+            for src, out in zip(sents[i:i + step], self._nllb_translate(sents[i:i + step], lang)):
                 done[src] = out
             for t in todo:
-                parts = [l for l in t.split("\n") if l.strip()]
-                if self.key(lang, t) not in self.cache and all(l in done for l in parts):
-                    self._store(lang, t, "\n".join(done.get(l, l) for l in t.split("\n")))
+                if self.key(lang, t) in self.cache:
+                    continue
+                if all(s in done for l in t.split("\n") for s in _sentences(l)):
+                    self._store(lang, t, "\n".join(" ".join(done[s] for s in _sentences(l)) if l.strip() else l
+                                                   for l in t.split("\n")))
             self.save()
-            print(f"    {min(i + step, len(lines))}/{len(lines)} lines", flush=True)
+            print(f"    {min(i + step, len(sents))}/{len(sents)} sentences", flush=True)
 
     def save(self):
         tmp = self.cache_path.with_suffix(".tmp")

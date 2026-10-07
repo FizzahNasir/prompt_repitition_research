@@ -26,4 +26,4 @@ This repository contains the replication and extension of **arXiv:2512.14982** (
 
 4. **Evaluation:**
    - Statistical significance is assessed with the **McNemar test** ($p < 0.1$, `correction=False`).
-   - Retrieval evaluation uses fuzzy substring matching with threshold $\ge 0.80$.
+   - Retrieval evaluation uses exact name matching after Perso-Arabic spelling normalization (fuzzy matching at $\ge 0.80$ was dropped: distinct names such as صفیہ بیگم / روبینہ بیگم score above it).

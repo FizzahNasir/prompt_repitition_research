@@ -63,9 +63,9 @@
 2. **ARC-Challenge** (Science MCQ, 300 items): Scenarios `2_Question_First`, `3_Options_First`. Choice extraction (A–D).
 3. **OpenBookQA** (Fact retrieval MCQ, 495+ items): Scenarios `2_Question_First`, `3_Options_First`. Choice extraction (A–D).
 4. **CommonSenseQA** (Commonsense reasoning, 289 items): Scenarios `2_Question_First`, `3_Options_First`. Choice extraction (A–E).
-5. **NameIndex** (50-name list retrieval, 100 items): Scenario `10_Data_First_Retrieval`. Fuzzy match ($\ge 0.80$).
-6. **MiddleMatch** (40-name list triplet retrieval, 100 items): Scenario `10_Data_First_Retrieval`. Fuzzy match ($\ge 0.80$).
-7. **ScriptMixed** (Code-switching English + RTL, 20 items): Scenario `8_English_to_RTL`. Fuzzy match ($\ge 0.80$).
+5. **NameIndex** (50-name list retrieval, 100 items): Scenario `10_Data_First_Retrieval`. Exact name match after spelling normalization.
+6. **MiddleMatch** (40-name list triplet retrieval, 100 items): Scenario `10_Data_First_Retrieval`. Exact name match after spelling normalization.
+7. **ScriptMixed** (Code-switching English + RTL, 20 items): Scenario `8_English_to_RTL`. Exact name match after spelling normalization.
 
 ---
 
