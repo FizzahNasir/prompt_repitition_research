@@ -241,16 +241,21 @@ _NUM = r"-?\d+(?:,\d{3})*(?:\.\d+)?"
 
 
 def _extract_mcq(text: str):
-    """Letter from 'The answer is X' (paper format); else a leading or standalone letter."""
+    """Letter from 'The answer is X' (paper format); else a leading letter; else the only
+    standalone letter in the reply. Echoes of the prompt or option list are not answers."""
     t = text.strip()
     m = re.findall(r"(?i:answer\s+is)\s*[:：]?\s*[\(\[<\*\"']*\s*([A-J])(?![A-Za-z])", t)
     if m:
         return m[-1]
+    lines = [ln for ln in t.splitlines() if ln.strip()]
+    if ("Reply with one letter" in t
+            or (len(lines) > 1 and all(re.match(r"\s*[A-J][\.\)]", ln) for ln in lines[:2]))):
+        return None
     m = re.match(r"[\(\[<\*\s]*([A-J])(?![A-Za-z])", t)
     if m:
         return m.group(1)
-    m = re.findall(r"(?<![A-Za-z])([A-J])(?![A-Za-z])", t)
-    return m[0] if m else None
+    letters = set(re.findall(r"(?<![A-Za-z])([A-J])(?![A-Za-z])", t))
+    return letters.pop() if len(letters) == 1 else None
 
 
 def _extract_number(text: str):
@@ -273,18 +278,28 @@ def _normalize_name(s: str) -> str:
     return " ".join(s.lower().split())
 
 
+_LIST_ITEM = re.compile(r"\s*(?:\d+|[٠-٩۰-۹]+)[\.\)]|\s*[-•*]\s")
+
+
 def _answer_span(response: str) -> str:
-    """Text after the last 'answer is', else the first non-empty line."""
+    """Text after the last 'answer is', else the first non-empty line. A lead-in line
+    ending in ':' or '?' ("The 25th name is:") also takes the next line, or the whole
+    list if one follows, so the distractor check still rejects echoed lists."""
     parts = _ANSWER_IS.split(response)
     if len(parts) > 1:
         return parts[-1]
-    for line in response.splitlines():
-        if line.strip():
-            return line
-    return ""
+    lines = [ln for ln in response.splitlines() if ln.strip()]
+    if not lines:
+        return ""
+    if len(lines) > 1 and lines[0].rstrip().rstrip("\"'*").endswith((":", "：", "?", "؟")):
+        span = lines[:2]
+        if _LIST_ITEM.match(lines[1]):
+            span += [ln for ln in lines[2:] if _LIST_ITEM.match(ln)]
+        return "\n".join(span)
+    return lines[0]
 
 
-def is_correct(task: str, response: str, answer: str, distractors=None) -> bool:
+def is_correct(task: str, response: str, answer: str, distractors=None, anchors=None) -> bool:
     """Score one response.
 
     MCQ:       extracted letter == answer letter.
@@ -292,6 +307,9 @@ def is_correct(task: str, response: str, answer: str, distractors=None) -> bool:
     Retrieval: exact (normalized) name match in the answer span, as in the paper. If
                `distractors` (other names from the list) are given, the span must not
                also contain one of them, so echoing the whole list doesn't count.
+               `anchors` are the names in the question (MiddleMatch's "between X and
+               Y"); a restated question is removed first, so an anchor that is also the
+               gold answer only counts when it is stated on its own.
     """
     response = response or ""
     if task in MCQ_TASKS:
@@ -303,6 +321,10 @@ def is_correct(task: str, response: str, answer: str, distractors=None) -> bool:
         except ValueError:
             return False
     span = f" {_normalize_name(_answer_span(response))} "
+    names = [n for n in (_normalize_name(a) for a in anchors or []) if n]
+    while len(names) >= 2 and all(f" {n} " in span for n in names):
+        for n in names:
+            span = span.replace(f" {n} ", " ", 1)
     target = _normalize_name(answer)
     if not target or f" {target} " not in span:
         return False
