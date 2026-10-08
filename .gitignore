@@ -57,3 +57,6 @@ Thumbs.db
 ~$*
 *.tmp
 *.temp
+
+# Claude Code local settings and session files
+.claude/
