@@ -116,20 +116,25 @@ def main():
         mc.to_csv(out / "mcnemar_results.csv", index=False)
         mc["win"] = mc["significant"] & (mc["direction"] == "method_better")
         mc["loss"] = mc["significant"] & (mc["direction"] == "baseline_better")
+        # Robustness: the same counts under the exact (binomial) McNemar test
+        mc["win_exact"] = mc["significant_exact"] & (mc["direction"] == "method_better")
+        mc["loss_exact"] = mc["significant_exact"] & (mc["direction"] == "baseline_better")
         wins = (mc.groupby(["language", "model", "method"])
-                  .agg(tests=("win", "size"), wins=("win", "sum"), losses=("loss", "sum"))
+                  .agg(tests=("win", "size"), wins=("win", "sum"), losses=("loss", "sum"),
+                       wins_exact=("win_exact", "sum"), losses_exact=("loss_exact", "sum"))
                   .reset_index())
         wins.to_csv(out / "wins_summary.csv", index=False)
         print(f"McNemar (p < {analysis.ALPHA}, no correction) -> {out / 'mcnemar_results.csv'}")
         print("\nSignificant wins / losses vs baseline:")
         print(wins.to_string(index=False))
-        total = wins.groupby("method")[["tests", "wins", "losses"]].sum()
+        total = wins.groupby("method")[["tests", "wins", "losses", "wins_exact", "losses_exact"]].sum()
         print("\nOverall, all tasks:")
         print(total.to_string())
         # The paper's benchmarks only (CommonSenseQA and ScriptMixed are this project's additions)
         paper = mc[mc["task"].isin(PAPER_TASKS)]
         paper_tot = paper.groupby("method").agg(tests=("win", "size"), wins=("win", "sum"),
-                                                losses=("loss", "sum"))
+                                                losses=("loss", "sum"), wins_exact=("win_exact", "sum"),
+                                                losses_exact=("loss_exact", "sum"))
         print(f"\nPaper tasks only {sorted(PAPER_TASKS)} (cf. paper: 47 wins / 70 tests, 0 losses):")
         print(paper_tot.to_string())
 

@@ -191,6 +191,15 @@ def _mcnemar_p(b: int, c: int) -> float:
     return float(chi2.sf(chi2_stat, df=1))
 
 
+def _mcnemar_exact_p(b: int, c: int) -> float:
+    """Exact (binomial) McNemar p-value, two-sided: a robustness check for small b+c,
+    where the chi-square approximation above is anti-conservative."""
+    if b + c == 0:
+        return float("nan")
+    from scipy.stats import binomtest
+    return float(binomtest(c, b + c, 0.5).pvalue)
+
+
 ALPHA = 0.1  # significance threshold used by the paper
 
 
@@ -230,6 +239,7 @@ def compute_mcnemar(df: pd.DataFrame) -> pd.DataFrame:
             b = int(((b_arr == 1) & (c_arr == 0)).sum())  # baseline correct, method wrong
             c = int(((b_arr == 0) & (c_arr == 1)).sum())  # baseline wrong, method correct
             p = _mcnemar_p(b, c)
+            p_exact = _mcnemar_exact_p(b, c)
             rows.append({
                 "model":         model,
                 "task":          task,
@@ -242,6 +252,8 @@ def compute_mcnemar(df: pd.DataFrame) -> pd.DataFrame:
                 "p_value":       round(p, 4) if not math.isnan(p) else float("nan"),
                 "significant":   (not math.isnan(p)) and (p < ALPHA),
                 "direction":     "method_better" if c > b else ("baseline_better" if b > c else "tie"),
+                "p_exact":       round(p_exact, 4) if not math.isnan(p_exact) else float("nan"),
+                "significant_exact": (not math.isnan(p_exact)) and (p_exact < ALPHA),
             })
 
     return pd.DataFrame(rows)
